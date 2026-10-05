@@ -1,0 +1,30 @@
+# 抓取来源配置
+# 网页/订阅 URL 支持日期模板：
+#   {today:%Y%m%d}  -> 20261005
+#   {today:%Y/%m/%d} -> 2026/10/05
+#   {today_nopad}   -> 2026-10-5（无前导零）
+# 含日期模板的 URL 会自动按今天、昨天、前天依次尝试，直到成功。
+
+web_pages:
+  # clashgithub 每日节点页（日期模板）
+  - "https://clashgithub.com/clashnode-{today:%Y%m%d}.html"
+  # clashnodev2ray 每日节点页（日期模板）
+  - "https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/"
+  # freenodess 每日节点页（无前导零日期模板）
+  - "https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/"
+
+subscriptions:
+  # clashgithub 每日 v2ray 订阅（base64）
+  - "https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.txt"
+  # clashgithub 每日 clash 订阅（YAML）
+  - "https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.yml"
+  # free18/v2ray GitHub 仓库订阅
+  - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
+  - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml"
+
+# Telegram 公开频道（通过 t.me/s/<频道> 免登录预览抓取）
+# 脚本会提取消息中的节点 URI，并对消息里的节点发布页链接跟进抓取一层
+tg_channels:
+  - clashjd
+  - pgkj666
+  - afxdxqe

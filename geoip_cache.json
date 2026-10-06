@@ -434,7 +434,13 @@
   "srv-17e124.21freedom.net": "103.88.243.142",
   "se.cdn.mynetcloud.online": "95.163.213.255",
   "gloss.fdc.video-mvm.ru": "50.7.221.218",
-  "cedar.fdc.video-mvm.ru": "50.7.221.226"
+  "cedar.fdc.video-mvm.ru": "50.7.221.226",
+  "aa1c26e1-tmtk00-tr7ru7-141tv.nw4.hyhuawei.com": "203.198.86.243",
+  "piracy-android.video-streams.org": "151.101.201.242",
+  "pphfree2.mvpnpvpn.de5.net": "103.107.52.106",
+  "tr.datanode-internal.net": "201.24.125.126",
+  "4392b94d-tmtk00-tr7ru7-141tv.hk3.hyhuawei.com": "116.49.85.111",
+  "nl5.freekeysh110.online": "5.253.59.156"
  },
  "geo": {
   "129.151.92.223": {
@@ -11390,17 +11396,17 @@
   "59.125.69.23": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Chunghwa Telecom Co."
+   "org": "Chunghwa Telecom"
   },
   "60.248.219.53": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Chunghwa Telecom Co."
+   "org": "Chunghwa Telecom"
   },
   "60.248.219.78": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Chunghwa Telecom Co."
+   "org": "Chunghwa Telecom"
   },
   "62.210.91.2": {
    "country": "France",
@@ -11526,6 +11532,71 @@
    "country": "Estonia",
    "cc": "EE",
    "org": "1Cent Host"
+  },
+  "103.107.52.106": {
+   "country": "Thailand",
+   "cc": "TH",
+   "org": "ReadyIDC"
+  },
+  "103.149.182.79": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "DALIAN YICHUAN INDUSTRIAL"
+  },
+  "138.199.48.82": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cdnext TOR"
+  },
+  "14.1.28.75": {
+   "country": "United States",
+   "cc": "US",
+   "org": "End of Reality"
+  },
+  "146.70.23.32": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "M247"
+  },
+  "150.241.79.232": {
+   "country": "Sweden",
+   "cc": "SE",
+   "org": "xorek.cloud International"
+  },
+  "151.101.201.242": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Fastly"
+  },
+  "151.242.104.93": {
+   "country": "Norway",
+   "cc": "NO",
+   "org": "Gigahost"
+  },
+  "162.35.17.121": {
+   "country": "United States",
+   "cc": "US",
+   "org": "KAGA FEI America"
+  },
+  "170.114.45.239": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Zoom Video Communications"
+  },
+  "5.253.59.156": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Neterra"
+  },
+  "50.7.87.122": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "FDCservers.net"
+  },
+  "51.158.206.96": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Scaleway"
   }
  }
 }

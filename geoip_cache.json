@@ -10249,7 +10249,7 @@
   "137.220.225.111": {
    "country": "Japan",
    "cc": "JP",
-   "org": "Rackip Consultancy Pte."
+   "org": "Rackip Consultancy"
   },
   "138.128.247.246": {
    "country": "United States",
@@ -10589,17 +10589,17 @@
   "27.50.48.8": {
    "country": "Hong Kong",
    "cc": "HK",
-   "org": "BGP Network Limited"
+   "org": "BGP Network"
   },
   "27.50.49.154": {
    "country": "Hong Kong",
    "cc": "HK",
-   "org": "BGP Network Limited"
+   "org": "BGP Network"
   },
   "27.50.49.242": {
    "country": "Hong Kong",
    "cc": "HK",
-   "org": "BGP Network Limited"
+   "org": "BGP Network"
   },
   "31.58.137.14": {
    "country": "Latvia",
@@ -10624,7 +10624,7 @@
   "36.50.84.115": {
    "country": "Japan",
    "cc": "JP",
-   "org": "Hostsymbol Pte."
+   "org": "Hostsymbol"
   },
   "37.221.210.113": {
    "country": "Hungary",
@@ -10809,7 +10809,7 @@
   "61.230.172.241": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Chunghwa Telecom Co."
+   "org": "Chunghwa Telecom"
   },
   "61.78.173.61": {
    "country": "South Korea",
@@ -11045,6 +11045,36 @@
    "country": "United States",
    "cc": "US",
    "org": "AT&T Corp"
+  },
+  "13.212.81.3": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "AWS EC2"
+  },
+  "132.226.226.189": {
+   "country": "South Korea",
+   "cc": "KR",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "152.67.8.205": {
+   "country": "India",
+   "cc": "IN",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "51.158.206.93": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Scaleway"
+  },
+  "51.79.85.185": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "OVH Hosting"
+  },
+  "85.209.157.177": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Beafort"
   }
  }
 }

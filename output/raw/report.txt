@@ -1,9 +1,9 @@
-抓取时间: 2026-10-06 00:54:06
-去重后节点: 1614
-clash 代理: 6615
+抓取时间: 2026-10-06 01:22:17
+去重后节点: 1875
+clash 代理: 6968
 
 - https://clashgithub.com/clashnode-{today:%Y%m%d}.html: OK, 835 个节点 + 0 个 clash 代理
-- https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/: OK, 92 个节点 + 97 个 clash 代理
+- https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/: OK, 0 个节点 + 0 个 clash 代理
 - https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/: OK, 92 个节点 + 97 个 clash 代理
 - https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.txt: OK, 497 个节点 + 0 个 clash 代理
 - https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.yml: OK, 0 个节点 + 0 个 clash 代理
@@ -21,6 +21,6 @@ clash 代理: 6615
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt: OK, 105 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS_WEAK_DPI_RUS.txt: OK, 4 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt: OK, 108 个节点 + 0 个 clash 代理
-- tg:clashjd: OK, 1306 个节点 + 1306 个 clash 代理
+- tg:clashjd: OK, 1495 个节点 + 1495 个 clash 代理
 - tg:pgkj666: OK, 0 个节点 + 0 个 clash 代理
 - tg:afxdxqe: OK, 0 个节点 + 0 个 clash 代理

@@ -358,7 +358,14 @@
   "c8dc0c18-tmrpc0-tt8rqc-jjv2.hk3.hyhuawei.com": "116.49.85.111",
   "goldcnmltyljgfwgov.vip60.wogcnmnnagfwgov.com": "42.194.128.3",
   "silversbgfgov.vip26.wogbcnmnagfwgov.com": "124.223.154.49",
-  "apinbxs.zalolink.com": "103.214.173.198"
+  "apinbxs.zalolink.com": "103.214.173.198",
+  "1.sdwan.realm-sync.com": "23.95.72.244",
+  "betty.ns.cloudflare.com": "173.245.58.75",
+  "www.shopify.com": "104.18.42.163",
+  "fsxhh.fastshop1.com": null,
+  "srv1.khatibirepair.ir": null,
+  "rezerv12.yunus.guru": "158.160.161.175",
+  "assets.trorays.com": null
  },
  "geo": {
   "129.151.92.223": {
@@ -6514,7 +6521,7 @@
   "119.46.51.45": {
    "country": "Thailand",
    "cc": "TH",
-   "org": "True Internet Corporation CO."
+   "org": "True Internet Corporation"
   },
   "124.223.154.49": {
    "country": "China",
@@ -6639,7 +6646,7 @@
   "137.220.221.179": {
    "country": "Japan",
    "cc": "JP",
-   "org": "Rackip Consultancy Pte."
+   "org": "Rackip Consultancy"
   },
   "137.74.16.237": {
    "country": "France",
@@ -7154,7 +7161,7 @@
   "165.154.195.38": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Scloud Pte"
+   "org": "Scloud"
   },
   "167.88.63.59": {
    "country": "United States",
@@ -7384,7 +7391,7 @@
   "173.234.14.105": {
    "country": "Singapore",
    "cc": "SG",
-   "org": "Leaseweb Asia Pacific Pte."
+   "org": "Leaseweb Asia Pacific"
   },
   "173.234.25.91": {
    "country": "United States",
@@ -7759,7 +7766,7 @@
   "211.178.105.134": {
    "country": "South Korea",
    "cc": "KR",
-   "org": "SK Broadband Co"
+   "org": "SK Broadband"
   },
   "212.227.235.66": {
    "country": "Spain",
@@ -8054,7 +8061,7 @@
   "45.127.32.220": {
    "country": "Singapore",
    "cc": "SG",
-   "org": "Dromatics Systems Pte"
+   "org": "Dromatics Systems"
   },
   "45.133.151.162": {
    "country": "Russia",
@@ -8379,7 +8386,7 @@
   "59.125.69.24": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Chunghwa Telecom Co."
+   "org": "Chunghwa Telecom"
   },
   "62.152.58.90": {
    "country": "Russia",
@@ -8895,6 +8902,611 @@
    "country": "Germany",
    "cc": "DE",
    "org": "1Cent Host"
+  },
+  "103.133.1.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Laravel"
+  },
+  "103.169.142.140": {
+   "country": "Australia",
+   "cc": "AU",
+   "org": "Canva"
+  },
+  "104.129.165.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Ipxo"
+  },
+  "104.129.167.140": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "SolidNetwork Technologies"
+  },
+  "104.17.52.188": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.18.42.163": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.234.239.140": {
+   "country": "British Virgin Islands",
+   "cc": "VG",
+   "org": "Cloudflare London"
+  },
+  "104.238.71.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "104.254.140.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Armis"
+  },
+  "104.27.194.143": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "108.162.194.135": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "108.162.195.19": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "108.162.198.11": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Cloudflare"
+  },
+  "108.165.152.140": {
+   "country": "India",
+   "cc": "IN",
+   "org": "Lease Packet Datacenter PVT."
+  },
+  "14.102.228.140": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "Cloudflare London"
+  },
+  "14.102.229.140": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "Cloudflare London"
+  },
+  "141.11.202.140": {
+   "country": "Hungary",
+   "cc": "HU",
+   "org": "Fair Game Software KFT"
+  },
+  "141.11.202.240": {
+   "country": "Hungary",
+   "cc": "HU",
+   "org": "Fair Game Software KFT"
+  },
+  "141.11.203.140": {
+   "country": "Hungary",
+   "cc": "HU",
+   "org": "Fair Game Software KFT"
+  },
+  "143.244.45.50": {
+   "country": "Ukraine",
+   "cc": "UA",
+   "org": "Cdn77 KYI"
+  },
+  "143.244.45.53": {
+   "country": "Ukraine",
+   "cc": "UA",
+   "org": "Cdn77 KYI"
+  },
+  "143.244.45.55": {
+   "country": "Ukraine",
+   "cc": "UA",
+   "org": "Cdn77 KYI"
+  },
+  "147.185.161.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "MIGHTY SOFTWARE"
+  },
+  "147.185.161.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "MIGHTY SOFTWARE"
+  },
+  "152.233.28.200": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "CDN77 London"
+  },
+  "152.233.28.201": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "CDN77 London"
+  },
+  "154.197.64.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Magenta Favorita Unipessoal LDA"
+  },
+  "154.197.80.140": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "Cloud Innovation"
+  },
+  "154.37.223.105": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "NetLab Global"
+  },
+  "154.37.223.25": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "NetLab Global"
+  },
+  "154.81.141.140": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "Litnet CY"
+  },
+  "154.83.2.240": {
+   "country": "Philippines",
+   "cc": "PH",
+   "org": "Cloud Innovation"
+  },
+  "154.92.9.140": {
+   "country": "Cyprus",
+   "cc": "CY",
+   "org": "Salo Solutions KFT"
+  },
+  "155.46.213.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Thomson Reuters U.S."
+  },
+  "158.160.161.175": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Yandex.Cloud"
+  },
+  "159.242.242.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "PayPal"
+  },
+  "160.153.137.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "160.153.138.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "160.250.247.70": {
+   "country": "Vietnam",
+   "cc": "VN",
+   "org": "Golden Key Solutions"
+  },
+  "162.159.13.71": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "162.159.19.67": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "162.159.40.181": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "164.38.155.140": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "Currys Retail"
+  },
+  "167.68.42.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Thomson Reuters"
+  },
+  "172.64.151.254": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "172.64.32.75": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "172.65.111.43": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "173.245.58.75": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "173.245.59.35": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "18.182.54.28": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "AWS EC2"
+  },
+  "184.174.80.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Ipxo"
+  },
+  "185.135.9.140": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Ipxo"
+  },
+  "185.135.9.40": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Ipxo"
+  },
+  "185.135.9.50": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Ipxo"
+  },
+  "185.148.104.140": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Dolgova Alena Andreevna"
+  },
+  "185.148.105.140": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Dolgova Alena Andreevna"
+  },
+  "185.16.110.140": {
+   "country": "France",
+   "cc": "FR",
+   "org": "BJT Partners"
+  },
+  "185.162.229.50": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "Softconstruct"
+  },
+  "185.162.231.140": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "Softconstruct"
+  },
+  "185.170.10.248": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "ServTech"
+  },
+  "185.170.166.140": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Playdom"
+  },
+  "185.229.191.12": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "AMS CDN77"
+  },
+  "185.229.191.13": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "AMS CDN77"
+  },
+  "185.229.191.157": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "AMS CDN77"
+  },
+  "185.238.228.140": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "IPXO"
+  },
+  "190.93.244.140": {
+   "country": "Costa Rica",
+   "cc": "CR",
+   "org": "CloudFlare Latin America S.R.L"
+  },
+  "190.93.246.140": {
+   "country": "Costa Rica",
+   "cc": "CR",
+   "org": "CloudFlare Latin America S.R.L"
+  },
+  "191.44.118.101": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Intezio Worldwide"
+  },
+  "192.169.220.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "193.233.132.140": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "AEZA GROUP"
+  },
+  "193.233.21.140": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "AEZA GROUP"
+  },
+  "193.233.21.240": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "AEZA GROUP"
+  },
+  "194.152.44.140": {
+   "country": "Ukraine",
+   "cc": "UA",
+   "org": "Demenin"
+  },
+  "194.53.53.140": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "tang"
+  },
+  "194.87.10.155": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "Baxet Group"
+  },
+  "195.85.23.140": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "Lotuna Management s.r.o"
+  },
+  "198.177.57.140": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Prime Formation"
+  },
+  "198.41.207.201": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "199.181.197.40": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Zenfolio"
+  },
+  "209.46.30.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "ADVERTISING SPECIALTY INSTITUTE"
+  },
+  "209.94.90.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Protocol Labs"
+  },
+  "212.183.88.240": {
+   "country": "Austria",
+   "cc": "AT",
+   "org": "Porsche Konstruktionen GmbH &"
+  },
+  "23.95.72.244": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Oneprovider.com"
+  },
+  "31.185.108.30": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "IPX"
+  },
+  "45.128.76.140": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Rapidseedbox"
+  },
+  "45.131.7.140": {
+   "country": "Belize",
+   "cc": "BZ",
+   "org": "Inter Networks"
+  },
+  "45.159.12.15": {
+   "country": "Sweden",
+   "cc": "SE",
+   "org": "Datacamp"
+  },
+  "45.196.29.140": {
+   "country": "Indonesia",
+   "cc": "ID",
+   "org": "Cloud Innovation"
+  },
+  "45.40.144.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "45.40.146.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "45.40.152.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "45.59.184.78": {
+   "country": "United States",
+   "cc": "US",
+   "org": "DMIT Cloud Services"
+  },
+  "45.8.211.140": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "Tang Dynastic Technology Pte."
+  },
+  "45.80.111.140": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "CloudKleyer Frankfurt"
+  },
+  "45.85.118.240": {
+   "country": "United Kingdom",
+   "cc": "GB",
+   "org": "LIR Services"
+  },
+  "5.10.244.140": {
+   "country": "Curacao",
+   "cc": "CW",
+   "org": "Hollycorn N.V"
+  },
+  "50.62.175.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "50.62.198.50": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "50.62.88.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "50.62.89.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "69.84.182.49": {
+   "country": "United States",
+   "cc": "US",
+   "org": "LexisNexis Risk Data Management"
+  },
+  "72.167.230.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "GoDaddy.com"
+  },
+  "79.127.249.221": {
+   "country": "Sweden",
+   "cc": "SE",
+   "org": "CDN77 Stockholm"
+  },
+  "8.34.146.240": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Level 3"
+  },
+  "8.34.70.140": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Level 3"
+  },
+  "87.249.139.233": {
+   "country": "Türkiye",
+   "cc": "TR",
+   "org": "Cdnext IST"
+  },
+  "87.249.139.235": {
+   "country": "Türkiye",
+   "cc": "TR",
+   "org": "Cdnext IST"
+  },
+  "87.249.139.247": {
+   "country": "Türkiye",
+   "cc": "TR",
+   "org": "Cdnext IST"
+  },
+  "89.116.250.140": {
+   "country": "Lithuania",
+   "cc": "LT",
+   "org": "SC \"Lithuanian Radio and TV Center\""
+  },
+  "89.208.113.157": {
+   "country": "France",
+   "cc": "FR",
+   "org": "Aeza Group"
+  },
+  "92.53.188.140": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Private Customer"
+  },
+  "92.53.189.40": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Private Customer"
+  },
+  "92.53.190.140": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Private Customer"
+  },
+  "92.53.191.140": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Private Customer"
+  },
+  "94.156.122.251": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Spacecore Solution"
+  },
+  "95.173.199.104": {
+   "country": "Romania",
+   "cc": "RO",
+   "org": "Datacamp"
+  },
+  "95.173.199.106": {
+   "country": "Romania",
+   "cc": "RO",
+   "org": "Datacamp"
+  },
+  "95.173.199.116": {
+   "country": "Romania",
+   "cc": "RO",
+   "org": "Datacamp"
+  },
+  "95.173.199.69": {
+   "country": "Romania",
+   "cc": "RO",
+   "org": "Datacamp"
+  },
+  "95.173.199.86": {
+   "country": "Romania",
+   "cc": "RO",
+   "org": "Datacamp"
+  },
+  "95.173.199.87": {
+   "country": "Romania",
+   "cc": "RO",
+   "org": "Datacamp"
   }
  }
 }

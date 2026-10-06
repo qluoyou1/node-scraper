@@ -32,6 +32,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add output/clash.yaml output/nodes.txt output/subscription.txt output/report.txt geoip_cache.json
+          git add output/clash.yaml output/nodes.txt output/subscription.txt output/raw/report.txt geoip_cache.json
           git diff --cached --quiet || git commit -m "daily scrape $(date -u +%Y-%m-%d)"
           git push

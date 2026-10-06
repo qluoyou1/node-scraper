@@ -1,28 +1,28 @@
-抓取时间: 2026-10-06 03:21:06
-去重后节点: 1868
-clash 代理: 6643
+抓取时间: 2026-10-06 04:40:59
+去重后节点: 2172
+clash 代理: 7040
 
 - https://clashgithub.com/clashnode-{today:%Y%m%d}.html: OK, 835 个节点 + 0 个 clash 代理
 - https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/: OK, 0 个节点 + 0 个 clash 代理
 - https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/: OK, 92 个节点 + 97 个 clash 代理
 - https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.txt: OK, 497 个节点 + 0 个 clash 代理
 - https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.yml: OK, 0 个节点 + 0 个 clash 代理
-- https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt: OK, 257 个节点 + 0 个 clash 代理
-- https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml: OK, 0 个节点 + 257 个 clash 代理
+- https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt: OK, 159 个节点 + 0 个 clash 代理
+- https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml: OK, 0 个节点 + 159 个 clash 代理
 - https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.txt: OK, 131 个节点 + 0 个 clash 代理
 - https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.yaml: OK, 0 个节点 + 194 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml: OK, 0 个节点 + 461 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml: OK, 0 个节点 + 542 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml: OK, 0 个节点 + 145 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml: OK, 0 个节点 + 120 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml: OK, 0 个节点 + 81 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml: OK, 0 个节点 + 38 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml: OK, 0 个节点 + 1819 个 clash 代理
-- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt: OK, 193 个节点 + 0 个 clash 代理
-- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt: OK, 148 个节点 + 0 个 clash 代理
-- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt: OK, 105 个节点 + 0 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml: OK, 0 个节点 + 432 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml: OK, 0 个节点 + 567 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml: OK, 0 个节点 + 146 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml: OK, 0 个节点 + 129 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml: OK, 0 个节点 + 77 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml: OK, 0 个节点 + 39 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml: OK, 0 个节点 + 1814 个 clash 代理
+- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt: OK, 516 个节点 + 0 个 clash 代理
+- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt: OK, 150 个节点 + 0 个 clash 代理
+- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt: OK, 106 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS_WEAK_DPI_RUS.txt: OK, 4 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt: OK, 98 个节点 + 0 个 clash 代理
-- tg:clashjd: OK, 1089 个节点 + 1089 个 clash 代理
+- tg:clashjd: OK, 1275 个节点 + 1275 个 clash 代理
 - tg:pgkj666: OK, 0 个节点 + 0 个 clash 代理
 - tg:afxdxqe: OK, 0 个节点 + 0 个 clash 代理

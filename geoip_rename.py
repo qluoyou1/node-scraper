@@ -351,7 +351,7 @@ def build_proxy_groups(proxies):
         providers[pname] = {
             "type": "http", "format": "mrs",
             "url": f"{acl4ssr}/{lst}",
-            "path": f"./ruleset/{pname}.mrs",
+            # "path": f"./ruleset/{pname}.mrs",
             "interval": 86400,
         }
 

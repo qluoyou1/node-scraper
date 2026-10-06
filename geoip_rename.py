@@ -346,7 +346,9 @@ def build_proxy_groups(proxies):
         ("telegramcidr", "Telegram_ip.mrs"),
     ]:
         providers[name] = {
-            "type": "http", "format": "mrs",
+            "type": "http",
+            "behavior": "ipcidr" if fname.endswith("_ip.mrs") else "domain",
+            "format": "mrs",
             "url": f"{mrs_base}/{fname}",
             "path": f"./ruleset/{name}.mrs",
             "interval": 86400,
@@ -356,7 +358,9 @@ def build_proxy_groups(proxies):
     for svc, lst in SERVICE_RULESETS.items():
         pname = "svc-" + svc.lower().replace("+", "")
         providers[pname] = {
-            "type": "http", "format": "mrs",
+            "type": "http",
+            "behavior": "ipcidr" if lst.endswith("_ip.mrs") else "domain",
+            "format": "mrs",
             "url": f"{acl4ssr}/{lst}",
             "path": f"./ruleset/{pname}.mrs",
             "interval": 86400,

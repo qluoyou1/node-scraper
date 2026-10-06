@@ -6,12 +6,12 @@
 # 含日期模板的 URL 会自动按今天、昨天、前天依次尝试，直到成功。
 
 web_pages:
-  # # clashgithub 每日节点页（日期模板）
-  # - "https://clashgithub.com/clashnode-{today:%Y%m%d}.html"
-  # # clashnodev2ray 每日节点页（日期模板）
-  # - "https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/"
-  # # freenodess 每日节点页（无前导零日期模板）
-  # - "https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/"
+  # clashgithub 每日节点页（日期模板）
+  - "https://clashgithub.com/clashnode-{today:%Y%m%d}.html"
+  # clashnodev2ray 每日节点页（日期模板）
+  - "https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/"
+  # freenodess 每日节点页（无前导零日期模板）
+  - "https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/"
 
 subscriptions:
   # # clashgithub 每日 v2ray 订阅（base64）

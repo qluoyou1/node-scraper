@@ -432,7 +432,7 @@ def main():
         yaml_proxies.extend(got_proxies)
 
     # 1) 网页来源
-    for tpl in cfg.get("web_pages", []):
+    for tpl in cfg.get("web_pages") or []:
         label = tpl
         try:
             if "{today" in tpl:
@@ -448,7 +448,7 @@ def main():
             print(f"[page] {label[:80]} 失败: {e}")
 
     # 2) 订阅链接来源
-    for tpl in cfg.get("subscriptions", []):
+    for tpl in cfg.get("subscriptions") or []:
         try:
             url = render_url_template(tpl)
             u, p = fetch_subscription(url)
@@ -460,7 +460,7 @@ def main():
             print(f"[sub ] {tpl[:80]} 失败: {e}")
 
     # 3) Telegram 频道
-    for ch in cfg.get("tg_channels", []):
+    for ch in cfg.get("tg_channels") or []:
         try:
             got, got_proxies = scrape_tg_channel(ch)
             _record(got, got_proxies, f"tg:{ch}")

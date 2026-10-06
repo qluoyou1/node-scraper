@@ -345,7 +345,7 @@ def build_proxy_groups(proxies):
             "interval": 86400,
         }
     # 各服务的 ACL4SSR 远程规则集
-    acl4ssr = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset"
+    acl4ssr = "https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset"
     for svc, lst in SERVICE_RULESETS.items():
         pname = "svc-" + svc.lower().replace("+", "")
         providers[pname] = {

@@ -330,18 +330,25 @@ def build_proxy_groups(proxies):
     groups.append({"name": "PROXY", "type": "select",
                    "proxies": ["自动选择", "手动选择", "DIRECT"]})
 
-    base = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release"
+    # 基础规则集：全部采用 ACL4SSR 的 MRS 二进制格式
+    # （tld-not-cn / cncidr 无对应 MRS：前者兜底 MATCH,PROXY 结果一致，
+    #  后者由 GEOIP,CN,DIRECT 覆盖，故直接去掉）
+    mrs_base = "https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/mrs"
     providers = {}
-    for name, behavior in [
-        ("reject", "domain"), ("private", "domain"),
-        ("google", "domain"), ("gfw", "domain"),
-        ("tld-not-cn", "domain"), ("proxy", "domain"), ("direct", "domain"),
-        ("cncidr", "ipcidr"), ("lancidr", "ipcidr"), ("telegramcidr", "ipcidr"),
+    for name, fname in [
+        ("reject", "BanAD_domain.mrs"),
+        ("private", "LocalAreaNetwork_domain.mrs"),
+        ("google", "Google_domain.mrs"),
+        ("gfw", "ProxyGFWlist_domain.mrs"),
+        ("proxy", "ProxyLite_domain.mrs"),
+        ("direct", "ChinaDomain_domain.mrs"),
+        ("lancidr", "LocalAreaNetwork_ip.mrs"),
+        ("telegramcidr", "Telegram_ip.mrs"),
     ]:
         providers[name] = {
-            "type": "http", "behavior": behavior,
-            "url": f"{base}/{name}.txt",
-            "path": f"./ruleset/{name}.yaml",
+            "type": "http", "format": "mrs",
+            "url": f"{mrs_base}/{fname}",
+            "path": f"./ruleset/{name}.mrs",
             "interval": 86400,
         }
     # 各服务的 ACL4SSR 远程规则集（MRS 格式：format=mrs，不需要 behavior）
@@ -351,7 +358,7 @@ def build_proxy_groups(proxies):
         providers[pname] = {
             "type": "http", "format": "mrs",
             "url": f"{acl4ssr}/{lst}",
-            # "path": f"./ruleset/{pname}.mrs",
+            "path": f"./ruleset/{pname}.mrs",
             "interval": 86400,
         }
 
@@ -368,10 +375,8 @@ def build_proxy_groups(proxies):
         "RULE-SET,google,Google",
         "RULE-SET,gfw,PROXY",
         "RULE-SET,proxy,PROXY",
-        "RULE-SET,tld-not-cn,PROXY",
         "RULE-SET,direct,DIRECT",
         "RULE-SET,lancidr,DIRECT,no-resolve",
-        "RULE-SET,cncidr,DIRECT",
         "RULE-SET,telegramcidr,PROXY",
         "GEOIP,CN,DIRECT",
         "MATCH,PROXY",

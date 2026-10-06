@@ -4,7 +4,12 @@ on:
   schedule:
     # 每天 UTC 0 点运行 = 北京时间早上 8 点
     - cron: '0 0 * * *'
-  workflow_dispatch:  # 允许在 Actions 页面手动点 Run
+  workflow_dispatch:  # 手动触发，可指定节点数量
+    inputs:
+      limit:
+        description: '节点数量上限'
+        required: false
+        default: '400'
 
 permissions:
   contents: write  # 允许把抓取结果 commit 回仓库
@@ -26,7 +31,7 @@ jobs:
         run: python3 scraper.py
 
       - name: Rename, group & build config
-        run: python3 geoip_rename.py --limit 400
+        run: python3 geoip_rename.py --limit ${{ inputs.limit || '400' }}
 
       - name: Commit results
         run: |

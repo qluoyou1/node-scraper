@@ -230,18 +230,18 @@ SERVICE_GROUPS = ["YouTube", "Facebook", "AI", "Google", "X", "Instagram",
                   "Cloudflare", "GitHub", "Telegram", "Spotify",
                   "Disney+", "Netflix", "Apple"]
 
-# 服务分组 -> ACL4SSR 远程规则集（classical 格式，比手写域名全得多）
+# 服务分组 -> ACL4SSR 远程规则集（MRS 二进制格式，加载更快）
 SERVICE_RULESETS = {
-    "YouTube": "YouTube.list",
-    "Facebook": "Facebook.list",
-    "Instagram": "Instagram.list",
-    "X": "Twitter.list",
-    "Telegram": "Telegram.list",
-    "Spotify": "Spotify.list",
-    "Disney+": "DisneyPlus.list",
-    "Netflix": "Netflix.list",
-    "GitHub": "Github.list",
-    "Apple": "Apple.list",
+    "YouTube": "YouTube_domain.mrs",
+    "Facebook": "Facebook_domain.mrs",
+    "Instagram": "Instagram_domain.mrs",
+    "X": "Twitter_domain.mrs",
+    "Telegram": "Telegram_domain.mrs",
+    "Spotify": "Spotify_domain.mrs",
+    "Disney+": "DisneyPlus_domain.mrs",
+    "Netflix": "Netflix_domain.mrs",
+    "GitHub": "Github_domain.mrs",
+    "Apple": "Apple_domain.mrs",
 }
 # 没有合适远程规则集的服务保留手写域名规则
 SERVICE_INLINE_DOMAINS = ("AI", "Cloudflare")
@@ -344,14 +344,14 @@ def build_proxy_groups(proxies):
             "path": f"./ruleset/{name}.yaml",
             "interval": 86400,
         }
-    # 各服务的 ACL4SSR 远程规则集
-    acl4ssr = "https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset"
+    # 各服务的 ACL4SSR 远程规则集（MRS 格式：format=mrs，不需要 behavior）
+    acl4ssr = "https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/mrs"
     for svc, lst in SERVICE_RULESETS.items():
         pname = "svc-" + svc.lower().replace("+", "")
         providers[pname] = {
-            "type": "http", "behavior": "classical",
+            "type": "http", "format": "mrs",
             "url": f"{acl4ssr}/{lst}",
-            "path": f"./ruleset/{pname}.yaml",
+            "path": f"./ruleset/{pname}.mrs",
             "interval": 86400,
         }
 

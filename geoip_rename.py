@@ -230,22 +230,6 @@ SERVICE_GROUPS = ["YouTube", "Facebook", "AI", "Google", "X", "Instagram",
                   "Cloudflare", "GitHub", "Telegram", "Spotify",
                   "Disney+", "Netflix", "Apple"]
 
-# 服务分组 -> ACL4SSR 远程规则集（MRS 二进制格式，加载更快）
-SERVICE_RULESETS = {
-    "YouTube": "YouTube_domain.mrs",
-    "Facebook": "Facebook_domain.mrs",
-    "Instagram": "Instagram_domain.mrs",
-    "X": "Twitter_domain.mrs",
-    "Telegram": "Telegram_domain.mrs",
-    "Spotify": "Spotify_domain.mrs",
-    "Disney+": "DisneyPlus_domain.mrs",
-    "Netflix": "Netflix_domain.mrs",
-    "GitHub": "Github_domain.mrs",
-    "Apple": "Apple_domain.mrs",
-}
-# 没有合适远程规则集的服务保留手写域名规则
-SERVICE_INLINE_DOMAINS = ("AI", "Cloudflare")
-
 
 def extract_host(uri):
     """从节点 URI 里提取服务器 host。"""
@@ -328,54 +312,64 @@ def build_proxy_groups(proxies):
         groups.append({"name": svc, "type": "select",
                        "proxies": ordered_regions + ["DIRECT"]})
 
-    # 基础规则集：全部采用 ACL4SSR 的 MRS 二进制格式
-    # （tld-not-cn / cncidr 无对应 MRS：前者兜底 MATCH,PROXY 结果一致，
-    #  后者由 GEOIP,CN,DIRECT 覆盖，故直接去掉）
-    mrs_base = "https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/mrs"
+    # 规则集：MetaCubeX meta-rules-dat geosite MRS（behavior+format 双字段）
+    geosite_base = "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite"
     providers = {}
-    for name, fname in [
-        ("reject", "BanAD_domain.mrs"),
-        ("private", "LocalAreaNetwork_domain.mrs"),
-        ("google", "Google_domain.mrs"),
-        ("direct", "ChinaDomain_domain.mrs"),
-        ("lancidr", "LocalAreaNetwork_ip.mrs"),
-        ("telegramcidr", "Telegram_ip.mrs"),
-    ]:
+    for name in ["x", "youtube", "openai", "netflix", "disney", "spotify",
+                 "github", "instagram", "apple", "google", "microsoft",
+                 "facebook", "telegram", "cloudflare"]:
         providers[name] = {
-            "type": "http",
-            "behavior": "ipcidr" if fname.endswith("_ip.mrs") else "domain",
-            "format": "mrs",
-            "url": f"{mrs_base}/{fname}",
+            "type": "http", "behavior": "domain", "format": "mrs",
+            "url": f"{geosite_base}/{name}.mrs",
             "path": f"./ruleset/{name}.mrs",
-            "interval": 86400,
-        }
-    # 各服务的 ACL4SSR 远程规则集（MRS 格式：format=mrs，不需要 behavior）
-    acl4ssr = "https://fastly.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/mrs"
-    for svc, lst in SERVICE_RULESETS.items():
-        pname = "svc-" + svc.lower().replace("+", "")
-        providers[pname] = {
-            "type": "http",
-            "behavior": "ipcidr" if lst.endswith("_ip.mrs") else "domain",
-            "format": "mrs",
-            "url": f"{acl4ssr}/{lst}",
-            "path": f"./ruleset/{pname}.mrs",
-            "interval": 86400,
+            "interval": 120,
         }
 
+    # provider -> 策略组的分流
     rules = [
-        "RULE-SET,private,DIRECT",
-        "RULE-SET,reject,REJECT",
+        "RULE-SET,openai,AI",
+        "RULE-SET,netflix,Netflix",
+        "RULE-SET,disney,Disney+",
+        "RULE-SET,spotify,Spotify",
+        "RULE-SET,cloudflare,Cloudflare",
+        "RULE-SET,github,GitHub",
+        "RULE-SET,telegram,Telegram",
+        "RULE-SET,youtube,YouTube",
+        "RULE-SET,google,Google",
+        "RULE-SET,x,X",
+        "RULE-SET,instagram,Instagram",
+        "RULE-SET,facebook,Facebook",
+        "RULE-SET,apple,Apple",
+        "RULE-SET,microsoft,DIRECT",
     ]
-    for svc in SERVICE_RULESETS:
-        pname = "svc-" + svc.lower().replace("+", "")
-        rules.append(f"RULE-SET,{pname},{svc}")
-    for svc in SERVICE_INLINE_DOMAINS:
+    # AI / Cloudflare 保留手写域名补充（geosite 覆盖不全）
+    for svc in ("AI", "Cloudflare"):
         rules.extend(f"DOMAIN-SUFFIX,{d},{svc}" for d in SERVICE_DOMAINS[svc])
     rules += [
-        "RULE-SET,google,Google",
-        "RULE-SET,direct,DIRECT",
-        "RULE-SET,lancidr,DIRECT,no-resolve",
-        "RULE-SET,telegramcidr,手动选择",
+        "GEOSITE,steam@cn,DIRECT",
+        "GEOSITE,steam,手动选择",
+        # 常见代理/下载软件进程直连
+        "PROCESS-NAME,v2ray,DIRECT",
+        "PROCESS-NAME,Surge,DIRECT",
+        "PROCESS-NAME,ss-local,DIRECT",
+        "PROCESS-NAME,privoxy,DIRECT",
+        "PROCESS-NAME,trojan,DIRECT",
+        "PROCESS-NAME,trojan-go,DIRECT",
+        "PROCESS-NAME,naive,DIRECT",
+        "PROCESS-NAME,CloudflareWARP,DIRECT",
+        "PROCESS-NAME,Cloudflare WARP,DIRECT",
+        "IP-CIDR,162.159.193.0/24,DIRECT,no-resolve",
+        "PROCESS-NAME,p4pclient,DIRECT",
+        "PROCESS-NAME,Thunder,DIRECT",
+        "PROCESS-NAME,DownloadService,DIRECT",
+        "PROCESS-NAME,qbittorrent,DIRECT",
+        "PROCESS-NAME,fdm,DIRECT",
+        "PROCESS-NAME,aria2c,DIRECT",
+        "PROCESS-NAME,Folx,DIRECT",
+        "PROCESS-NAME,NetTransport,DIRECT",
+        "PROCESS-NAME,uTorrent,DIRECT",
+        "PROCESS-NAME,WebTorrent,DIRECT",
+        "GEOIP,LAN,DIRECT",
         "GEOIP,CN,DIRECT",
         "MATCH,手动选择",
     ]

@@ -327,8 +327,6 @@ def build_proxy_groups(proxies):
     for svc in SERVICE_GROUPS:
         groups.append({"name": svc, "type": "select",
                        "proxies": ordered_regions + ["DIRECT"]})
-    groups.append({"name": "PROXY", "type": "select",
-                   "proxies": ["自动选择", "手动选择", "DIRECT"]})
 
     # 基础规则集：全部采用 ACL4SSR 的 MRS 二进制格式
     # （tld-not-cn / cncidr 无对应 MRS：前者兜底 MATCH,PROXY 结果一致，
@@ -339,8 +337,6 @@ def build_proxy_groups(proxies):
         ("reject", "BanAD_domain.mrs"),
         ("private", "LocalAreaNetwork_domain.mrs"),
         ("google", "Google_domain.mrs"),
-        ("gfw", "ProxyGFWlist_domain.mrs"),
-        ("proxy", "ProxyLite_domain.mrs"),
         ("direct", "ChinaDomain_domain.mrs"),
         ("lancidr", "LocalAreaNetwork_ip.mrs"),
         ("telegramcidr", "Telegram_ip.mrs"),
@@ -377,13 +373,11 @@ def build_proxy_groups(proxies):
         rules.extend(f"DOMAIN-SUFFIX,{d},{svc}" for d in SERVICE_DOMAINS[svc])
     rules += [
         "RULE-SET,google,Google",
-        "RULE-SET,gfw,PROXY",
-        "RULE-SET,proxy,PROXY",
         "RULE-SET,direct,DIRECT",
         "RULE-SET,lancidr,DIRECT,no-resolve",
-        "RULE-SET,telegramcidr,PROXY",
+        "RULE-SET,telegramcidr,手动选择",
         "GEOIP,CN,DIRECT",
-        "MATCH,PROXY",
+        "MATCH,手动选择",
     ]
     return groups, providers, rules, ordered_regions, region_filters
 

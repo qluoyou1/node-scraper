@@ -393,6 +393,19 @@ def load_sources(path):
         return yaml.safe_load(f) or {}
 
 
+def source_label(url):
+    """从 URL 派生短来源标签，如 Au1rxx/free-vpn-subscriptions。"""
+    try:
+        from urllib.parse import urlparse
+        pr = urlparse(url)
+        parts = [p for p in pr.path.split("/") if p]
+        if "githubusercontent" in pr.netloc and len(parts) >= 2:
+            return f"{parts[0]}/{parts[1]}"
+        return pr.netloc or url[:40]
+    except Exception:  # noqa: BLE001
+        return url[:40]
+
+
 def main():
     ap = argparse.ArgumentParser(description="免费节点抓取脚本")
     ap.add_argument("-c", "--config", default=str(HERE / "sources.yaml"))
@@ -405,7 +418,18 @@ def main():
     cfg = load_sources(args.config)
 
     uris, yaml_proxies = [], []
+    uri_sources = {}  # URI -> 来源标签（首次出现为准，用于优先来源排序）
     stats = {}
+
+    def _record(got, got_proxies, label):
+        for u in got:
+            if u not in uri_sources:
+                uri_sources[u] = label
+        for p in got_proxies:
+            if isinstance(p, dict):
+                p.setdefault("_source", label)
+        uris.extend(got)
+        yaml_proxies.extend(got_proxies)
 
     # 1) 网页来源
     for tpl in cfg.get("web_pages", []):
@@ -416,8 +440,7 @@ def main():
             else:
                 url = tpl
             got, got_proxies = scrape_node_page(url)
-            uris.extend(got)
-            yaml_proxies.extend(got_proxies)
+            _record(got, got_proxies, source_label(url))
             stats[label] = f"OK, {len(got)} 个节点 + {len(got_proxies)} 个 clash 代理"
             print(f"[page] {url[:80]} -> {len(got)} 个节点, {len(got_proxies)} clash代理")
         except Exception as e:  # noqa: BLE001
@@ -429,8 +452,7 @@ def main():
         try:
             url = render_url_template(tpl)
             u, p = fetch_subscription(url)
-            uris.extend(u)
-            yaml_proxies.extend(p)
+            _record(u, p, source_label(url))
             stats[tpl] = f"OK, {len(u)} 个节点 + {len(p)} 个 clash 代理"
             print(f"[sub ] {url[:80]} -> {len(u)} 节点, {len(p)} clash代理")
         except Exception as e:  # noqa: BLE001
@@ -441,8 +463,7 @@ def main():
     for ch in cfg.get("tg_channels", []):
         try:
             got, got_proxies = scrape_tg_channel(ch)
-            uris.extend(got)
-            yaml_proxies.extend(got_proxies)
+            _record(got, got_proxies, f"tg:{ch}")
             stats[f"tg:{ch}"] = f"OK, {len(got)} 个节点 + {len(got_proxies)} 个 clash 代理"
             print(f"[tg  ] {ch} -> {len(got)} 个节点, {len(got_proxies)} clash代理")
         except Exception as e:  # noqa: BLE001
@@ -484,7 +505,7 @@ def main():
             i += 1
         p["name"] = n
         names.add(n)
-        final.append(p)
+        final.append({k: v for k, v in p.items() if k != "_source"})
     proxy_names = [p["name"] for p in final]
     clash_cfg = {
         "mixed-port": 7890,
@@ -521,6 +542,9 @@ def main():
     import json as _json
     (outdir / "_yaml_proxies.json").write_text(
         _json.dumps(yaml_proxies, ensure_ascii=False), encoding="utf-8")
+    # URI -> 来源标签，供 geoip_rename.py 做优先来源排序
+    (outdir / "_node_sources.json").write_text(
+        _json.dumps(uri_sources, ensure_ascii=False), encoding="utf-8")
 
 
 if __name__ == "__main__":

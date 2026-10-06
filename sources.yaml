@@ -21,6 +21,21 @@ subscriptions:
   # free18/v2ray GitHub 仓库订阅
   - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
   - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml"
+  # ===== 优先来源：实测可用节点，更新频繁 =====
+  # Au1rxx/free-vpn-subscriptions：每小时更新，HTTP 实测可用；分国家订阅补常用地区
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml"
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml"
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml"
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml"
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml"
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml"
+  - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml"
+  # igareck/vpn-configs-for-russia：大量欧洲节点（明文 URI 列表，每日更新）
+  - "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt"
+  - "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt"
+  - "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt"
+  - "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS_WEAK_DPI_RUS.txt"
+  - "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt"
 
 # Telegram 公开频道（通过 t.me/s/<频道> 免登录预览抓取）
 # 脚本会提取消息中的节点 URI，并对消息里的节点发布页链接跟进抓取一层

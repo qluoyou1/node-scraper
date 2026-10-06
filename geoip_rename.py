@@ -277,23 +277,22 @@ def build_proxy_groups(proxies):
 
     groups = [
         {"name": "自动选择", "type": "url-test",
-         "include-all-proxies": True,
-         "url": "http://www.gstatic.com/generate_204", "interval": 300,
-         "tolerance": 50},
+         "proxies": ordered_regions + ["DIRECT"],
+         "url": "http://www.gstatic.com/generate_204",
+         "interval": 300, "tolerance": 50},
         {"name": "手动选择", "type": "select",
-         "include-all-proxies": True},
+         "proxies": ordered_regions + ["DIRECT"]},
     ]
     for r in ordered_regions:
         groups.append({"name": r, "type": "select",
                        "include-all-proxies": True,
                        "filter": region_filters[r]})
-    # 服务策略组：成员为各国家/洲分组（嵌套引用）
+    # 服务策略组：成员直接为各国家/洲分组
     for svc in ["YouTube", "Facebook", "AI", "Google"]:
         groups.append({"name": svc, "type": "select",
-                       "proxies": ["自动选择"] + ordered_regions + ["DIRECT"]})
+                       "proxies": ordered_regions + ["DIRECT"]})
     groups.append({"name": "PROXY", "type": "select",
-                   "proxies": ["自动选择", "手动选择", "DIRECT"]
-                   + ordered_regions})
+                   "proxies": ["自动选择", "手动选择", "DIRECT"]})
 
     base = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release"
     providers = {}

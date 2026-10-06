@@ -203,14 +203,48 @@ def country_code_of(proxy_name):
 # 服务策略组及其域名
 SERVICE_DOMAINS = {
     "YouTube": ["youtube.com", "youtu.be", "googlevideo.com", "ytimg.com"],
-    "Facebook": ["facebook.com", "fb.com", "fbcdn.net", "instagram.com",
+    "Facebook": ["facebook.com", "fb.com", "fbcdn.net",
                  "whatsapp.com", "messenger.com", "fbcdn.com", "fbsbx.com"],
+    "Instagram": ["instagram.com", "cdninstagram.com", "ig.me"],
+    "X": ["x.com", "twitter.com", "twimg.com", "t.co"],
     "AI": ["openai.com", "chatgpt.com", "oaistatic.com", "oaiusercontent.com",
            "anthropic.com", "claude.ai", "perplexity.ai", "poe.com",
            "x.ai", "grok.com", "deepseek.com", "gemini.google.com",
            "bard.google.com", "aistudio.google.com", "copilot.microsoft.com",
            "midjourney.com", "huggingface.co", "character.ai"],
+    "Cloudflare": ["cloudflare.com", "cloudflareinsights.com",
+                   "cloudflarestream.com"],
+    "GitHub": ["github.com", "githubusercontent.com", "githubassets.com",
+               "ghcr.io"],
+    "Telegram": ["telegram.org", "t.me", "telegram.me"],
+    "Spotify": ["spotify.com", "scdn.co", "spotifycdn.com", "spoti.fi"],
+    "Disney+": ["disneyplus.com", "disney-plus.net", "dssott.com"],
+    "Netflix": ["netflix.com", "netflix.net", "nflximg.net", "nflxext.com",
+                "nflxvideo.net"],
+    "Apple": ["apple.com", "icloud.com", "mzstatic.com", "itunes.com",
+              "apple-cloudkit.com", "cdn-apple.com"],
 }
+
+# 服务策略组（与 SERVICE_DOMAINS 的 key 对应，Google 走 RULE-SET）
+SERVICE_GROUPS = ["YouTube", "Facebook", "AI", "Google", "X", "Instagram",
+                  "Cloudflare", "GitHub", "Telegram", "Spotify",
+                  "Disney+", "Netflix", "Apple"]
+
+# 服务分组 -> ACL4SSR 远程规则集（classical 格式，比手写域名全得多）
+SERVICE_RULESETS = {
+    "YouTube": "YouTube.list",
+    "Facebook": "Facebook.list",
+    "Instagram": "Instagram.list",
+    "X": "Twitter.list",
+    "Telegram": "Telegram.list",
+    "Spotify": "Spotify.list",
+    "Disney+": "DisneyPlus.list",
+    "Netflix": "Netflix.list",
+    "GitHub": "Github.list",
+    "Apple": "Apple.list",
+}
+# 没有合适远程规则集的服务保留手写域名规则
+SERVICE_INLINE_DOMAINS = ("AI", "Cloudflare")
 
 
 def extract_host(uri):
@@ -290,7 +324,7 @@ def build_proxy_groups(proxies):
                        "url": "http://www.gstatic.com/generate_204",
                        "interval": 300, "tolerance": 50})
     # 服务策略组：成员直接为各国家/洲分组
-    for svc in ["YouTube", "Facebook", "AI", "Google"]:
+    for svc in SERVICE_GROUPS:
         groups.append({"name": svc, "type": "select",
                        "proxies": ordered_regions + ["DIRECT"]})
     groups.append({"name": "PROXY", "type": "select",
@@ -299,8 +333,8 @@ def build_proxy_groups(proxies):
     base = "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release"
     providers = {}
     for name, behavior in [
-        ("reject", "domain"), ("private", "domain"), ("icloud", "domain"),
-        ("apple", "domain"), ("google", "domain"), ("gfw", "domain"),
+        ("reject", "domain"), ("private", "domain"),
+        ("google", "domain"), ("gfw", "domain"),
         ("tld-not-cn", "domain"), ("proxy", "domain"), ("direct", "domain"),
         ("cncidr", "ipcidr"), ("lancidr", "ipcidr"), ("telegramcidr", "ipcidr"),
     ]:
@@ -310,15 +344,26 @@ def build_proxy_groups(proxies):
             "path": f"./ruleset/{name}.yaml",
             "interval": 86400,
         }
+    # 各服务的 ACL4SSR 远程规则集
+    acl4ssr = "https://cdn.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset"
+    for svc, lst in SERVICE_RULESETS.items():
+        pname = "svc-" + svc.lower().replace("+", "")
+        providers[pname] = {
+            "type": "http", "behavior": "classical",
+            "url": f"{acl4ssr}/{lst}",
+            "path": f"./ruleset/{pname}.yaml",
+            "interval": 86400,
+        }
 
     rules = [
         "RULE-SET,private,DIRECT",
         "RULE-SET,reject,REJECT",
-        "RULE-SET,icloud,DIRECT",
-        "RULE-SET,apple,DIRECT",
     ]
-    for svc, domains in SERVICE_DOMAINS.items():
-        rules.extend(f"DOMAIN-SUFFIX,{d},{svc}" for d in domains)
+    for svc in SERVICE_RULESETS:
+        pname = "svc-" + svc.lower().replace("+", "")
+        rules.append(f"RULE-SET,{pname},{svc}")
+    for svc in SERVICE_INLINE_DOMAINS:
+        rules.extend(f"DOMAIN-SUFFIX,{d},{svc}" for d in SERVICE_DOMAINS[svc])
     rules += [
         "RULE-SET,google,Google",
         "RULE-SET,gfw,PROXY",
@@ -439,10 +484,6 @@ def main():
         if p:
             pairs.append([u, p, is_priority_source(uri_sources.get(u))])
     for p in yaml_proxies:
-        if "reality-opts" in p or str(p.get("port")) == "443":
-            p.pop("skip-cert-verify", None)
-        else:
-            p["skip-cert-verify"] = True
         if isinstance(p, dict) and p.get("server"):
             src = p.pop("_source", "")
             pairs.append([None, dict(p), is_priority_source(src)])
@@ -532,6 +573,13 @@ def main():
 
     # 2) 写 clash.yaml：地区分组（配置内正则）+ 服务组 + 规则集
     proxies = [p for _, p, _ in pairs]
+    # 证书验证：reality 自带公钥校验、443 端口证书通常正常，都不跳过；
+    # 其余全部跳过，避免自签/过期证书连不上
+    for p in proxies:
+        if "reality-opts" in p or str(p.get("port")) == "443":
+            p.pop("skip-cert-verify", None)
+        else:
+            p["skip-cert-verify"] = True
     groups, providers, rules, ordered_regions, region_filters = \
         build_proxy_groups(proxies)
     cfg = {

@@ -278,7 +278,22 @@
   "31.76.11.46.cdn-one.org": "31.76.11.46",
   "cdn.9889888.xyz": "172.67.170.11",
   "ct.090227.xyz": "172.64.154.211",
-  "H1.bnm.uw.to": null
+  "H1.bnm.uw.to": null,
+  "jjyeye.cloudflare.182682.xyz": "104.17.168.12",
+  "www.true.th": "18.238.109.28",
+  "russia.com": "104.26.5.57",
+  "cf-ak-hk01.ziyoufly.xyz": "104.21.50.103",
+  "www.glassdoor.com": "104.18.39.196",
+  "mmefi.cloudflare.182682.xyz": "104.16.252.24",
+  "lv.rexten.cc": "72.56.52.30",
+  "glidio.shieldix.top": null,
+  "hkkk498.cloudflare.182682.xyz": "104.19.155.22",
+  "stormix.pulsio.cfd": null,
+  "tw3011h8r.cloudflare.182682.xyz": "104.16.252.24",
+  "vpn.renshengxuanze.ccwu.cc": null,
+  "www.nextkyc.com": "172.67.161.144",
+  "visa.com.sg": "162.159.152.2",
+  "admin.jikebet.com": "104.21.67.171"
  },
  "geo": {
   "129.151.92.223": {
@@ -5409,7 +5424,7 @@
   "103.25.202.114": {
    "country": "Singapore",
    "cc": "SG",
-   "org": "SimplerCloud Pte"
+   "org": "SimplerCloud"
   },
   "104.16.106.213": {
    "country": "Canada",
@@ -5564,7 +5579,7 @@
   "163.128.99.194": {
    "country": "Singapore",
    "cc": "SG",
-   "org": "Cyberjet PTE"
+   "org": "Cyberjet"
   },
   "165.232.81.187": {
    "country": "The Netherlands",
@@ -5929,7 +5944,7 @@
   "64.120.94.225": {
    "country": "Singapore",
    "cc": "SG",
-   "org": "Leaseweb Asia Pacific pte."
+   "org": "Leaseweb Asia Pacific"
   },
   "64.176.35.237": {
    "country": "Japan",
@@ -6015,6 +6030,206 @@
    "country": "Poland",
    "cc": "PL",
    "org": "1Cent Host"
+  },
+  "104.16.252.24": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.17.168.12": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.17.77.77": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.18.37.228": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.18.39.196": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.18.4.130": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.19.155.22": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.21.50.103": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.21.67.171": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "104.26.5.57": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "134.98.144.137": {
+   "country": "Netherlands",
+   "cc": "NL",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "14.137.238.155": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "Alpha JP Sub1"
+  },
+  "149.130.175.159": {
+   "country": "Colombia",
+   "cc": "CO",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "149.130.183.255": {
+   "country": "Colombia",
+   "cc": "CO",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "149.130.189.152": {
+   "country": "Colombia",
+   "cc": "CO",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "151.101.56.7": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Fastly"
+  },
+  "151.241.129.98": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "IPXO"
+  },
+  "152.53.142.39": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Location: DE"
+  },
+  "157.245.97.66": {
+   "country": "India",
+   "cc": "IN",
+   "org": "DigitalOcean"
+  },
+  "158.247.124.143": {
+   "country": "Colombia",
+   "cc": "CO",
+   "org": "Oracle Cloud Infrastructure"
+  },
+  "162.159.152.2": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "162.159.60.231": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "172.67.161.144": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "18.238.109.28": {
+   "country": "United States",
+   "cc": "US",
+   "org": "AWS CloudFront"
+  },
+  "18.239.83.52": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "AWS CloudFront"
+  },
+  "188.164.248.32": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Webzilla"
+  },
+  "193.232.178.149": {
+   "country": "Sweden",
+   "cc": "SE",
+   "org": "xorek.cloud International"
+  },
+  "194.26.229.207": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "xorek.cloud GROUP"
+  },
+  "194.26.229.209": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "xorek.cloud GROUP"
+  },
+  "2.144.21.150": {
+   "country": "Iran",
+   "cc": "IR",
+   "org": "Iran Cell Service and Communication"
+  },
+  "31.58.182.33": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Hostes"
+  },
+  "46.101.253.244": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Digital Ocean"
+  },
+  "47.83.247.150": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "IPXO"
+  },
+  "72.56.52.30": {
+   "country": "Latvia",
+   "cc": "LV",
+   "org": "Lease"
+  },
+  "77.95.201.235": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "TimeWeb"
+  },
+  "8.35.211.224": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Level 3"
+  },
+  "8.39.125.209": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Level 3"
+  },
+  "8.6.112.6": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Level 3"
+  },
+  "82.40.42.204": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "Cyberverse"
+  },
+  "83.217.200.217": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "JSC \"TIMEWEB\""
   }
  }
 }

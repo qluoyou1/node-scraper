@@ -439,6 +439,10 @@ def main():
         if p:
             pairs.append([u, p, is_priority_source(uri_sources.get(u))])
     for p in yaml_proxies:
+        if "reality-opts" in p or str(p.get("port")) == "443":
+            p.pop("skip-cert-verify", None)
+        else:
+            p["skip-cert-verify"] = True
         if isinstance(p, dict) and p.get("server"):
             src = p.pop("_source", "")
             pairs.append([None, dict(p), is_priority_source(src)])

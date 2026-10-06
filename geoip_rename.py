@@ -277,16 +277,18 @@ def build_proxy_groups(proxies):
 
     groups = [
         {"name": "自动选择", "type": "url-test",
-         "proxies": ordered_regions + ["DIRECT"],
+         "proxies": ordered_regions,
          "url": "http://www.gstatic.com/generate_204",
          "interval": 300, "tolerance": 50},
         {"name": "手动选择", "type": "select",
-         "proxies": ordered_regions + ["DIRECT"]},
+         "proxies": ordered_regions},
     ]
     for r in ordered_regions:
-        groups.append({"name": r, "type": "select",
+        groups.append({"name": r, "type": "url-test",
                        "include-all-proxies": True,
-                       "filter": region_filters[r]})
+                       "filter": region_filters[r],
+                       "url": "http://www.gstatic.com/generate_204",
+                       "interval": 300, "tolerance": 50})
     # 服务策略组：成员直接为各国家/洲分组
     for svc in ["YouTube", "Facebook", "AI", "Google"]:
         groups.append({"name": svc, "type": "select",

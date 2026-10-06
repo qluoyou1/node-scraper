@@ -6,21 +6,21 @@
 # 含日期模板的 URL 会自动按今天、昨天、前天依次尝试，直到成功。
 
 web_pages:
-  # clashgithub 每日节点页（日期模板）
-  - "https://clashgithub.com/clashnode-{today:%Y%m%d}.html"
-  # clashnodev2ray 每日节点页（日期模板）
-  - "https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/"
-  # freenodess 每日节点页（无前导零日期模板）
-  - "https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/"
+  # # clashgithub 每日节点页（日期模板）
+  # - "https://clashgithub.com/clashnode-{today:%Y%m%d}.html"
+  # # clashnodev2ray 每日节点页（日期模板）
+  # - "https://clashnodev2ray.github.io/{today:%Y/%m/%d}/free-ssr-node/"
+  # # freenodess 每日节点页（无前导零日期模板）
+  # - "https://freenodess.github.io/freenode/posts/{today_nopad}-freenode/"
 
 subscriptions:
-  # clashgithub 每日 v2ray 订阅（base64）
-  - "https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.txt"
-  # clashgithub 每日 clash 订阅（YAML）
-  - "https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.yml"
-  # free18/v2ray GitHub 仓库订阅
-  - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
-  - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml"
+  # # clashgithub 每日 v2ray 订阅（base64）
+  # - "https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.txt"
+  # # clashgithub 每日 clash 订阅（YAML）
+  # - "https://clashgithub.com/wp-content/uploads/rss/{today:%Y%m%d}.yml"
+  # # free18/v2ray GitHub 仓库订阅
+  # - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
+  # - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml"
   # Barabama/FreeNodes：yudou 分享节点（txt 为 URI 列表，yaml 为 Clash 格式）
   - "https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.txt"
   - "https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.yaml"

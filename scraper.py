@@ -458,7 +458,6 @@ def main():
             uniq_uris.append(u)
     print(f"\n去重后节点 URI: {len(uniq_uris)}（原始 {len(uris)}）")
 
-
     # 输出 1: nodes.txt
     (outdir / "nodes.txt").write_text("\n".join(uniq_uris) + "\n", encoding="utf-8")
 
@@ -485,7 +484,7 @@ def main():
             i += 1
         p["name"] = n
         names.add(n)
-        final.append({k: v for k, v in p.items() if k != "_source"})
+        final.append(p)
     proxy_names = [p["name"] for p in final]
     clash_cfg = {
         "mixed-port": 7890,
@@ -522,9 +521,6 @@ def main():
     import json as _json
     (outdir / "_yaml_proxies.json").write_text(
         _json.dumps(yaml_proxies, ensure_ascii=False), encoding="utf-8")
-    # URI -> 来源标签，供 geoip_rename.py 做优先来源排序
-    (outdir / "_node_sources.json").write_text(
-        _json.dumps(uri_sources, ensure_ascii=False), encoding="utf-8")
 
 
 if __name__ == "__main__":

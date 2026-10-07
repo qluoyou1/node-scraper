@@ -22,8 +22,10 @@ subscriptions:
   # - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
   # - "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml"
   # Barabama/FreeNodes：yudou 分享节点（txt 为 URI 列表，yaml 为 Clash 格式）
-  - "https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.txt"
-  - "https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.yaml"
+  # - "https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.txt"
+  # - "https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.yaml"
+  - https://github.com/mid8568/My-V2Ray-Nodes-Clean/raw/refs/heads/main/v2ray-base64.txt
+  - https://raw.githubusercontent.com/mid8568/My-V2Ray-Nodes-Clean/main/v2ray-base64.txt
   # ===== 优先来源：实测可用节点，更新频繁 =====
   # Au1rxx/free-vpn-subscriptions：每小时更新，HTTP 实测可用；分国家订阅补常用地区
   - "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml"

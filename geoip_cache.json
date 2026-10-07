@@ -467,7 +467,9 @@
   "es4.h1cloud.net": "78.40.111.178",
   "pooriaredgyhhdtuuugrdgythiiiiitggsfhtujgxdfgfghhhuujjig-on-a2c2.up.railway.app": "69.46.46.89",
   "kr.tronsg.com": "158.247.220.26",
-  "t9.qifei.app": "153.121.36.102"
+  "t9.qifei.app": "153.121.36.102",
+  "cz.h2.cleanersaz.help": "95.85.238.173",
+  "vpn-de-002.fastervpn.world": "3.123.42.12"
  },
  "geo": {
   "129.151.92.223": {
@@ -11628,7 +11630,7 @@
   "103.36.91.32": {
    "country": "Singapore",
    "cc": "SG",
-   "org": "Greywolf Networks Pte."
+   "org": "Greywolf Networks"
   },
   "104.16.10.104": {
    "country": "Canada",
@@ -12399,6 +12401,26 @@
    "country": "United States",
    "cc": "US",
    "org": "AWS EC2"
+  },
+  "3.123.42.12": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "AWS EC2"
+  },
+  "45.89.190.245": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Quasar"
+  },
+  "62.210.124.146": {
+   "country": "France",
+   "cc": "FR",
+   "org": "ONLINE"
+  },
+  "95.85.238.173": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "Wuldi"
   }
  }
 }

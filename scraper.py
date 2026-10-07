@@ -175,7 +175,7 @@ def extract_subscription_links(text):
     return links
 
 
-def scrape_node_page(url, max_sub_links=4):
+def scrape_node_page(url, max_sub_links=0):
     """抓取节点发布页：直接提取节点 URI，并跟进页面内的订阅文件链接。"""
     text = fetch(url)
     uris = extract_uris(text)

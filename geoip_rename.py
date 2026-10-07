@@ -390,13 +390,6 @@ SPECIAL_QUOTAS = {
     "美国": 70, "韩国": 12, "日本": 25,
 }
 
-# 优先来源：去重和抽样时优先保留这些来源的节点
-PRIORITY_SRC_KEYS = ("free-vpn-subscriptions", "vpn-configs-for-russia")
-
-
-def is_priority_source(label):
-    return any(k in (label or "") for k in PRIORITY_SRC_KEYS)
-
 
 def stratified_sample(pairs, target, min_n=5, seed=42):
     """按地区分层抽样到 target 个：常见国家按配额优先保证，其余按比例。"""
@@ -408,8 +401,6 @@ def stratified_sample(pairs, target, min_n=5, seed=42):
     rnd = random.Random(seed)
     for g in groups.values():
         rnd.shuffle(g)
-        # 优先来源排前面（稳定排序，打乱后的随机顺序在同级内保留）
-        g.sort(key=lambda pr: 0 if pr[2] else 1)
 
     quotas = {}
     for r, q in SPECIAL_QUOTAS.items():  # 常见国家优先
@@ -468,43 +459,34 @@ def main():
     yp_path = rawdir / "_yaml_proxies.json"
     yaml_proxies = (json.loads(yp_path.read_text(encoding="utf-8"))
                     if yp_path.exists() else [])
-    # URI -> 来源标签（scraper.py 记录，用于优先来源排序）
-    src_path = rawdir / "_node_sources.json"
-    uri_sources = (json.loads(src_path.read_text(encoding="utf-8"))
-                   if src_path.exists() else {})
-
-    # 统一成 (uri|None, proxy, 是否优先来源) 配对，后续重命名/抽样/写回都基于它
+    # 统一成 (uri|None, proxy) 配对，后续重命名/抽样/写回都基于它
     from scraper import uri_to_clash
     pairs = []
     for u in uris:
         p = uri_to_clash(u)
         if p:
-            pairs.append([u, p, is_priority_source(uri_sources.get(u))])
+            pairs.append([u, p])
     for p in yaml_proxies:
         if isinstance(p, dict) and p.get("server"):
-            src = p.pop("_source", "")
-            pairs.append([None, dict(p), is_priority_source(src)])
-    print(f"配对: {len(pairs)}（URI来源 {sum(1 for u, _, _ in pairs if u)}，"
-          f"订阅来源 {sum(1 for u, _, _ in pairs if not u)}，"
-          f"优先来源 {sum(1 for _, _, prio in pairs if prio)}）")
-
-    # 优先来源排前面：去重时同一服务器保留优先来源的版本
-    pairs.sort(key=lambda pr: 0 if pr[2] else 1)
+            p.pop("_source", None)  # 兼容旧抓取数据里的来源标记
+            pairs.append([None, dict(p)])
+    print(f"配对: {len(pairs)}（URI来源 {sum(1 for u, _ in pairs if u)}，"
+          f"订阅来源 {sum(1 for u, _ in pairs if not u)}）")
 
     # 先按 服务器:端口:协议 去重（同一服务器的重复节点只保留一个），
     # 避免抽样配额被重复节点挤占
     seen_sp, deduped = set(), []
-    for u, p, prio in pairs:
+    for u, p in pairs:
         key = (p.get("server"), p.get("port"), p.get("type"))
         if key in seen_sp:
             continue
         seen_sp.add(key)
-        deduped.append([u, p, prio])
+        deduped.append([u, p])
     pairs = deduped
     print(f"去重后: {len(pairs)} 个代理")
 
     # 收集 host -> 解析 IP
-    hosts = {p.get("server") for _, p, _ in pairs if p.get("server")}
+    hosts = {p.get("server") for _, p in pairs if p.get("server")}
     hosts.discard(None)
     host_ip = {}
     for h in hosts:
@@ -520,7 +502,7 @@ def main():
         return bool(ip) and is_routable_ip(ip)
 
     before = len(pairs)
-    pairs = [[u, p, prio] for u, p, prio in pairs if host_ok(p.get("server"))]
+    pairs = [[u, p] for u, p in pairs if host_ok(p.get("server"))]
     print(f"剔除无效节点: {before}->{len(pairs)}")
 
     # 批量 geo 查询
@@ -541,22 +523,21 @@ def main():
         used.add(n)
         return n
 
-    for _, p, _ in pairs:
+    for _, p in pairs:
         p["name"] = unique(new_name_for(p.get("server")))
 
-    # 按地区分层抽样，限制总数（常见国家按配额优先保证，优先来源排前面）
+    # 按地区分层抽样，限制总数（常见国家按配额优先保证）
     pairs = stratified_sample(pairs, args.limit)
-    print(f"分层抽样后: {len(pairs)} 个代理（优先来源 "
-          f"{sum(1 for _, _, prio in pairs if prio)}）")
+    print(f"分层抽样后: {len(pairs)} 个代理")
 
     # 去重后重新编号命名（去掉抽样前的大序号，如 -535）
     used.clear()
-    for _, p, _ in pairs:
+    for _, p in pairs:
         p["name"] = unique(new_name_for(p.get("server")))
 
     # 1) 写 nodes.txt / subscription.txt（仅抽样命中的 URI）
     new_uris = []
-    for u, p, _ in pairs:
+    for u, p in pairs:
         if not u:
             continue
         name = p["name"]
@@ -569,7 +550,7 @@ def main():
     (outdir / "subscription.txt").write_text(b64, encoding="utf-8")
 
     # 2) 写 clash.yaml：地区分组（配置内正则）+ 服务组 + 规则集
-    proxies = [p for _, p, _ in pairs]
+    proxies = [p for _, p in pairs]
     # 证书验证：reality 自带公钥校验、443 端口证书通常正常，都不跳过；
     # 其余全部跳过，避免自签/过期证书连不上
     for p in proxies:

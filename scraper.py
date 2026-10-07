@@ -145,10 +145,10 @@ def scrape_tg_channel(channel, pages=4, max_follow_pages=8):
             print(f"    [tg:{channel}] 订阅: {sub[:70]} -> {len(u)} 节点")
         except Exception as e:  # noqa: BLE001
             print(f"    [tg:{channel}] 订阅失败: {sub[:70]} ({e})")
-    # 再跟进节点发布页
+    # 再跟进节点发布页（不跟进页内订阅链接，避免扩散抓取）
     for link in list(seen_pages)[:max_follow_pages]:
         try:
-            u, p = scrape_node_page(link)
+            u, p = scrape_node_page(link, max_sub_links=0)
             uris.extend(u)
             proxies.extend(p)
             print(f"    [tg:{channel}] 跟进页面: {link[:70]} (+{len(u)} 节点)")
@@ -175,7 +175,7 @@ def extract_subscription_links(text):
     return links
 
 
-def scrape_node_page(url, max_sub_links=0):
+def scrape_node_page(url, max_sub_links=4):
     """抓取节点发布页：直接提取节点 URI，并跟进页面内的订阅文件链接。"""
     text = fetch(url)
     uris = extract_uris(text)
@@ -393,19 +393,6 @@ def load_sources(path):
         return yaml.safe_load(f) or {}
 
 
-def source_label(url):
-    """从 URL 派生短来源标签，如 Au1rxx/free-vpn-subscriptions。"""
-    try:
-        from urllib.parse import urlparse
-        pr = urlparse(url)
-        parts = [p for p in pr.path.split("/") if p]
-        if "githubusercontent" in pr.netloc and len(parts) >= 2:
-            return f"{parts[0]}/{parts[1]}"
-        return pr.netloc or url[:40]
-    except Exception:  # noqa: BLE001
-        return url[:40]
-
-
 def main():
     ap = argparse.ArgumentParser(description="免费节点抓取脚本")
     ap.add_argument("-c", "--config", default=str(HERE / "sources.yaml"))
@@ -418,18 +405,7 @@ def main():
     cfg = load_sources(args.config)
 
     uris, yaml_proxies = [], []
-    uri_sources = {}  # URI -> 来源标签（首次出现为准，用于优先来源排序）
     stats = {}
-
-    def _record(got, got_proxies, label):
-        for u in got:
-            if u not in uri_sources:
-                uri_sources[u] = label
-        for p in got_proxies:
-            if isinstance(p, dict):
-                p.setdefault("_source", label)
-        uris.extend(got)
-        yaml_proxies.extend(got_proxies)
 
     # 1) 网页来源
     for tpl in cfg.get("web_pages") or []:
@@ -440,7 +416,8 @@ def main():
             else:
                 url = tpl
             got, got_proxies = scrape_node_page(url)
-            _record(got, got_proxies, source_label(url))
+            uris.extend(got)
+            yaml_proxies.extend(got_proxies)
             stats[label] = f"OK, {len(got)} 个节点 + {len(got_proxies)} 个 clash 代理"
             print(f"[page] {url[:80]} -> {len(got)} 个节点, {len(got_proxies)} clash代理")
         except Exception as e:  # noqa: BLE001
@@ -452,7 +429,8 @@ def main():
         try:
             url = render_url_template(tpl)
             u, p = fetch_subscription(url)
-            _record(u, p, source_label(url))
+            uris.extend(u)
+            yaml_proxies.extend(p)
             stats[tpl] = f"OK, {len(u)} 个节点 + {len(p)} 个 clash 代理"
             print(f"[sub ] {url[:80]} -> {len(u)} 节点, {len(p)} clash代理")
         except Exception as e:  # noqa: BLE001
@@ -463,7 +441,8 @@ def main():
     for ch in cfg.get("tg_channels") or []:
         try:
             got, got_proxies = scrape_tg_channel(ch)
-            _record(got, got_proxies, f"tg:{ch}")
+            uris.extend(got)
+            yaml_proxies.extend(got_proxies)
             stats[f"tg:{ch}"] = f"OK, {len(got)} 个节点 + {len(got_proxies)} 个 clash 代理"
             print(f"[tg  ] {ch} -> {len(got)} 个节点, {len(got_proxies)} clash代理")
         except Exception as e:  # noqa: BLE001
@@ -478,6 +457,7 @@ def main():
             seen.add(k)
             uniq_uris.append(u)
     print(f"\n去重后节点 URI: {len(uniq_uris)}（原始 {len(uris)}）")
+
 
     # 输出 1: nodes.txt
     (outdir / "nodes.txt").write_text("\n".join(uniq_uris) + "\n", encoding="utf-8")

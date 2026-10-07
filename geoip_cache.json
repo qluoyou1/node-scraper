@@ -596,7 +596,9 @@
   "twmoon1-cdn-route.couldflare-cdn.com": "61.223.90.125",
   "cdn2.bpcdn.cc": "172.64.146.66",
   "nimm.mpd.cc.cd": "104.21.48.18",
-  "nas.aizhzo.com": "152.32.254.68"
+  "nas.aizhzo.com": "152.32.254.68",
+  "36a466g.fi1.h1clayd.click": "45.133.151.188",
+  "fmwf6gbnad0a.dop16.com": "51.68.164.10"
  },
  "geo": {
   "129.151.92.223": {
@@ -12572,7 +12574,7 @@
   "103.169.67.34": {
    "country": "Thailand",
    "cc": "TH",
-   "org": "Bangmod Cloud Pte"
+   "org": "Bangmod Cloud"
   },
   "103.190.178.195": {
    "country": "Singapore",
@@ -13432,7 +13434,7 @@
   "109.66.88.118": {
    "country": "Hong Kong",
    "cc": "HK",
-   "org": "Aoripus Technology Co."
+   "org": "Aoripus Technology"
   },
   "119.10.231.30": {
    "country": "Japan",
@@ -13457,17 +13459,17 @@
   "121.46.230.136": {
    "country": "China",
    "cc": "CN",
-   "org": "shanghai wexchange network technology Co."
+   "org": "shanghai wexchange network technology"
   },
   "121.46.230.138": {
    "country": "China",
    "cc": "CN",
-   "org": "shanghai wexchange network technology Co."
+   "org": "shanghai wexchange network technology"
   },
   "121.46.230.232": {
    "country": "China",
    "cc": "CN",
-   "org": "shanghai wexchange network technology Co."
+   "org": "shanghai wexchange network technology"
   },
   "123.202.5.117": {
    "country": "Hong Kong",
@@ -16502,7 +16504,7 @@
   "5.181.219.212": {
    "country": "United States",
    "cc": "US",
-   "org": "Hostsymbol Pte."
+   "org": "Hostsymbol"
   },
   "5.188.181.201": {
    "country": "Spain",
@@ -16762,7 +16764,7 @@
   "61.223.90.125": {
    "country": "Taiwan",
    "cc": "TW",
-   "org": "Chunghwa Telecom Co."
+   "org": "Chunghwa Telecom"
   },
   "62.182.196.194": {
    "country": "Sweden",
@@ -17477,7 +17479,7 @@
   "92.113.124.204": {
    "country": "Japan",
    "cc": "JP",
-   "org": "Dromatics Systems Pte"
+   "org": "Dromatics Systems"
   },
   "93.152.217.152": {
    "country": "Germany",
@@ -17523,6 +17525,51 @@
    "country": "Germany",
    "cc": "DE",
    "org": "Vultr Holdings LLC Frankfurt"
+  },
+  "103.30.76.65": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "VH Global"
+  },
+  "111.88.230.245": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Selectel"
+  },
+  "13.124.117.110": {
+   "country": "South Korea",
+   "cc": "KR",
+   "org": "AWS EC2"
+  },
+  "185.229.9.176": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Datahouse FOLGA"
+  },
+  "185.67.125.90": {
+   "country": "India",
+   "cc": "IN",
+   "org": "GCL"
+  },
+  "2.59.41.70": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "TimeWeb"
+  },
+  "217.198.6.70": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "TimeWeb"
+  },
+  "50.7.21.189": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "FDCservers.net"
+  },
+  "51.68.164.10": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "OVH"
   }
  }
 }

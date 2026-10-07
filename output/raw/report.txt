@@ -1,22 +1,22 @@
-抓取时间: 2026-10-07 01:22:05
-去重后节点: 3127
-clash 代理: 8578
+抓取时间: 2026-10-07 01:54:07
+去重后节点: 2403
+clash 代理: 7904
 
 - https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.txt: OK, 120 个节点 + 0 个 clash 代理
 - https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.yaml: OK, 0 个节点 + 229 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml: OK, 0 个节点 + 693 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml: OK, 0 个节点 + 437 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml: OK, 0 个节点 + 170 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-JP.yaml: OK, 0 个节点 + 657 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-US.yaml: OK, 0 个节点 + 508 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-SG.yaml: OK, 0 个节点 + 167 个 clash 代理
 - https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-KR.yaml: OK, 0 个节点 + 169 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml: OK, 0 个节点 + 73 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml: OK, 0 个节点 + 47 个 clash 代理
-- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml: OK, 0 个节点 + 1838 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-HK.yaml: OK, 0 个节点 + 66 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/by-country/clash-TW.yaml: OK, 0 个节点 + 46 个 clash 代理
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml: OK, 0 个节点 + 1849 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt: OK, 308 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt: OK, 150 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt: OK, 134 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS_WEAK_DPI_RUS.txt: OK, 20 个节点 + 0 个 clash 代理
-- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt: OK, 93 个节点 + 0 个 clash 代理
-- tg:juzibaipiao: OK, 2404 个节点 + 1839 个 clash 代理
+- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt: OK, 113 个节点 + 0 个 clash 代理
+- tg:juzibaipiao: OK, 3313 个节点 + 1839 个 clash 代理
 - tg:fqzw9: OK, 0 个节点 + 0 个 clash 代理
 - tg:SSRSUB: OK, 55 个节点 + 333 个 clash 代理
 - tg:ZDYZ2: OK, 105 个节点 + 0 个 clash 代理

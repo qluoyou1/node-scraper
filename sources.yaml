@@ -43,6 +43,8 @@ subscriptions:
 # Telegram 公开频道（通过 t.me/s/<频道> 免登录预览抓取）
 # 脚本会提取消息中的节点 URI，并对消息里的节点发布页链接跟进抓取一层
 tg_channels:
-  - clashjd
-  - pgkj666
-  - afxdxqe
+  - juzibaipiao
+  - fqzw9
+  - SSRSUB
+  - ZDYZ2
+  - sorenab2

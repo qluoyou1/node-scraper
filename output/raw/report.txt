@@ -1,6 +1,6 @@
-抓取时间: 2026-10-07 01:05:27
-去重后节点: 655
-clash 代理: 4273
+抓取时间: 2026-10-07 01:22:05
+去重后节点: 3127
+clash 代理: 8578
 
 - https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.txt: OK, 120 个节点 + 0 个 clash 代理
 - https://fastly.jsdelivr.net/gh/Barabama/FreeNodes@feat/ai-crawler-v2/nodes/yudou.yaml: OK, 0 个节点 + 229 个 clash 代理
@@ -16,6 +16,8 @@ clash 代理: 4273
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt: OK, 134 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS_WEAK_DPI_RUS.txt: OK, 20 个节点 + 0 个 clash 代理
 - https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt: OK, 93 个节点 + 0 个 clash 代理
-- tg:clashjd: OK, 0 个节点 + 0 个 clash 代理
-- tg:pgkj666: OK, 0 个节点 + 0 个 clash 代理
-- tg:afxdxqe: OK, 0 个节点 + 0 个 clash 代理
+- tg:juzibaipiao: OK, 2404 个节点 + 1839 个 clash 代理
+- tg:fqzw9: OK, 0 个节点 + 0 个 clash 代理
+- tg:SSRSUB: OK, 55 个节点 + 333 个 clash 代理
+- tg:ZDYZ2: OK, 105 个节点 + 0 个 clash 代理
+- tg:sorenab2: OK, 46 个节点 + 0 个 clash 代理

@@ -2418,7 +2418,25 @@
   "fr.private-ai.ir": "217.69.5.153",
   "steel7.hadsvpn.com": "153.52.85.32",
   "dns22.m3hrzd.ir": "185.4.115.149",
-  "dns27.m3hrzd.ir": "185.4.115.146"
+  "dns27.m3hrzd.ir": "185.4.115.146",
+  "fl3.nexfile.net": "179.253.82.47",
+  "by-tls.nerpvpn.net": "140.225.199.155",
+  "hk2.huahua.wiki": "124.156.182.132",
+  "sub-edge-14-1g.whitenw.net": "185.86.145.112",
+  "az-1.linkaa.xyz": null,
+  "auto.claudpath.com": "104.249.18.218",
+  "sgp.huahua.wiki": "43.134.82.23",
+  "Qmh49RE8c0DCqpFU.v.3dns.vip": "47.245.182.206",
+  "dns24.m3hrzd.ir": "185.4.115.147",
+  "mdk.mdmekjll.best": "111.243.119.92",
+  "hk1.huahua.wiki": "43.161.225.44",
+  "aesafdfaesfv.asopardaz.ir": "176.107.147.216",
+  "jp.huahua.wiki": "43.163.208.228",
+  "hk.huahua.wiki": "43.161.197.242",
+  "us.huahua.wiki": "43.153.90.117",
+  "app-mi-26.spbstudentlife.com": "31.76.227.57",
+  "sub-edge-12-1g.xrent.cloud": "185.86.145.55",
+  "id.huahua.wiki": "43.157.197.183"
  },
  "geo": {
   "129.151.92.223": {
@@ -51184,7 +51202,7 @@
   "45.221.114.16": {
    "country": "Hong Kong",
    "cc": "HK",
-   "org": "Telkom SA"
+   "org": "Telkom"
   },
   "45.90.56.67": {
    "country": "Switzerland",
@@ -51280,6 +51298,566 @@
    "country": "United States",
    "cc": "US",
    "org": "SERV.HOST GROUP"
+  },
+  "103.11.78.211": {
+   "country": "United States",
+   "cc": "US",
+   "org": "5G Network Operations Pty"
+  },
+  "103.118.209.80": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Mastersoft S.R.L."
+  },
+  "103.218.173.218": {
+   "country": "South Korea",
+   "cc": "KR",
+   "org": "Packetstream"
+  },
+  "103.219.195.65": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Bage Cloud"
+  },
+  "103.69.128.221": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Siberfy Private"
+  },
+  "104.249.18.218": {
+   "country": "Georgia",
+   "cc": "GE",
+   "org": "V-Techna UAB"
+  },
+  "111.243.119.92": {
+   "country": "Taiwan",
+   "cc": "TW",
+   "org": "Chunghwa Telecom Co."
+  },
+  "124.156.182.132": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Tencent Cloud Computing"
+  },
+  "13.140.80.136": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "Contabo Asia Private"
+  },
+  "130.12.46.156": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "ZhouyiSat Communications"
+  },
+  "130.17.6.19": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Fornex Hosting S.L"
+  },
+  "130.78.30.25": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Dedalus Italia S.p.A"
+  },
+  "130.94.69.15": {
+   "country": "Malaysia",
+   "cc": "MY",
+   "org": "Light Node"
+  },
+  "138.124.231.159": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Hostinux"
+  },
+  "138.124.39.251": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "WAIcore"
+  },
+  "140.225.199.155": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "InterLIR Marketplace"
+  },
+  "140.225.209.140": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Uxhost"
+  },
+  "140.225.209.170": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Uxhost"
+  },
+  "141.11.87.77": {
+   "country": "Taiwan",
+   "cc": "TW",
+   "org": "AKILE"
+  },
+  "141.11.91.35": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Akile"
+  },
+  "141.133.174.88": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "ESA"
+  },
+  "149.104.107.41": {
+   "country": "Colombia",
+   "cc": "CO",
+   "org": "Lightnode-CO"
+  },
+  "149.104.109.252": {
+   "country": "Philippines",
+   "cc": "PH",
+   "org": "Lightnode-PH"
+  },
+  "154.83.2.50": {
+   "country": "Philippines",
+   "cc": "PH",
+   "org": "Cloud Innovation"
+  },
+  "156.229.166.66": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Akile"
+  },
+  "163.245.42.132": {
+   "country": "France",
+   "cc": "FR",
+   "org": "Purdue University Northwest"
+  },
+  "164.52.11.194": {
+   "country": "Taiwan",
+   "cc": "TW",
+   "org": "Ucul"
+  },
+  "171.25.158.163": {
+   "country": "Sweden",
+   "cc": "SE",
+   "org": "Kronnet"
+  },
+  "172.66.0.172": {
+   "country": "Canada",
+   "cc": "CA",
+   "org": "Cloudflare"
+  },
+  "176.107.147.216": {
+   "country": "Italy",
+   "cc": "IT",
+   "org": "Aruba S.p.A"
+  },
+  "176.108.240.123": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "176.108.242.45": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "176.108.242.55": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "176.97.65.223": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "IROKO Networks Corporation"
+  },
+  "176.97.71.90": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "CLOUD-NETWORK"
+  },
+  "177.1.192.117": {
+   "country": "Poland",
+   "cc": "PL",
+   "org": "Uphost Solutions"
+  },
+  "177.1.192.90": {
+   "country": "Poland",
+   "cc": "PL",
+   "org": "Uphost Solutions"
+  },
+  "177.202.70.13": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Deutsche Telekom"
+  },
+  "178.20.45.164": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Hosting technology"
+  },
+  "178.208.89.190": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "Iron Hosting Centre"
+  },
+  "179.236.133.2": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Deutsche Telekom"
+  },
+  "179.253.82.47": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Vodafone Libertel"
+  },
+  "179.255.103.55": {
+   "country": "United States",
+   "cc": "US",
+   "org": "NetCrew"
+  },
+  "179.255.127.200": {
+   "country": "United States",
+   "cc": "US",
+   "org": "NetCrew"
+  },
+  "179.255.127.45": {
+   "country": "United States",
+   "cc": "US",
+   "org": "NetCrew"
+  },
+  "179.255.127.82": {
+   "country": "United States",
+   "cc": "US",
+   "org": "NetCrew"
+  },
+  "179.255.136.189": {
+   "country": "United States",
+   "cc": "US",
+   "org": "DMIT Cloud Services"
+  },
+  "185.125.101.86": {
+   "country": "Finland",
+   "cc": "FI",
+   "org": "xorek.cloud International"
+  },
+  "185.147.27.196": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Procloud"
+  },
+  "185.186.143.76": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Kontel"
+  },
+  "185.250.180.145": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Huize Holdings"
+  },
+  "185.4.115.147": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "Denit"
+  },
+  "185.50.202.4": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Sbercloud"
+  },
+  "185.86.145.112": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "VK Cloud Solutions"
+  },
+  "185.86.147.85": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "VK Cloud Solutions"
+  },
+  "188.225.62.72": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "JSC \"TIMEWEB\""
+  },
+  "189.74.106.132": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Khachatryan Armen Martirosovich"
+  },
+  "189.74.106.74": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Khachatryan Armen Martirosovich"
+  },
+  "190.12.150.244": {
+   "country": "Ecuador",
+   "cc": "EC",
+   "org": "Onetelecom Cia.ltda"
+  },
+  "193.134.209.165": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Lucidacloud"
+  },
+  "193.17.183.48": {
+   "country": "Spain",
+   "cc": "ES",
+   "org": "JaJoJoo"
+  },
+  "193.8.215.116": {
+   "country": "Austria",
+   "cc": "AT",
+   "org": "RAPIDSEEDBOX"
+  },
+  "194.48.250.203": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "1Cent Host"
+  },
+  "194.58.71.117": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "Reliable Communications s.r.o"
+  },
+  "199.119.137.32": {
+   "country": "United States",
+   "cc": "US",
+   "org": "A.I.A"
+  },
+  "2.27.14.117": {
+   "country": "Sweden",
+   "cc": "SE",
+   "org": "Node Host"
+  },
+  "212.80.218.89": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "SkyCore Technologies L.L.C-FZ"
+  },
+  "213.165.60.235": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "GIR SER"
+  },
+  "213.238.182.13": {
+   "country": "Türkiye",
+   "cc": "TR",
+   "org": "MARKAHOST Telekomunikasyon ve Tic. Ltd. Sti"
+  },
+  "217.16.31.193": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "VK Cloud Solutions"
+  },
+  "31.59.143.147": {
+   "country": "Poland",
+   "cc": "PL",
+   "org": "ExpressHost"
+  },
+  "31.76.227.57": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Nekobyte International"
+  },
+  "31.76.91.238": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "Akenai Products"
+  },
+  "37.18.14.6": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "LLC Global cloud network"
+  },
+  "43.134.82.23": {
+   "country": "Singapore",
+   "cc": "SG",
+   "org": "Tencent Cloud Computing"
+  },
+  "43.153.90.117": {
+   "country": "United States",
+   "cc": "US",
+   "org": "Tencent Cloud Computing"
+  },
+  "43.157.197.183": {
+   "country": "Indonesia",
+   "cc": "ID",
+   "org": "Aceville Pte.ltd"
+  },
+  "43.161.197.242": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Tencent Cloud Computing"
+  },
+  "43.161.225.44": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Aceville Pte.ltd"
+  },
+  "43.163.208.228": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "Tencent Cloud Computing"
+  },
+  "45.131.7.123": {
+   "country": "Belize",
+   "cc": "BZ",
+   "org": "Inter Networks"
+  },
+  "45.132.178.123": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "45.132.178.130": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "45.132.179.50": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "45.196.235.64": {
+   "country": "Hong Kong",
+   "cc": "HK",
+   "org": "Akile"
+  },
+  "45.198.0.101": {
+   "country": "Poland",
+   "cc": "PL",
+   "org": "ExpressHost"
+  },
+  "45.8.115.202": {
+   "country": "Japan",
+   "cc": "JP",
+   "org": "Owl"
+  },
+  "45.88.12.140": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Uxhost"
+  },
+  "46.17.46.27": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "LLC Baxet"
+  },
+  "46.174.142.238": {
+   "country": "United Arab Emirates",
+   "cc": "AE",
+   "org": "Qrator Technologies FZ-LLC"
+  },
+  "47.245.182.206": {
+   "country": "Germany",
+   "cc": "DE",
+   "org": "Alibaba.com"
+  },
+  "5.129.198.96": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "JSC \"TIMEWEB\""
+  },
+  "5.253.29.83": {
+   "country": "India",
+   "cc": "IN",
+   "org": "Beafort"
+  },
+  "5.255.97.220": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "TIG"
+  },
+  "5.34.213.8": {
+   "country": "Latvia",
+   "cc": "LV",
+   "org": "Parsun Network Solutions PTY"
+  },
+  "79.141.164.81": {
+   "country": "Netherlands",
+   "cc": "NL",
+   "org": "HZ Na25"
+  },
+  "79.182.39.57": {
+   "country": "Israel",
+   "cc": "IL",
+   "org": "NET"
+  },
+  "82.118.18.179": {
+   "country": "Bulgaria",
+   "cc": "BG",
+   "org": "Green Floid"
+  },
+  "83.166.237.167": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "VK Cloud Solutions"
+  },
+  "83.166.238.173": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "VK Cloud Solutions"
+  },
+  "87.236.146.111": {
+   "country": "Czechia",
+   "cc": "CZ",
+   "org": "ESA"
+  },
+  "87.242.94.1": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Cloud.ru"
+  },
+  "89.147.111.185": {
+   "country": "Iceland",
+   "cc": "IS",
+   "org": "1984 ehf"
+  },
+  "90.156.214.92": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "VK Cloud Solutions"
+  },
+  "91.185.83.113": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "CloudMTS"
+  },
+  "91.215.153.52": {
+   "country": "Bulgaria",
+   "cc": "BG",
+   "org": "Friendhosting"
+  },
+  "92.242.165.20": {
+   "country": "Finland",
+   "cc": "FI",
+   "org": "Nameto"
+  },
+  "93.170.72.138": {
+   "country": "Kazakhstan",
+   "cc": "KZ",
+   "org": "EQU Technologies LLP"
+  },
+  "94.183.245.2": {
+   "country": "The Netherlands",
+   "cc": "NL",
+   "org": "IvansLavrentjevs"
+  },
+  "95.182.120.84": {
+   "country": "Russia",
+   "cc": "RU",
+   "org": "Ildar Gilmutdinov PE"
+  },
+  "95.182.95.144": {
+   "country": "United Arab Emirates",
+   "cc": "AE",
+   "org": "Cloud Software - FZCO"
+  },
+  "95.56.251.12": {
+   "country": "Kazakhstan",
+   "cc": "KZ",
+   "org": "DIS"
   }
  }
 }

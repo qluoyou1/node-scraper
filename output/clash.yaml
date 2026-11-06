@@ -3,674 +3,811 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: KR+Oracle Cloud Infrastructure
-  network: ws
-  port: 25555
-  server: 152.69.226.63
+- name: VG+"It Saport"
   type: vless
+  server: 45.142.120.54
+  port: 443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  skip-cert-verify: true
-- name: US+objx.net
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳 @VPNine1
+    headers:
+      Host: vp58.cc.cd
+  tls: true
+  servername: vp58.cc.cd
+  client-fingerprint: chrome
+- name: TW+Chunghwa Telecom
+  password: 0324fbc29561
+  port: 443
+  server: er8u54dh.df6h451rh.xin
+  sni: px.ads.linkedin.com
+  type: anytls
   udp: true
-  network: raw
+- name: RU+.masterhost
+  type: ss
+  server: 90.156.203.62
+  port: 5112
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
+  udp: true
   skip-cert-verify: true
-- name: AU+Vultr Holdings
+- name: NL+Greenhost
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  skip-cert-verify: true
+- name: US+GTHost
   type: trojan
-  server: 45.63.30.142
+  server: 66.163.114.45
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   udp: true
-- client-fingerprint: firefox
+- name: JP+Linode
+  type: vless
+  server: 172.105.241.119
+  port: 1916
+  uuid: 3fd1868a-a3bb-4eab-a878-2c344bc86810
+  udp: true
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: JP+Akenai Products
+  network: grpc
+  port: 443
+  server: 31.76.91.31
+  servername: b.jp-1.bnc-gt.co.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+- name: PL+OVH Sp. z o. o
+  type: vmess
+  server: 54.37.131.126
+  port: 80
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  skip-cert-verify: true
+- name: RU+Ildar Gilmutdinov PE
+  type: vless
+  server: 95.182.120.114
+  port: 443
+  uuid: f9688dcf-60d0-4a8d-8f2a-f3bdb401c198
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless-ws
+    headers:
+      Host: ''
+  tls: true
+  servername: crt.molniya.sbs
+- name: US+Tencent cloud computing
+  type: ss
+  server: 49.51.39.148
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: LCvps-199-168-136-193-bak8443
+  udp: true
+- name: DE+Hetzner
+  type: vless
+  server: 157.90.165.181
+  port: 11762
+  uuid: 7c9b4360-6be9-47f2-ace9-b87297ea3d8f
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  servername: swdist.apple.com
+  flow: xtls-rprx-vision
+- name: US+GTHost-2
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  udp: true
+- name: CH+Green Floid
+  type: vless
+  server: 45.90.57.119
+  port: 8443
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 16036bbef04d0509
+  servername: twitch.tv
+  flow: xtls-rprx-vision
+- name: CA+Cloudflare
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: humanity
+  udp: true
+  network: ws
+  ws-opts:
+    path: //assignment
+    headers:
+      Host: www.calmlunch.com
+  tls: true
+  sni: www.calmlunch.com
+- name: CA+Cloudflare-2
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  skip-cert-verify: true
+- name: SG+DigitalOcean
+  port: 9090
+  server: 167.99.74.174
+  type: http
+  skip-cert-verify: true
+- name: CA+Cloudflare-3
+  type: vless
+  server: 172.64.145.93
+  port: 443
+  uuid: f330576f-eda3-4fcf-9756-b453fff18b6f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /hptjws
+    headers:
+      Host: rac.679888.xyz
+  tls: true
+  servername: rac.679888.xyz
+- name: DE+Hetzner-2
+  type: vless
+  server: 5.75.195.244
+  port: 40792
+  uuid: cc50ca48-b54a-42f3-afad-c54b136d1f14
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 546b264aac9b6fed
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: KR+Lightnode
+  type: ss
+  server: 154.90.62.145
+  port: 46578
+  cipher: chacha20-ietf-poly1305
+  password: 907e91edf84826c3
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-4
+  password: humanity
+  port: 443
+  server: 172.66.40.99
+  sni: www.trusteeforward.com
+  type: trojan
+  udp: true
+- name: US+OVH US
+  type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: '01'
+  servername: fuck.rkn
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: US+Digital Ocean
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: US+NetCrafters OU
+  type: vless
+  server: 138.124.60.146
+  port: 443
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  servername: usa.oblaco.bet
+  flow: xtls-rprx-vision
+- client-fingerprint: random
+  name: GB+OVH
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
+  server: 51.89.194.151
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+- name: KW+CDNetworks
+  type: ss
+  server: 163.171.181.49
+  port: 48852
+  cipher: chacha20-ietf-poly1305
+  password: abc484edcf1be43c
+  udp: true
+  skip-cert-verify: true
+- name: JP+ACE SG
+  network: ws
+  port: 443
+  server: 43.170.8.95
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: JP+DDPS Networks
+  type: vless
+  server: 131.143.214.224
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+  tls: true
+  servername: jp3.yohototo.top
+- name: US+GTHost-3
+  type: trojan
+  server: 169.197.140.169
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- client-fingerprint: chrome
   name: HK+Hongkong Wen Jing Network
   network: tcp
-  port: 21003
+  port: 21001
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: eb9539689690d35c
+    short-id: b6dfd5c750351c57
   server: 103.238.227.211
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-- name: DE+Hetzner
+- name: RO+M247 Europe SRL
+  password: None
+  port: 9443
+  server: 135.136.1.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: CA+Cloudflare-5
+  type: vless
+  server: mybb.com
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  client-fingerprint: chrome
+- name: HK+Alibaba.com Singapore E-Commerce Private
+  type: vmess
+  server: 8.218.175.64
+  port: 9754
+  uuid: 5b9575c3-c404-4c93-98f8-63581e88ffdf
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: ''
+  skip-cert-verify: true
+- name: CA+Cloudflare-6
+  type: vless
+  server: 104.21.91.49
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+  tls: true
+  servername: vpn.cintaku.qzz.io
+  client-fingerprint: firefox
+- name: JP+Vultr Holdings
+  password: 96ab5cd282733fd4c312a61f972f330a
+  port: 443
+  server: 45.32.10.7
+  sni: vp3.yysyy.online
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: US+GoldIPv4
+  network: raw
+  port: 47443
+  reality-opts:
+    public-key: zHU0WVJ6mMqTgBj6hEt_B0yRnegzdTGGLBydGyAPvlk
+    short-id: ae97223a8f799001
+  server: 217.60.151.141
+  servername: ge-1.waspguard.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+- name: JP+Tencent Cloud Computing
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- name: RU+Beget
+  type: vless
+  server: 83.222.25.62
+  port: 443
+  uuid: 3f426ef7-a809-4d46-921c-cc80b6cee4e0
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 84ba23f147ad7a15
+  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
+- name: NL+Melbikomas UAB
   password: 'null'
   port: 443
-  server: 159.69.94.125
+  server: 185.140.209.235
   tls: true
   type: http
   username: 'null'
-- name: CA+Cloudflare
-  type: vless
-  server: 172.64.155.209
+- name: FR+OVH
+  type: vmess
+  server: 46.105.222.157
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: CA+Cloudflare-7
+  type: vmess
+  server: www.shopify.com
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
+  tls: true
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
+- name: US+Thomson Reuters
+  type: vless
+  server: 167.68.4.253
+  port: 2096
+  uuid: 7556317c-dff6-46e8-ad29-b408f2a6456e
   udp: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: snip.edgeoneai.cc.cd
+      Host: ''
   tls: true
-  servername: snip.edgeoneai.cc.cd
+  servername: vless.muzheng.top
   client-fingerprint: chrome
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: SE+SERV.HOST GROUP
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-    short-id: ''
-  server: 13.143.180.142
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2614a96d-e39f-02f0-a9c7-467a178c2c0a
-  xudp: true
-  servername: sw.lenvex.cc
-- name: SC+RAPIDSEEDBOX
-  password: humanity
-  port: 443
-  server: 45.130.125.75
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: NL+Black HOST
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  server: 86.54.28.75
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-- name: IL+013 Netvision Network
-  port: 443
-  server: 62.90.77.30
-  tls: true
-  type: http
-- alterId: 0
-  cipher: auto
-  name: CA+Cloudflare-2
-  network: ws
-  port: 8443
-  server: 104.21.91.53
-  servername: v2ray1.dozapp.xyz
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-- name: RU+Fibersa
-  type: vless
-  server: 165.231.157.123
-  port: 8443
-  uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
-  udp: true
-  tls: true
-  servername: api-6aeb73b7.adhil.uk
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-- name: US+Datacamp
-  password: ''
-  port: 443
-  server: 149.34.248.65
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: SE+Aeza Group
-  port: 8443
-  server: 77.221.136.60
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: NL+Greenhost
+- name: HK+DALIAN YICHUAN INDUSTRIAL
   type: ss
-  server: 82.38.31.155
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  server: 103.149.183.10
+  port: 8388
+  cipher: chacha20-ietf
+  password: asd123456
   udp: true
   skip-cert-verify: true
-- name: US+Cloudflare
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: HK+Alibaba.com Singapore E-Commerce Private-2
+  type: vmess
+  server: n1747624267.4u9ma.icu
+  port: 443
+  uuid: 8c5d150c-b046-4440-8230-e84506a065a3
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: n1747624267.4u9ma.icu
+  tls: true
+  servername: n1747624267.4u9ma.icu
+- name: NL+Avento Mt
+  type: vless
+  server: 193.227.99.54
+  port: 8880
+  uuid: 4f45e0ad-e854-4d2f-9ff2-fa1bee1afe37
+  udp: true
+  network: httpupgrade
   skip-cert-verify: true
-- name: US+Zoom Video Communications
+- name: CA+Cloudflare-8
+  type: vless
+  server: cdn.7zz.cn
+  port: 443
+  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
+  udp: true
   network: ws
-  port: 8080
-  server: 170.114.45.6
-  type: vless
-  udp: true
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  skip-cert-verify: true
-- name: RU+LLC Baxet
-  type: ss
-  server: 46.17.46.27
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  name: FR+OVH
-  network: grpc
-  port: 51671
-  reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  server: 152.228.139.33
-  servername: www.sony.com
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: vltj.qzz.io
   tls: true
-  type: vless
-  udp: true
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
-- name: US+Cdnext NYC
-  type: ss
-  server: 37.19.198.243
+  servername: vltj.qzz.io
+  client-fingerprint: chrome
+- name: HK+Aryaka Networks
+  type: vmess
+  server: 159.100.206.88
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
+  alterId: 0
+  cipher: auto
   udp: true
-- name: SE+Company 64d34573Gz9YjyWz
-  type: vless
-  server: smart.bachidze.com
-  port: 443
-  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
-  udp: true
+  network: ws
+  ws-opts:
+    path: /ray
+    headers:
+      Host: lg30.cfcdn3.xyz
   tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: smart.bachidze.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: PL+ExpressHost
+- name: US+Tornado VPS
+  type: ss
+  server: 71.19.148.143
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
+  udp: true
+- name: ES+SR DC Mad1
+  password: humanity
+  port: 443
+  server: 185.18.250.252
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: US+GTHost-4
+  type: trojan
+  server: 66.163.114.132
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- name: US+Fastly
   type: vless
-  server: cz.pythonmakemigreat.wiki
-  port: 61374
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  server: 151.101.56.7
+  port: 443
+  uuid: d2299018-601d-488e-afd6-8f55b3f7439f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+    headers:
+      Host: pan1.global.ssl.fastly.net
+  tls: true
+  servername: ssl.fastly.com
+- name: CA+Cloudflare-9
+  type: vless
+  server: 104.18.26.90
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+- name: KR+Lightnode-2
+  type: ss
+  server: 154.90.62.145
+  port: 46577
+  cipher: chacha20-ietf-poly1305
+  password: 907e91edf84826c3
+  udp: true
+  skip-cert-verify: true
+- name: DE+OVH
+  type: vless
+  server: 57.129.41.216
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+  skip-cert-verify: true
+- name: RU+JSC "TIMEWEB"
+  type: vless
+  server: 104.171.134.135
+  port: 443
+  uuid: f9f70641-667b-46f2-a37e-e3858acbcd9b
   udp: true
   network: xhttp
   tls: true
   reality-opts:
     public-key: ''
-    short-id: ''
-  servername: cz.pythonmakemigreat.wiki
-- name: HK+Sun Network
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  sni: 202.146.222.29
-  type: hysteria2
-- name: RU+Fibersa-2
+    short-id: 8fd699a1c79e360d
+  servername: 360.yandex.ru
+  client-fingerprint: firefox
+- name: VN+Fastly Network Solution Company
+  type: ss
+  server: 103.186.154.31
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: FR+AWS EC2
   type: vless
-  server: 165.231.157.147
-  port: 8443
-  uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
+  server: 13.39.184.235
+  port: 22223
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   udp: true
-  tls: true
-  servername: api-6aeb73b7.adhil.uk
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
   skip-cert-verify: true
-- name: NL+Greenhost-2
+- name: VN+Fastly Network Solution Company-2
   type: ss
-  server: 82.38.31.165
+  server: 103.186.154.216
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: TW+Chunghwa Telecom Co.
+  type: vmess
+  server: 211.72.35.110
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  uuid: 541ca026-58d3-48f1-d6ef-3a05543ddcb7
+  alterId: 0
+  cipher: auto
   udp: true
-- name: IT+Tumpi Networks Srls
-  type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  name: US+Vultr Holdings
   network: ws
-  port: 443
-  reality-opts:
-    public-key: jO7THaLxz0Oz3kePAJcuwcKNTlsWoEWGh18zzRmiXgo
-    short-id: 77c4230d
-  server: 144.202.126.147
-  servername: itunes.apple.com
+  ws-opts:
+    path: /
+    headers:
+      Host: ru.tzccifq.ga
   tls: true
+  servername: ru.tzccifq.ga
+- name: NL+Scaleway
   type: vless
-  udp: true
-  uuid: 45d51389-0c38-4843-8ae8-cffb94e97a72
-- client-fingerprint: chrome
-  name: SG+Oneprovider.com
-  network: tcp
-  port: 21002
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 3ab8d93dd9b1a5be
-  server: 511.150333.xyz
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-- name: NL+Digital Ocean
-  password: e4b72b531a2d10900519
-  port: 443
-  server: 82.196.9.7
-  sni: 52c40907.acsnet.co
-  tls: true
-  type: http
-  username: testuser1
-- name: DE+Baykov Ilya Sergeevich
-  type: vless
-  server: 130.49.177.193
-  port: 443
-  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+  server: 51.158.206.29
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
   tls: true
   reality-opts:
     public-key: ''
-    short-id: 681fc2dd643bc2f3
-  servername: de-2.ffpn.pro
-  client-fingerprint: ios
+    short-id: '01'
+  servername: fuck.rkn
   flow: xtls-rprx-vision
-- name: CA+GTHost
-  type: trojan
-  server: 216.152.147.74
+- name: CA+Cloudflare-10
+  type: vless
+  server: 104.16.10.116
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   udp: true
-- name: JP+Contabo Asia Private
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-- name: FR+Melbikomas UAB
-  port: 443
-  server: 103.82.101.43
-  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
   tls: true
-  type: http
-- name: NL+Greenhost-3
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+- name: NL+Servers Tech Fzco
+  type: vless
+  server: 144.124.249.128
+  port: 443
+  uuid: 88d848f8-88ac-4a90-8258-d61a491ce34e
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: ''
+  servername: cdn-fastly-v6.deb.debian.org
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: KR+KOR VULTR
   type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  server: 141.164.45.187
+  port: 6679
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
   udp: true
   skip-cert-verify: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: TW+Chunghwa Telecom
-  password: 0324fbc29561
+- name: TW+Chunghwa Telecom Co.-2
+  type: ss
+  server: 36.224.152.189
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+  skip-cert-verify: true
+- name: TW+Chunghwa Telecom-2
+  type: vless
+  server: 60.248.219.53
   port: 443
-  server: 684616s4.df6h451rh.xin
-  sni: px.ads.linkedin.com
-  type: anytls
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+- name: DE+Hetzner-3
+  type: vless
+  server: 46.225.46.136
+  port: 2087
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /hokm
+    headers:
+      Host: hoert1rert.localip.ir
+  tls: true
+  servername: hoert1rert.localip.ir
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: JP+Vultr Holdings-2
+  type: trojan
+  server: jp.tronsg.com
+  port: 443
+  password: Trojan@82164024
+  udp: true
+  tls: true
+  sni: jp.tronsg.com
 - name: US+Cdnext LAX
   password: None
   port: 9002
-  server: 138.199.35.202
+  server: 138.199.35.217
   skip-cert-verify: true
   sub_tag: noCache
   tls: true
   type: http
   udp: true
-- name: NL+Greenhost-4
-  type: ss
-  server: 82.38.31.10
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: JP+JAPAN
+  type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 18295
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
   udp: true
   skip-cert-verify: true
-- name: JP+DataCamp
-  type: ss
-  server: 149.22.87.241
+- name: CA+Cloudflare-11
+  type: vless
+  server: 104.19.212.207
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   udp: true
-- name: CA+Cloudflare-3
-  password: humanity
-  port: 443
-  server: 104.17.206.147
-  sni: www.trusteeforward.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: HK+Hongkong Wen Jing Network-2
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.com
+    headers:
+      Host: free.cndyw.ggff.net
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+- name: KR+Oracle Cloud Infrastructure
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152.69.231.175
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: HK+Ucloud Information Technology
   network: tcp
-  port: 21002
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: f0e6a8bb98db3efd
-  server: 526.150333.xyz
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-- name: CA+Cloudflare-4
-  password: humanity
   port: 443
-  server: 104.18.32.47
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: US+AWS EC2
-  port: 8443
-  server: 44.217.145.28
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: firefox
-  name: DK+Global Connectivity Solutions LLP
-  network: grpc
-  port: 8444
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: ''
-  server: 193.233.253.180
-  servername: github.com
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  server: 165.154.63.139
+  servername: www.amazon.com
   tls: true
   type: vless
   udp: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  encryption: none
-  name: DE+360 Treasury Systems
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+- name: CA+Cloudflare-12
+  type: vless
+  server: 104.18.33.141
+  port: 443
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  udp: true
   network: ws
-  port: 2083
-  server: 195.137.226.133
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f733b1a-6c00-48ac-ae3b-cbc178a9146e
   ws-opts:
+    path: /154.16.10.34-8080
     headers:
-      Host: nexostore.xnetaro.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /wss?TELEGRAM----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN----@GHOFLSHCAN
-  xudp: true
-  servername: nexostore.xnetaro.ir
-  skip-cert-verify: true
-- name: ES+SR DC Mad1
-  password: humanity
-  port: 443
-  server: 185.18.250.245
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: LT+IPXO
-  type: vless
-  server: 84.32.215.96
-  port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  network: raw
+      Host: kclx.eu.org
   tls: true
-  reality-opts:
-    public-key: ''
-    short-id: d44d6d46
-  servername: app26.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: SG+Datacamp
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: raw
-  ws-opts:
-    path: /4bc027a44532
-    headers:
-      Host: ''
-  skip-cert-verify: true
-- name: US+Akamai Technologies
-  type: trojan
-  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
-  port: 443
-  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
-  udp: true
-- name: CA+Palmira Hosting
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: raw
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-  skip-cert-verify: true
-- name: NL+Cyberlab
-  type: vless
-  server: 185.86.13.248
-  port: 443
-  uuid: b1e4bfe2-2b12-11f1-92cb-12ba70109d32
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: nl03-gos.everycom.store
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: FI+xorek.cloud International
-  password: ''
-  port: 8443
-  server: 176.124.206.150
-  skip-cert-verify: true
-  sub_tag: S001-260618
-  type: socks5
-  udp: true
-  username: ''
-- name: US+GTHost
-  type: trojan
-  server: 66.163.112.242
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: VN+Vinasite Viet NAM Company
-  type: vless
-  server: node1.csnety.com
-  port: 53104
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 5d219249d6a7f3
-  servername: v1-dy.ixigua.com
+  servername: kclx.eu.org
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: CA+Cloudflare-5
+- name: JP+Oracle Cloud Infrastructure
   network: ws
   port: 443
-  server: 104.16.0.1
+  server: 152.69.200.216
   servername: jp3.yohototo.top
   tls: true
   type: vless
   udp: true
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: HK+YottaSrc
-  type: vless
-  server: hk1.japancase.site
-  port: 443
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: bee10b047804c637
-  servername: hk1.japancase.site
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- client-fingerprint: firefox
-  name: CA+OVH Hosting
-  network: raw
-  port: 2053
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  server: 66.70.179.198
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-- name: US+Zoom Video Communications-2
-  network: ws
-  port: 8080
-  server: 170.114.46.6
-  type: vless
-  udp: true
-  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  name: SG+Oneprovider.com-2
-  network: tcp
-  port: 21002
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: d9a6b52e98121db2
-  server: 510.150333.xyz
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-- name: US+Akamai Technologies-2
-  type: vless
-  server: nian.001.url111.kcloud02.top
-  port: 15003
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 4c517b9e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: DE+IONOS SE
-  type: vless
-  server: 31.70.111.146
-  port: 443
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: d7de3a6ff4018957
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: CA+Cloudflare-6
-  type: vmess
-  server: 172.67.187.145
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-  skip-cert-verify: true
-- name: US+Cdnext SEA
+- name: NL+Weiss Hosting Group S.R.L
   type: ss
-  server: 138.199.43.159
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: NL+Scaleway
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.93
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: NL+Greenhost-5
-  type: ss
-  server: 193.29.139.198
-  port: 8080
+  server: 89.221.225.15
+  port: 443
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: yCbQ4bry4otfifK7oel71NaXpPL9pYJb
   udp: true
-  skip-cert-verify: true
-- name: SG+DigitalOcean
-  type: ss
-  server: 68.183.227.4
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-  skip-cert-verify: true
-- name: GB+Edge Core FZE
-  type: vless
-  server: ch1.japancase.site
-  port: 443
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: aafcd65859993991
-  servername: ch1.japancase.site
-  client-fingerprint: qq
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
+  name: HK+NetLab Global
+  network: tcp
+  port: 27509
+  reality-opts:
+    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
+    short-id: 6ba85179e30d4fc2
+  server: 38.22.88.248
+  servername: www.suffolk.edu
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
 - name: TW+Akile
   type: vless
   server: 45.207.158.76
@@ -684,46 +821,200 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: SG+Oracle Cloud Infrastructure
-  password: f87376e17da040ed04c9665ce8972930
+- name: HK+Strong Worth Holdings
+  type: ss
+  server: 103.141.221.200
+  port: 8388
+  cipher: chacha20-ietf
+  password: asd123456
+  udp: true
+  skip-cert-verify: true
+- name: JP+Lightnode
+  type: ss
+  server: 154.205.139.9
+  port: 11203
+  cipher: chacha20-ietf-poly1305
+  password: 303ac65e30f28b0b
+  udp: true
+  skip-cert-verify: true
+- client-fingerprint: random
+  name: TR+Hostkey
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  server: 151.241.226.201
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: SG+AWS EC2
+  network: raw
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+- name: BG+Netassist International EOOD
+  type: ss
+  server: 95.164.116.33
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: pQmnC03JObbPhdh5FBJHgD6jnTLchsRA
+  udp: true
+- name: KR+Lightnode-3
+  type: ss
+  server: 156.244.20.53
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: c8f11e2ba63181ea
+  udp: true
+  skip-cert-verify: true
+- name: TW+Chunghwa Telecom Co.-3
+  type: vmess
+  server: terutrrj.d6f54hd1j.cc
+  port: 443
+  uuid: a904e307-771f-498b-87ad-8e6e0d0ade4a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: terutrrj.d6f54hd1j.cc
+  tls: true
+- name: EG+LightNode-EG
+  type: ss
+  server: 38.54.59.16
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 6ff1423f61ffe673
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-13
+  type: vmess
+  server: 172.67.206.33
+  port: 443
+  uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /guolicheng/us1?ed=2048
+    headers:
+      Host: us1.guolicheng.cyou
+  tls: true
+- name: US+WPEngine
+  type: vless
+  server: 141.193.213.20
+  port: 8443
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: CH+Oracle Cloud Infrastructure
+  password: 84a506ca5aca505696a454d828420b3f
   port: 50160
-  server: 138.2.73.238
+  server: 140.238.213.114
   skip-cert-verify: true
   sni: 'off'
   type: hysteria2
-- name: US+Datacamp-2
+- name: US+Dedicated.com
   type: ss
-  server: 156.146.38.169
+  server: 216.105.168.18
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
   udp: true
-- name: US+GTHost-2
-  type: trojan
-  server: 169.197.140.171
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: MY+Kaopu Cloud
+  type: ss
+  server: 38.54.97.247
+  port: 28024
+  cipher: chacha20-ietf-poly1305
+  password: 3bb08205cb6c8af0
   udp: true
-- name: NL+Clodo Cloud Service CO. L.L.C
-  type: vless
-  server: 132.243.119.223
-  port: 443
-  uuid: 326c45d1-966c-4080-874f-ac73883c5e4a
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 5e50b6c8fe883545
-  servername: www.techadvisor.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: SG+Alibaba.com
-  password: '8888'
-  port: 1080
-  server: 47.236.168.243
   skip-cert-verify: true
-  type: socks5
-  username: '8888'
+- name: CA+CloudFlare
+  type: vless
+  server: 188.114.96.37
+  port: 443
+  uuid: 3804296d-167f-4c1b-8734-147f80473590
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiU29DZFZoZzF6RG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iLCJbMjYwMjpmYzU5OjExOjY0OjpdIl19
+    headers:
+      Host: telegram.freepersianland1.workers.dev
+  tls: true
+  servername: TeLegrAm.FREEPErSiANland1.woRKERS.DEv
+  client-fingerprint: chrome
+- name: CA+Cloudflare-14
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: ''
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: SG+AWS EC2-2
+  network: tcp
+  port: 12972
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
+  name: US+Fastly-2
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  tls: true
+  type: vless
+  udp: true
+  uuid: 72881b3f-76f7-4cae-912d-e95e602a5ca4
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /
+  xudp: true
+  servername: community.fastly.steamstatic.com
 - name: DE+Hostkey
   password: d62s7ghfehm742us
   port: 12824
@@ -731,212 +1022,349 @@ proxies:
   skip-cert-verify: true
   sni: derfderf.ru
   type: hysteria2
-- client-fingerprint: chrome
+- name: RU+JSC Selectel
+  type: vless
+  server: 95.213.245.84
+  port: 443
+  uuid: 255a8044-3337-473e-af26-46a37208adcc
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 5f3fd060c992bb2e
+  servername: hudson.glowbreeze.online
+  client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: JP+Kvmcloud Network
-  network: tcp
+- name: TR+Colo
+  type: vmess
+  server: free.ertebatgoostar.ir
   port: 443
-  reality-opts:
-    public-key: Z7B8VKvjAiBH93XEkHFWCVBfK8Mu5HTLtAwfr5LuYlk
-    short-id: 00b0389a
-  server: ga1data.xyy123.bid
-  servername: www.amzn.com
-  tls: true
-  type: vless
+  uuid: 1ffa1361-1552-45cc-ba33-dc9a71d37476
+  alterId: 0
+  cipher: auto
   udp: true
-  uuid: 81f686e2-0700-4e7d-b3aa-2f7fc544bcc3
-- cipher: chacha20-ietf-poly1305
-  name: NL+Greenhost-6
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.54
+- name: GB+Lite Info
   type: ss
+  server: 185.176.206.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
   skip-cert-verify: true
-- name: CH+Ontario
-  type: trojan
-  server: 208.69.78.29
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: US+GlobalTeleHost Corp.
-  type: trojan
-  server: 167.88.61.175
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: ID+Hurricane Electric
-  password: ''
-  port: 443
-  server: purecambogiasl.live
-  tls: true
-  type: http
-  username: ''
-  sni: purecambogiasl.live
-- name: HK+w1n
-  password: b0917015b656b3dd2286b5633af0c5c1
-  port: 50160
-  server: 31.57.248.176
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- client-fingerprint: chrome
-  name: IN+Contabo
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  server: 194.61.31.126
-  servername: www.apple.com
-  tls: true
+- name: HK+Julian Achter
   type: vless
+  server: 45.133.73.20
+  port: 2087
+  uuid: 3d78373f-bdbd-428a-9b83-aea64264bf4e
   udp: true
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-- name: NL+Greenhost-7
-  type: ss
-  server: 82.38.31.159
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: US+Vodafone Libertel
-  type: vless
-  server: hollandlanzerotte.xyz
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
   tls: true
   reality-opts:
     public-key: ''
     short-id: ''
-  servername: hollandlanzerotte.xyz
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: RU+Fibersa-3
-  type: vless
-  server: 165.231.157.139
-  port: 8443
-  uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
-  udp: true
-  tls: true
-  servername: api-6aeb73b7.adhil.uk
+  servername: main.vpsvdsclouds.net
   client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-- name: JP+CLOUD-NETWORK
-  type: vless
-  server: 176.97.71.18
-  port: 9443
-  uuid: 2751c1f3-0bb6-446e-ab26-e2384980705f
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: US+GTHost-3
+- name: US+GTHost-5
   type: trojan
-  server: 216.152.156.65
+  server: 216.106.186.33
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  password: f0eb8c92ce8946aaba856569cff1a16b
   udp: true
-- name: US+Baykov Ilya Sergeevich
-  type: vless
-  server: 185.95.231.156
-  port: 443
-  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
-  udp: true
-  network: raw
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: a3a578ab
-  servername: www.apple.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: PL+Doprax ApS
-  network: tcp
-  port: 10000
-  server: connect.wecantos.site
-  type: vless
-  udp: true
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-  skip-cert-verify: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: US+Inception Hosting
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.225
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: AE+Oracle Cloud Infrastructure
-  network: ws
-  port: 22573
-  server: 84.235.244.108
-  type: vless
-  udp: true
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  skip-cert-verify: true
-- name: SG+DigitalOcean-2
+- name: SA+Cdnw Reassigned
   type: ss
-  server: 68.183.235.122
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  server: 163.171.207.11
+  port: 29461
+  cipher: chacha20-ietf-poly1305
+  password: cb4258dc1b53613c
   udp: true
   skip-cert-verify: true
-- name: US+Akamai Technologies-3
+- name: BR+Meteverse
+  type: ss
+  server: 157.185.173.60
+  port: 46727
+  cipher: chacha20-ietf-poly1305
+  password: 29acd960ab8e3408
+  udp: true
+  skip-cert-verify: true
+- name: SG+Datacamp
+  type: vmess
+  server: 149.88.23.202
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: raw
+  skip-cert-verify: true
+- name: SG+Contabo Asia Private
+  password: None
+  port: 443
+  server: 154.26.139.24
+  tls: true
+  type: http
+- name: US+Dedicated.com-2
+  password: ae7eb4dwyaz25pxwgq59
+  port: 59689
+  server: 66.23.203.21
+  skip-cert-verify: true
+  sni: 66.23.203.21
+  type: trojan
+  udp: true
+- name: CA+Cloudflare-15
   type: vless
-  server: nian.001.url111.kcloud02.top
-  port: 15006
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  server: fbi.gov
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560fp=random
+    headers:
+      Host: misaka.cndyw.ggff.net
+  tls: true
+  servername: misaka.cndyw.ggff.net
+- name: DE+Digital Ocean
+  type: vless
+  server: 46.101.196.101
+  port: 2096
+  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucky-sky-0104.alvlirm444.workers.dev
+  tls: true
+  servername: lucky-sky-0104.alvlirm444.workers.dev
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: NL+Global Connectivity Solutions LLP
+  type: vless
+  server: 185.76.243.226
+  port: 443
+  uuid: 919c1334-5a4a-4eb4-930a-7576b307aa48
+  udp: true
+- name: US+Akamai Technologies
+  type: trojan
+  server: jp1.8b1c7c70-ecf1-6891-9fa7-68a86662f902.cheathub.net
+  port: 443
+  password: 6cddea99-9b18-4d42-8638-131bd9f5374f
+  udp: true
+- name: CA+CloudFlare-2
+  password: humanity
+  port: 443
+  server: 188.114.97.6
+  sni: www.trusteeforward.com
+  type: trojan
+  udp: true
+- name: RU+Yandex
+  type: vless
+  server: 84.201.179.244
+  port: 443
+  uuid: 4d94fa33-9462-48b4-b7de-8a2863560d19
   udp: true
   tls: true
   reality-opts:
     public-key: ''
-    short-id: 029a6cc4
-  servername: www.adobe.com
+    short-id: a20d3ed244c76426
+  servername: sso.passport.yandex.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: CA+Regxa Company for Information Technology
-  network: raw
+- name: DE+Unesty Company
+  type: vless
+  server: 181.214.231.180
   port: 443
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  server: 209.200.246.148
-  servername: www.cloudflare.com
+  uuid: 7c63f43f-f526-49bb-b5c8-2be26e11ef00
+  udp: true
+  network: xhttp
   tls: true
+  servername: statue.lnmarketplace.net
+  client-fingerprint: firefox
+- name: DE+Hetzner-4
+  type: vless
+  server: 91.99.82.11
+  port: 443
+  uuid: 2ee2a715-d541-416a-8713-d66567448c2e
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: US+CloudFlare
+  type: vmess
+  server: 141.101.114.200
+  port: 443
+  uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      Host: v2ray2.ssr-free2.xyz
+  tls: true
+  servername: v2ray2.ssr-free2.xyz
+- name: HK+Hong Kong Telecommunications
+  password: 0324fbc29561
+  port: 443
+  server: 56481.df6h451rh.xin
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+- name: CA+Cloudflare-16
+  type: vless
+  server: 104.17.189.125
+  port: 8443
+  uuid: 83f03646-fb28-44cc-9d2c-8853f6c09285
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=#TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+    headers:
+      Host: r4fnviw9jl4i4rx.zjde5.de5.net
+  tls: true
+  servername: r4fnviw9jl4i4rx.zjde5.de5.net
+  skip-cert-verify: true
+- name: SG+Contabo Asia Private-2
+  type: ss
+  server: 154.26.132.38
+  port: 27882
+  cipher: chacha20-ietf-poly1305
+  password: ded718fcb2bb17b7
+  udp: true
+  skip-cert-verify: true
+- name: VN+Fastly Network Solution Company-3
+  type: ss
+  server: 103.186.154.33
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: HK+AWS EC2
+  type: vless
+  server: hk1-r.link-t7.com
+  port: 10126
+  uuid: 57A71E7F-E6B5-42BF-A4A6-47ECCBE7F50C
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+- name: TW+NOT TFN
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  sni: 160.187.100.109
+  type: hysteria2
+- name: VN+Fastly Network Solution Company-4
+  type: ss
+  server: 103.186.155.32
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: CA+CloudFlare-3
+  type: trojan
+  server: 188.114.98.0
+  port: 443
+  password: humanity
+  udp: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+  tls: true
+  sni: www.pleadcourt.org
+  client-fingerprint: chrome
+  alpn:
+  - http/1.1
+- name: DE+Packet Loss
+  type: vless
+  server: 31.77.251.92
+  port: 844
+  uuid: 7df4f23f-b361-412a-883a-54dfdb5b8c8f
+  udp: true
+  skip-cert-verify: true
+- name: IT+Microsoft Azure Cloud
+  type: vless
+  server: 4.232.64.201
+  port: 443
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
+  tls: true
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+- name: DE+Individual Entrepreneur Anton Levin
+  type: vless
+  server: 45.148.117.151
+  port: 38291
+  uuid: 483079ae-79ba-48aa-9071-340b79117a22
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 55e00de72e977e65
+  servername: reality.airvpn.su
+  flow: xtls-rprx-vision
+- cipher: 2022-blake3-aes-256-gcm
+  name: US+White Label Services
+  password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
+  port: 443
+  server: 216.9.225.189
+  type: ss
+  udp: true
+- name: US+IONOS
+  network: ws
+  port: 30016
+  server: uspanel.unixzone.us
   type: vless
   udp: true
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: LV+Baykov Ilya Sergeevich
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  server: 138.124.180.137
-  servername: www.apple.com
-  tls: true
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  skip-cert-verify: true
+- name: NL+Hostzealot
   type: vless
+  server: 5.149.248.151
+  port: 443
+  uuid: 4fdf8c8f-4728-4437-a309-5ecfac2bf021
   udp: true
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-- name: NL+Greenhost-8
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 27350908de933e09
+  servername: nla.kosmosapp.net
+  client-fingerprint: firefox
+- name: SC+RAPIDSEEDBOX
+  type: vless
+  server: 45.130.125.151
+  port: 443
+  uuid: eaf76557-2219-4799-8171-d7020adfefd0
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fancy-mouse-6aff.wixit71180.workers.dev
+  tls: true
+  servername: fancy-mouse-6aff.wixit71180.workers.dev
+- name: NL+Greenhost-2
   type: ss
   server: 82.38.31.49
   port: 8080
@@ -944,606 +1372,1342 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
   skip-cert-verify: true
-- name: DE+dataforest
-  type: vless
-  server: 176.96.138.122
-  port: 443
-  uuid: b229d38c-35ec-4a0b-9c86-8fceba243d6c
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: plucky-xenon.cdn.cachefleet.com
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- name: VN+Vinasite Viet NAM Company-2
-  type: vless
-  server: node1.csnety.com
-  port: 17009
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: c832c0
-  servername: v1-dy.ixigua.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: HK+Hong Kong Broadband Network
-  type: vless
-  server: hkhl1f6.87544899.xyz
-  port: 443
-  uuid: 58c14e54-6db0-46fb-a1fb-8f3184197d94
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: e7988d
-  servername: travelinluxe.discoverhongkong.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- client-fingerprint: firefox
-  name: CH+Ontario-2
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  server: 208.69.78.217
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SG+AWS EC2
-  network: tcp
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: CA+Cloudflare-7
-  network: ws
-  port: 443
-  server: 104.16.10.72
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: US+Hargray Communications Group
-  port: 443
-  server: 207.5.30.9
-  tls: true
-  type: http
-- name: GB+M247
-  type: ss
-  server: 146.70.61.37
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-  skip-cert-verify: true
-- name: US+AT&T Services
-  port: 443
-  server: 12.202.180.118
-  tls: true
-  type: http
-- name: SG+Vultr Holdings
-  type: trojan
-  server: 149.28.130.108
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: CA+CloudFlare
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: AE+Melbicom
-  network: ws
-  port: 14430
-  server: 95.174.68.188
-  type: vless
-  udp: true
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  skip-cert-verify: true
-- name: US+GTHost-4
-  type: trojan
-  server: 216.106.186.33
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  udp: true
-- name: CA+Cloudflare-8
-  network: ws
-  port: 443
-  server: 104.17.50.227
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: HK+VH Global
+- name: US+CloudFlare-2
   type: vmess
-  server: 103.240.197.112
-  port: 55314
-  uuid: bdb68629-1c6a-4eed-8083-7d4379a2dd52
+  server: 141.101.115.120
+  port: 443
+  uuid: 33aa57df-1c93-4318-9fce-e850437ee781
   alterId: 0
   cipher: auto
   udp: true
+  network: ws
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      Host: lg1.cfcdn3.xyz
+  tls: true
+- name: JP+Linode-2
+  type: vless
+  server: 172.104.81.253
+  port: 443
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pg/10086-dfc816f117c49173
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+- name: AU+Trellian Pty.
+  type: vmess
+  server: 12.72img.xyz
+  port: 443
+  uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 12.72img.xyz
+  tls: true
+- name: PL+M247
+  port: 443
+  server: 37.120.156.34
+  tls: true
+  type: http
+- name: US+Fastly-3
+  type: vless
+  server: 151.101.195.8
+  port: 80
+  uuid: c5f6bb6f-d451-447b-e9ce-6c3016deba77
+  udp: true
+  network: xhttp
   skip-cert-verify: true
-- name: IT+Tumpi Networks Srls-2
+- name: US+Level 3
+  password: humanity
+  port: 443
+  server: 8.6.112.206
+  sni: www.trusteeforward.com
+  type: trojan
+  udp: true
+- name: IT+Tumpi Networks Srls
   type: ss
-  server: 202.50.253.63
+  server: 202.50.253.81
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
   skip-cert-verify: true
-- name: TW+NOT TFN
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: LV+Sabiedriba ar ierobezotu atbildibu DELSKA Latvia
   port: 443
-  server: 160.187.100.109
-  sni: 160.187.100.109
-  type: hysteria2
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: HK+NetLab Global
-  network: tcp
-  port: 51279
-  reality-opts:
-    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
-    short-id: bb82c8
-  server: 154.21.203.106
-  servername: www.tesla.com
+  server: 185.219.159.16
   tls: true
-  type: vless
+  type: http
+- name: HK+LightNode-HK
+  type: ss
+  server: 38.60.203.155
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: a46a7f1876472552
   udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-- name: JP+Vultr Holdings
-  password: 96ab5cd282733fd4c312a61f972f330a
-  port: 443
-  server: vp3.yysyy.online
-  sni: ''
-  type: hysteria2
-- name: FR+Doprax ApS
-  network: tcp
-  port: 10002
-  server: 155.117.5.208
-  type: vless
-  udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
   skip-cert-verify: true
-- name: US+Akile
+- name: CH+Infomaniak Cloud
   type: vless
-  server: 156.229.162.171
-  port: 9443
-  uuid: 2751c1f3-0bb6-446e-ab26-e2384980705f
+  server: 83.228.210.214
+  port: 443
+  uuid: c5fdf480-3942-4fc9-9e73-f6899c24bda6
   udp: true
   tls: true
   reality-opts:
     public-key: ''
-    short-id: b390142456517acc
-  servername: www.amazon.com
+    short-id: 41f38b2355acf7bc
+  servername: ok.ru
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- client-fingerprint: chrome
-  name: HK+Hongkong Wen Jing Network-3
+- name: RU+Yandex.Cloud
+  type: vless
+  server: 51.250.27.60
+  port: 443
+  uuid: 4d94fa33-9462-48b4-b7de-8a2863560d19
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: a20d3ed244c76426
+  servername: sso.passport.yandex.ru
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: US+Spartan Host
+  port: 8443
+  server: 45.145.73.240
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
+  encryption: none
+  name: IL+NET
   network: tcp
-  port: 21001
+  port: 443
+  reality-opts:
+    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
+    short-id: 257420d9d430152a
+  server: 79.182.39.57
+  tls: true
+  type: vless
+  udp: true
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  xudp: true
+  servername: a0688bt.us4.h1clayd.click
+- name: GB+Iomart Hosting
+  type: ss
+  server: 130.185.144.4
+  port: 995
+  cipher: aes-256-gcm
+  password: OGEyYWJkY2Y4OTFjYTQ1MTFmZmE0OWI2MTA5ZDgz
+  udp: true
+  skip-cert-verify: true
+- name: HK+Pittqiao Network Information
+  network: ws
+  port: 8443
+  server: 103.148.73.173
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+- name: GB+AWS EC2
+  type: ss
+  server: 18.171.235.36
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: SG+Contabo Asia Private-3
+  type: ss
+  server: 154.26.132.38
+  port: 27885
+  cipher: chacha20-ietf-poly1305
+  password: ded718fcb2bb17b7
+  udp: true
+  skip-cert-verify: true
+- client-fingerprint: firefox
+  name: HK+Hongkong Wen Jing Network-2
+  network: tcp
+  port: 21003
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: b6dfd5c750351c57
+    short-id: eb9539689690d35c
   server: 103.238.227.211
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-- name: CA+Cloudflare-9
-  network: ws
+- name: US+Ace Data Centers
+  type: vless
+  server: 201.8.71.38
   port: 443
-  server: 104.21.0.87
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
+  uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: CA+Cloudflare-10
-  network: ws
-  port: 443
-  server: 104.16.10.185
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: HK+AWS EC2
-  type: vless
-  server: hk4-r.link-t7.com
-  port: 10129
-  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: movie
   tls: true
   reality-opts:
     public-key: ''
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-- name: TW+Tucd
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    short-id: e572b6579ea525d4
+  servername: 71b840t.de7.h1clayd.click
+- name: NL+Spacecore Solution
+  server: nl5.japancase.site
   port: 443
-  server: 103.115.109.49
-  sni: ''
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: Yw0T7qr5Wk3HCqV8h6V9N5wcInMxQ0XsxUuLV62_bEM
+    short-id: c498d5e4a069592c
+  servername: nl5.japancase.site
+  client-fingerprint: ios
+  network: tcp
+  udp: true
+- name: CA+Cloudflare-17
+  network: ws
+  port: 443
+  server: 104.19.33.25
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: US+Oracle Cloud Infrastructure
   type: hysteria2
-- name: NL+Hostes
-  type: vless
-  server: 94.183.152.153
+  server: starlink-ft.251313.xyz
   port: 443
-  uuid: 0f11b72f-1af1-4f0a-b992-87a8241d9213
+  password: https://xship.best
+  sni: xship.top
+- name: US+Glenforest School
+  port: 8090
+  server: 98.101.229.212
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: TW+Chunghwa Telecom-3
+  type: vmess
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 654168416355441.d6f54hd1j.cc
+  tls: true
+  servername: 654168416355441.d6f54hd1j.cc
+- name: KR+KOR VULTR-2
+  type: ss
+  server: 141.164.45.187
+  port: 9090
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
+  skip-cert-verify: true
+- name: IR+Asre Dadeha Asiatech
+  type: vless
+  server: 3633c37daa4e6400.tunvi.w-ert.org
+  port: 40287
+  uuid: 23ab3d0a-7626-48d5-99b8-8446b0187734
   udp: true
   tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 9a4d61e8c2f735b0
-  servername: www.bing.com
+  servername: ask.w-ert.org
   client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: JP+Urban Network Solutions SRL
-  password: STYyftThFn
-  port: 12765
-  server: freedom.chenlan.top
   skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-- client-fingerprint: chrome
-  name: SG+Oneprovider.com-3
+- name: SG+Akamai Technologies
+  type: vless
+  server: 172.237.91.206
+  port: 443
+  uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+    headers:
+      Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  tls: true
+  servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  client-fingerprint: chrome
+- name: DE+Play2go International
+  type: vless
+  server: 87.120.84.32
+  port: 8443
+  uuid: 93dac4b8-3879-4179-abdb-9666a9e2ca8d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  skip-cert-verify: true
+- name: CA+Cloudflare-18
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: ed189537-41de-4abe-9f8b-bb75d457722d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: lucky-cake-4f58.318-5ee.workers.dev
+  skip-cert-verify: true
+- name: TW+Chunghwa Telecom-4
+  type: vmess
+  server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
+  tls: true
+  servername: 24864168545164.d6f54hd1j.cc
+- name: DE+Hetzner-5
+  type: vless
+  server: 5.75.196.88
+  port: 19035
+  uuid: 40aead58-e990-4c9c-97bb-5846b5c8a9b7
+  udp: true
+  skip-cert-verify: true
+- name: SG+Alibaba.com Singapore E-Commerce Private
+  type: vless
+  server: 8.219.173.17
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /message?ed=2560
+    headers:
+      Host: edg-2oo.pages.dev
+  tls: true
+  servername: edg-2oo.pages.dev
+  client-fingerprint: chrome
+- name: US+Globaltelehost Corp
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+- name: RU+LLC Vektor Aiti Tekhnologii
+  type: vless
+  server: re-rus2.koska.pro
+  port: 443
+  uuid: c5f09ac5-d980-408d-a7fa-00cdb4d8ead4
+  udp: true
+  network: xhttp
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 8580939eb8d1ca17
+  servername: yandex.tr
+  client-fingerprint: firefox
+- name: CA+OVH Hosting
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+  skip-cert-verify: true
+- name: JP+Contabo Asia Private
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+  udp: true
+  skip-cert-verify: true
+- name: CN+shanghai wexchange network technology
+  type: ss
+  server: 121.46.230.232
+  port: 65443
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
+  skip-cert-verify: true
+- name: VN+Vinasite Viet NAM Company
+  type: vless
+  server: node1.csnety.com
+  port: 56533
+  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: d0be
+  servername: v1-dy.ixigua.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: SG+Dromatics Systems Pte
+  type: vless
+  server: 103.195.190.160
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: xy1ej.stream-node-us.danfeng.qzz.io
+  tls: true
+  servername: xy1ej.stream-node-us.danfeng.qzz.io
+  client-fingerprint: chrome
+- client-fingerprint: firefox
+  name: SG+HostHatch
   network: tcp
-  port: 21003
+  port: 2053
+  reality-opts:
+    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
+    short-id: cd7e85995ae2afc9
+  server: 45.132.75.213
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
+- name: FR+ONLINE
+  type: vless
+  server: 62.210.91.10
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: '01'
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+- name: IT+HZ Hosting
+  type: vless
+  server: 89.150.48.171
+  port: 443
+  uuid: 854eea7a-c834-4f62-9e17-ae63d1086f36
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 868419504747f6de
+  servername: pt1vless.instavpn.ru
+  client-fingerprint: chrome
+- client-fingerprint: chrome
+  name: SG+Oneprovider.com
+  network: tcp
+  port: 21002
   reality-opts:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: bab49aa4c2a88d27
+    short-id: 3ab8d93dd9b1a5be
   server: 511.150333.xyz
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
   uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-- name: SE+M247 Ltd Stockholm
-  password: None
-  port: 443
-  server: 146.70.242.146
-  tls: true
-  type: http
-- name: CA+Cloudflare-11
-  network: ws
-  port: 443
-  server: 104.21.70.21
-  servername: jp3.yohototo.top
-  tls: true
+- name: FI+1Cent Host
   type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: SE+Company 64d34573Gz9YjyWz-2
-  type: vless
-  server: 88.216.223.100
-  port: 443
-  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
+  server: 83.219.97.166
+  port: 30297
+  uuid: f3b47775-edd2-42f8-94ac-9d315ae5463d
   udp: true
   tls: true
   reality-opts:
     public-key: ''
-    short-id: ''
-  servername: smart.bachidze.com
-  client-fingerprint: firefox
+    short-id: 626617b8f5c8
+  servername: google.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-- name: NL+Greenhost-9
-  type: ss
-  server: 82.38.31.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: NL+FRC-AMS
-  port: 9443
-  server: 161.129.60.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: NL+Greenhost-10
-  type: ss
-  server: 82.38.31.183
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: NL+UAB Cherry Servers
+- name: FR+AWS EC2-2
   type: vless
-  server: app.betust.net
+  server: 35.180.76.81
+  port: 22222
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-19
+  password: humanity
   port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  server: 104.18.32.47
+  sni: www.calmlunch.com
+  type: trojan
   udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ef5d4ad5
-  servername: app.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: RU+Selectel
+- name: NL+FDCservers.net
   type: vless
-  server: apply.betust.net
+  server: panel.betust.net
   port: 443
   uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
   udp: true
   tls: true
   reality-opts:
     public-key: ''
-    short-id: b20168a5
-  servername: apply.betust.net
+    short-id: 8ece2039
+  servername: panel.betust.net
   client-fingerprint: firefox
   flow: xtls-rprx-vision
-- name: NL+Greenhost-11
-  type: ss
-  server: 82.38.31.192
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SG+AWS EC2-2
-  network: tcp
-  port: 10574
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
+- name: CA+Cloudflare-20
   type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: IT+INTERBUSINESS
-  password: None
+  server: 104.16.10.2
   port: 443
-  server: 95.229.15.89
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /tyxyws#telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: jp3.yohototo.top
+  tls: true
+  servername: jp3.yohototo.top
+- name: SG+AWS EC2-3
+  type: vless
+  server: funagfrdfs.alixxplay.com
+  port: 46105
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 28f5c1f8f98a
+  servername: www.lamer.com.sg
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: CA+Cloudflare-21
+  type: vless
+  server: 104.17.165.123
+  port: 8443
+  uuid: f85f60b1-2b96-49e9-8bde-b656d1516df0
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=#Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--?ed=512
+    headers:
+      Host: gx8rw8fz783ncefn332y7uyfsvb59o820mryrxu1cj19jiuuur.zjde5.de5.net
+  tls: true
+  servername: gx8rw8fz783ncefn332y7uyfsvb59o820mryrxu1cj19jiuuur.zjde5.de5.net
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: SG+Oracle Cloud Infrastructure
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: AU+Streamline Servers
+  port: 443
+  server: 103.62.50.130
   sub_tag: noCache
   tls: true
   type: http
-- name: CN+China Mobile Communications Group
-  password: None
-  port: 31343
-  server: 120.232.204.58
+- name: US+Host Department NJ
+  password: nwilryafgkyvuxauc8pz
+  port: 50875
+  server: 69.164.240.85
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: US+Online Banking Solutions
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  sni: 69.164.240.85
+  type: trojan
   udp: true
-  ws-opts:
-    headers:
-      Host: 38.110.1.246
-  skip-cert-verify: true
-- name: CA+Cloudflare-12
+- name: US+Level 3-2
   type: vless
-  server: ct.877774.xyz
+  server: 8.6.112.242
   port: 443
-  uuid: 563f3112-71fe-4a88-9055-23df3cbf708d
+  uuid: 64726966-0000-4000-8000-740000000000
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  tls: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  client-fingerprint: firefox
+- name: CA+Cloudflare-22
+  type: vless
+  server: 104.21.51.145
+  port: 8443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  network: ws
+  ws-opts:
+    path: /assets?ed=2048
+    headers:
+      Host: index.arcane509.workers.dev
+  tls: true
+  servername: INDEX.Arcane509.Workers.DEV
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: CA+Cloudflare-23
+  type: vless
+  server: us-lax.862400.xyz
+  port: 443
+  uuid: ea81763f-e534-4700-aa28-9ac98156771b
   udp: true
   network: ws
   ws-opts:
     path: /announcement?ed=2048
     headers:
-      Host: it-mil.xhs152.shop
+      Host: us-lax.862400.xyz
   tls: true
-  servername: it-mil.xhs152.shop
+  servername: us-lax.862400.xyz
   client-fingerprint: random
-- name: HK+Ipxo
-  password: XuMweB2PWs
-  port: 45464
-  server: 2.27.109.179
-  skip-cert-verify: true
-  sni: 2.27.109.179
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: US+Inception Hosting-2
+  name: US+Green Floid
   network: raw
   port: 443
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.89
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: MX+Ipxo
-  port: 443
-  server: 45.134.9.41
-  sni: 991cc80f13caf81d3426ddebb2da7f49-240d6105b6ef86f0.apache-iv.com
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: IN+Beafort
-  network: tcp
-  port: 40443
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  server: hydra.yokkastars.com
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-- name: CA+Cloudflare-13
-  password: humanity
-  port: 443
-  server: 162.159.91.211
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: DK+SERV.HOST GROUP
-  type: vless
-  server: 144.31.242.142
-  port: 443
-  uuid: f8bdf363-ff05-4fe6-a013-a5605266657e
-  udp: true
-  network: xhttp
-  tls: true
-  servername: 883f1393.con.rasterparcel.tech
-  client-fingerprint: firefox
-- name: SG+Tencent Cloud Computing
-  type: vless
-  server: 43.156.62.218
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-  tls: true
-  servername: jp3.yohototo.top
-- name: US+Datacamp-3
-  port: 9443
-  server: 149.88.21.140
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: JP+Alpha JP Sub1
-  password: 'null'
-  port: 443
-  server: fan.571589.xyz
-  sni: fan.571589.xyz
-  tls: true
-  type: http
-  username: 'null'
-- name: NL+Greenhost-12
-  type: ss
-  server: 82.38.31.198
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: RU+Kontel
-  type: vless
-  server: 185.186.143.7
-  port: 443
-  uuid: db4f6c31-ae15-43f1-811e-4ec34768952f
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 803c4bb737a161c0
-  servername: md-76.file-rkat.online
-  client-fingerprint: firefox
-- name: US+Cdnext NYC-2
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: RU+Selectel-2
-  type: vless
-  server: 81.163.22.194
-  port: 443
-  uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
-  udp: true
-  network: raw
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: b20168a5
-  servername: apply.betust.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- client-fingerprint: chrome
-  name: HK+Hongkong Wen Jing Network-4
-  network: tcp
-  port: 21004
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: 2f34703f16523c80
-  server: 103.238.227.211
+    public-key: xPnpkXu5qfwIArlHKvJsqKJnGdGbJK1tT2GzWMyLohA
+    short-id: 9c56fddf237e8eaf
+  server: 195.211.98.43
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-- name: US+GTHost-5
-  type: trojan
-  server: www.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: 242a3d8eee5e4ed1a6bfa4141d549a25
-  udp: true
-- name: SE+AltusHost
-  password: None
-  port: 443
-  server: 79.142.77.63
-  tls: true
-  type: http
-- name: HK+Hong Kong
-  password: admin
-  port: 8899
-  server: 47.242.19.215
-  skip-cert-verify: true
-  type: socks5
-  username: admin
+  uuid: 1b4b11d5-4c2d-4533-9a55-636757cdee94
 - client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc-90
-  name: FR+ipbnb
-  network: grpc
-  port: 443
+  flow: xtls-rprx-vision
+  name: JP+AWS EC2
+  network: tcp
+  port: 10583
   reality-opts:
-    public-key: 9X-tgXeFaqxURY0nGxFNdz9bpNIo7DTXHoWXpBqiOj0
-    short-id: cbc638acc8ac87
-  server: qtir1.dnetsolutions.ru
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 63959ed7-d26f-48dd-8c7b-ebdb6ea68535
-  xudp: true
-  servername: max.ru
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: US+FranTech Solutions
+  type: ss
+  server: 198.98.53.130
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
+  udp: true
+- name: HK+Alibaba Cloud - HK
+  type: vless
+  server: 47.238.155.3
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /avatar/about/blogs?ed=2560
+    headers:
+      Host: edg-2oo.pages.dev
+  tls: true
+  servername: edg-2oo.pages.dev
+  client-fingerprint: chrome
+- name: HK+Hong Kong Telecommunications-2
+  type: trojan
+  server: 219.76.13.181
+  port: 443
+  password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ
+  udp: true
+  tls: true
+  sni: arbettp.freetrade.link
+- name: US+GTHost-6
+  type: trojan
+  server: 169.197.140.214
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- name: RU+TimeWeb
+  type: vless
+  server: 217.198.12.29
+  port: 443
+  uuid: 613725ab-ca86-4d54-852e-a0bf45e812de
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 28e1270764a2464b
+  servername: alisa.kosmolet.xyz
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: CA+Cloudflare-24
+  type: vless
+  server: 104.27.56.173
+  port: 443
+  uuid: 50414e45-4c5f-5a45-5553-c67e6a7b76e9
+  udp: true
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/c67e6a7b76e9
+    headers:
+      Host: kwzu1yelu3ms.ouzrzee5u7rs.workers.dev
+  tls: true
+  servername: kwzu1yelu3ms.ouzrzee5u7rs.workers.dev
+  client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: CA+Cloudflare-25
+  network: ws
+  port: 443
+  server: nickgus.cc.cd
+  servername: nickgus.cc.cd
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
+- name: US+Bigcommerce
+  type: vless
+  server: 192.200.160.132
+  port: 8443
+  uuid: 4525c260-df3c-4f62-b8f1-f4f5f305694b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=#Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--Join--V2rayTun0--?ed=512
+    headers:
+      Host: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+  tls: true
+  servername: yyzsuabw9e3qd5ud7ihi5dxm96oglnsvr83cjojnm1efncfhr9ucordq.zjde5.de5.net
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: EG+LightNode-EG-2
+  type: ss
+  server: 38.54.59.38
+  port: 11205
+  cipher: chacha20-ietf-poly1305
+  password: 0cdde695873565ee
+  udp: true
+  skip-cert-verify: true
+- name: AU+Vultr Holdings
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- name: HK+Alibaba Cloud - HK-2
+  password: '111'
+  port: 11211
+  server: 47.243.173.50
+  skip-cert-verify: true
+  type: socks5
+  username: '111'
+- name: RU+Sbercloud
+  type: vless
+  server: 176.109.109.58
+  port: 8443
+  uuid: bc32639e-100a-40ad-b064-b0829a0bd197
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 6419bed7fd0a2cff
+  servername: tradingview.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: US+Akamai Technologies-2
+  type: vless
+  server: nian.001.url111.kcloud02.top
+  port: 15003
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 4c517b9e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: US+LogicWeb
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: CA+GTHost
+  type: trojan
+  server: 216.152.147.201
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- client-fingerprint: random
+  name: KR+HostHatch
+  network: tcp
+  port: 2053
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  server: 151.245.106.49
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+- alterId: 0
+  cipher: auto
+  name: NL+Zenex 5ive
+  network: tcp
+  port: 1234
+  server: 45.90.106.24
+  servername: 45.90.106.24
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+- name: JP+JAPAN-2
+  type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 45502
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+- name: SG+AWS EC2-4
+  type: vless
+  server: sg1-r.link-t7.com
+  port: 10036
+  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+- name: VN+Fastly Network Solution Company-5
+  type: ss
+  server: 103.186.154.249
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: GB+CLOUDFLARE
+  type: vless
+  server: 141.101.123.232
+  port: 443
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+  tls: true
+  servername: cfnode-11ivy8.pages.dev
+  client-fingerprint: chrome
+- name: NL+GTHost
+  type: trojan
+  server: 66.163.127.215
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  sni: courses.indyourperfectremotetechjobfromthecomfortofhome.com
+- name: JP+Oracle Cloud Infrastructure-2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  port: 50160
+  server: 138.3.208.26
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: DE+IDC Cube
+  type: vless
+  server: 188.220.67.224
+  port: 2087
+  uuid: 90da514d-8888-4a53-912e-ac2981c8c6ee
+  udp: true
+  network: ws
+  ws-opts:
+    path: /8f2690e2d016
+    headers:
+      Host: ''
+  skip-cert-verify: true
+- name: CA+Cloudflare-26
+  type: vless
+  server: 172.67.134.136
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c300000003
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: VN+Fastly Network Solution Company-6
+  type: ss
+  server: 103.186.154.62
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: US+Baykov Ilya Sergeevich
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-27
+  type: vless
+  server: 172.67.214.25
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  network: ws
+  ws-opts:
+    path: /assets?ed=2048
+    headers:
+      Host: index.arcane509.workers.dev
+  tls: true
+  servername: INDEX.Arcane509.Workers.DEV
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- type: vless
+  name: US+Render
+  server: 216.24.57.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
+- name: HK+BGP Network
+  type: vless
+  server: 27.50.48.8
+  port: 443
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2-8vx.pages.dev
+  tls: true
+  client-fingerprint: qq
+- name: LT+SERV.HOST GROUP
+  type: ss
+  server: 144.31.243.2
+  port: 16015
+  cipher: chacha20-ietf-poly1305
+  password: J1InuU6QRT5JOh1mQfkjU2
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-28
+  type: vless
+  server: 104.17.56.116
+  port: 443
+  uuid: 9d847ad3-1896-48f9-b89c-13fe345e2bff
+  udp: true
+  network: xhttp
+  tls: true
+  servername: cho.chonon.sbs
+  client-fingerprint: chrome
+- name: US+3hcloud
+  server: 104.167.198.141
+  port: 9010
+  type: vless
+  uuid: d86bb8e6-ba84-96a9-1346-5af07bb85e79
+  tls: false
+  encryption: mlkem768x25519plus.native.0rtt.cQRUHo0p5mmP3i6Q9li2sGOm9LGKXmd_tzl6XdTrVQ4
+  network: ws
+  ws-opts:
+    path: /system-health-monitoring-portal-a7e32f91
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-29
+  type: vless
+  server: 104.16.72.30
+  port: 443
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  udp: true
+  network: ws
+  ws-opts:
+    path: /xiron
+    headers:
+      Host: xstack.mahanfixe.workers.dev
+  tls: true
+  servername: xstack.mahanfixe.workers.dev
+  client-fingerprint: chrome
+- name: PL+Global Internet Solutions
+  type: ss
+  server: 77.83.246.74
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: BcqAH98TZvAocGMYkQzyc1
+  udp: true
+- name: DE+dataforest
+  type: vless
+  server: 194.238.79.242
+  port: 443
+  uuid: 2d167f8d-529b-00cb-bc0a-a01d402d9fb9
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 0d44312db16a14db
+  servername: unip.russsport-life.org
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+- name: US+WPEngine-2
+  type: vless
+  server: news.zoom.us
+  port: 2087
+  uuid: 0ef68b97-f878-4cea-b756-c56ea3632851
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.vkehi.store
+  tls: true
+  servername: free.vkehi.store
+  client-fingerprint: android
+  skip-cert-verify: true
 - name: JP+Alibaba.com Singapore E-Commerce Private
   password: usqmqUKJFIlCmvkCNSY64L3k
   port: 443
   server: 8.209.247.109
   sni: bing.com
   type: hysteria2
+- name: US+Fastly-4
+  type: vless
+  server: 151.101.169.242
+  port: 80
+  uuid: TELEGRAM-CONFiGLiNE-125
+  udp: true
+  network: ws
+  ws-opts:
+    path: /telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE?ed=1024
+    headers:
+      Host: barayeazaadi.global.ssl.fastly.net
+  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: JP+AWS EC2-2
+  network: tcp
+  port: 19645
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: KR+KOR VULTR-3
+  type: ss
+  server: 141.164.45.187
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+  skip-cert-verify: true
+- name: SG+DigitalOcean-2
+  type: ss
+  server: 68.183.235.240
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+  skip-cert-verify: true
+- name: SG+Vultr Holdings
+  type: vless
+  server: sg003.zestapp778.com
+  port: 443
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  udp: true
+  tls: true
+  servername: sg003.zestapp778.com
+  client-fingerprint: chrome
+- name: US+Lite Info
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US+AWS EC2
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Xxlyh5wfeoNPedBBkb8Sq8rjGEwmNHfE-sVyU7pJEnA
+    short-id: 16217b4ca76913e2
+  server: us3.oh-node.com
+  servername: download-porter.hoyoverse.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4bcf0215-f07e-4a0b-97e2-7464a565e8f1
+- name: CA+Cloudflare-30
+  type: trojan
+  server: 172.64.152.241
+  port: 443
+  password: xhl549341
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  tls: true
+  sni: tro.baiyi.cloudns.org
+  client-fingerprint: chrome
+  alpn:
+  - h3
+- name: AU+EdgeCenter
+  type: vless
+  server: 37.9.54.98
+  port: 443
+  uuid: c5c9d8ec-6c95-4f84-a395-de41ef895f34
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 9d8307f6
+  servername: download.cdn.yandex.net
+  client-fingerprint: chrome
+- name: HK+BGP Network-2
+  type: vless
+  server: 27.50.48.13
+  port: 443
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vless2-8vx.pages.dev
+  tls: true
+  servername: vless2-8vx.pages.dev
+- name: CA+Cloudflare-31
+  type: vless
+  server: 172.66.47.45
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: wk1.f1w.de5.net
+  tls: true
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: true
+- name: PL+OVH Sp. z o. o-2
+  type: ss
+  server: pl134.vpnbook.com
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 6heexyz
+  udp: true
+- name: CA+Cloudflare-32
+  password: humanity
+  port: 443
+  server: 172.67.231.254
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: TR+Netlen Internet Hizmetleri Ltd. Sti
+  type: vmess
+  server: 153.52.92.43
+  port: 46466
+  uuid: '@Nitro_Skybot'
+  alterId: 0
+  cipher: auto
+  udp: true
+  ws-opts:
+    path: /
+    headers:
+      Host: bazine.pi10.ir
+  skip-cert-verify: true
+- name: US+Level 3-3
+  type: vless
+  server: 8.35.211.188
+  port: 8443
+  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn-1fj.pages.dev
+  tls: true
+  servername: vpn-1fj.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: US+Vapeline Technology
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+  udp: true
+- name: DE+VPN Consumer Frankfurt
+  port: 9002
+  server: 158.173.154.3
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: SG+Linode
+  network: tcp
+  port: 443
+  server: 139.162.27.96
+  servername: aka.ms
+  tls: true
+  type: vless
+  udp: true
+  uuid: f1178fbe-1420-4eef-b087-4f33b32b4a19
+- name: VN+Fastly Network Solution Company-7
+  type: ss
+  server: 103.186.154.164
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-33
+  type: vless
+  server: 172.66.44.124
+  port: 443
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: FI+H2nexus
+  type: vless
+  server: 85.192.48.235
+  port: 443
+  uuid: 4154b4df-d253-4157-8508-eba52f9e6a3c
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: '50'
+  servername: fin.eu-ffast.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: CA+Cloudflare-34
+  type: trojan
+  server: chatgpt.com
+  port: 443
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  udp: true
+  network: ws
+  ws-opts:
+    path: /7x-tj-cdn
+    headers:
+      Host: cdn.config7x.site
+  tls: true
+  sni: cdn.config7x.site
+- name: CA+Cloudflare-35
+  password: humanity
+  port: 443
+  server: 104.21.103.254
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: CA+Cloudflare-36
+  type: vless
+  server: 104.21.41.86
+  port: 443
+  uuid: 26086552-5b79-d167-dd18-1ea000000000
+  udp: true
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev
+  tls: true
+  servername: lczoox-b5gygc-24w8tc.rozhaghadri.workers.dev
+  client-fingerprint: chrome
+- name: US+Box
+  type: vless
+  server: 103.116.7.100
+  port: 2087
+  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: proxy-1cu.pages.dev
+  tls: true
+  servername: proxy-1cu.pages.dev
+  client-fingerprint: android
+  skip-cert-verify: true
+- name: FI+Globalit DOO
+  type: vless
+  server: server.slavkiti.monster
+  port: 443
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 8325360e8bd2
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: IT+Tumpi Networks Srls-2
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  skip-cert-verify: true
+- name: VN+Fastly Network Solution Company-8
+  type: ss
+  server: 103.186.154.22
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: NL+Greenhost-3
+  type: ss
+  server: 82.38.31.211
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  skip-cert-verify: true
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: DE+Intezio Worldwide
@@ -1558,177 +2722,158 @@ proxies:
   type: vless
   udp: true
   uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-- name: US+Cdnext LAX-2
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: DE+NETCUP-GMBH
-  password: miaoge110
-  port: 51511
-  server: 5.45.100.100
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: GB+Clouvider
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
-  tls: true
+- name: BZ+Inter Networks
   type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  name: SG+Oneprovider.com-4
-  network: tcp
-  port: 21001
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: a51c3ccb2320024a
-  server: 510.150333.xyz
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-- name: US+Palmetto Surgery Center
-  port: 8090
-  server: 24.142.229.178
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: US+GTHost-6
-  type: trojan
-  server: 169.197.140.214
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: ZA+Microsoft Azure Cloud
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  udp: true
-  skip-cert-verify: true
-- name: RU+route
-  type: vless
-  server: 107.150.93.22
-  port: 443
-  uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
-  udp: true
-  network: xhttp
-  tls: true
-  servername: 53de05e9.ferrin.uk
-  client-fingerprint: firefox
-- name: NL+Greenhost-13
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: NL+Greenhost-14
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  skip-cert-verify: true
-- name: KR+Oracle Cloud Infrastructure-2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  port: 50160
-  server: 152.67.200.82
-  skip-cert-verify: true
-  sni: 152-67-200-82.liao.kdns.fr
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US+Inception Hosting-3
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.163
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: CA+Cloudflare-14
-  network: ws
-  port: 443
-  server: 104.21.34.106
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: CA+Cloudflare-15
-  network: ws
-  port: 443
-  server: 104.16.10.104
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- alterId: 0
-  cipher: auto
-  name: CA+Cloudflare-16
-  network: ws
-  port: 443
-  server: nickgus.cc.cd
-  servername: nickgus.cc.cd
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 56eee791-99e8-4e11-9d27-539b46c14368
-- name: CA+Cloudflare-17
-  network: ws
-  port: 443
-  server: 104.16.10.48
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: KR+Oracle Cloud Infrastructure-3
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  port: 50160
-  server: 152.69.231.175
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-- name: CL+Vultr Holdings
-  type: trojan
-  server: 64.176.7.205
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: TW+Chunghwa Telecom-2
-  type: vless
-  server: 60.248.219.53
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  server: 45.131.209.130
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
   udp: true
   network: ws
   ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    path: /57ba2ab1
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
+      Host: ovhwuxian.pai50288.uk
   tls: true
-  servername: ty986gfazs.cainiaohub.xyz
+  servername: ovhwuxian.pai50288.uk
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: CA+Cloudflare-37
+  type: vless
+  server: 104.16.10.235
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+- name: HK+Cogento Backbone
+  port: 39811
+  server: 176.111.37.216
+  type: http
+  skip-cert-verify: true
+- name: FR+YottaSrc
+  server: uk.zarqivo.ir
+  port: 2053
+  type: vless
+  uuid: c25c2329-3038-4193-9b0c-2e115630c723
+  tls: true
+  encryption: mlkem768x25519plus.native.0rtt.woF94Ad5-2zSxgXgjcNStC2CeHOpje_TUapVXAcEIVM
+  servername: Filano.zarqivo.ir
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: uk.zarqivo.ir
+    mode: auto
+  udp: true
+  skip-cert-verify: true
+- name: PL+Ethernity Network
+  type: vless
+  server: 94.183.209.58
+  port: 443
+  uuid: 78791f9e-fe09-4d4f-88ec-895764bae0d6
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pl2.lckdwn.ru
+- name: TH+LightNode-TH
+  type: trojan
+  server: th001.zestapp778.com
+  port: 33079
+  password: 5t6i121em5lkmsmk
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-38
+  type: vless
+  server: 104.16.3.98
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+  tls: true
+  servername: u.srilankangrill.online
+- name: SG+Rackip Consultancy Pte.
+  type: vless
+  server: 134.122.154.210
+  port: 443
+  uuid: 7f549a50-4655-46b6-962d-183cfc532fc9
+  udp: true
+- name: ID+PT Link Data Sumber Barokah
+  port: 443
+  server: 103.86.117.202
+  tls: true
+  type: http
+- name: CA+CloudFlare-4
+  type: vless
+  server: 188.114.96.9
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    headers:
+      Host: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  tls: true
+  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  client-fingerprint: chrome
+- name: CA+Cloudflare-39
+  type: vless
+  server: 198.41.208.22
+  port: 2095
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ripbdigi5hdb
+    headers:
+      Host: index.arcane509.workers.dev
+  skip-cert-verify: true
+- name: DE+Doprax ApS
+  network: tcp
+  port: 10002
+  server: 178.83.45.226
+  type: vless
+  udp: true
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  skip-cert-verify: true
+- name: SG+Contabo Asia Private-4
+  type: ss
+  server: 154.26.132.38
+  port: 16922
+  cipher: chacha20-ietf-poly1305
+  password: 42d2b47181a32de7
+  udp: true
+  skip-cert-verify: true
+- name: TW+NOT TFN-2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  sni: css.rbxcdn.com
+  type: hysteria2
+- name: FI+H2nexus-2
+  type: vless
+  server: 45.144.52.65
+  port: 443
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 7271129440ade8fa
+  servername: web.moscowvibe.fyi
+  flow: xtls-rprx-vision
 - name: JP+Akari Networks
   type: trojan
   server: 185.220.238.77
@@ -1744,940 +2889,280 @@ proxies:
   sni: 185.220.238.77
   client-fingerprint: chrome
   skip-cert-verify: true
-- name: CH+Ontario-3
-  type: trojan
-  server: 208.69.78.19
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: AU+Oracle Cloud Infrastructure
-  password: None
-  port: 443
-  server: 159.13.44.228
-  tls: true
-  type: http
-- name: US+Globaltelehost Corp
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ''
-  skip-cert-verify: true
-- alterId: 0
-  cipher: auto
-  name: DE+OVH
-  network: tcp
-  port: 1234
-  server: 162.19.204.71
-  servername: supervpn.super.com
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- name: HK+AWS EC2-2
+- name: HK+SIMCENTRIC
   type: vless
-  server: hk1-r.link-t7.com
-  port: 10126
-  uuid: 57A71E7F-E6B5-42BF-A4A6-47ECCBE7F50C
+  server: 182.16.62.14
+  port: 443
+  uuid: 5bfa133a-76d4-425c-b8d4-72cd2ff18198
   udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
   tls: true
   reality-opts:
     public-key: ''
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
+    short-id: f76d89d0
+  servername: cloudflare.com
   client-fingerprint: chrome
-- name: NL+Greenhost-15
+- name: CA+OVH Hosting-2
+  type: vless
+  server: 54.39.96.233
+  port: 8080
+  uuid: 20b98028-53c9-4f76-9bc9-b6b16b8a9152
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 2b30
+  servername: icloud.com
+  flow: xtls-rprx-vision
+- name: FR+OVH-2
+  type: vless
+  server: 137.74.16.237
+  port: 443
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
+  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+- name: SE+Vultr
+  type: vless
+  server: 70.34.214.175
+  port: 13369
+  uuid: 70ec317d-d66d-4f9d-955a-fcd58678ce4c
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: d868e6
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: US+Fastly-5
+  type: vless
+  server: 146.75.57.111
+  port: 443
+  uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_a11ia.global.ssl.fastly.net.
+  tls: true
+  servername: firefox.com
+- name: US+OVH US-2
   type: ss
-  server: 82.38.31.181
+  server: 15.204.246.111
+  port: 5498
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+  udp: true
+  skip-cert-verify: true
+- name: KR+Tencent Cloud Computing
+  type: vless
+  server: 43.128.130.45
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: xy1ej.stream-node-us.danfeng.qzz.io
+  tls: true
+  servername: xy1ej.stream-node-us.danfeng.qzz.io
+  client-fingerprint: firefox
+- name: PL+Global Internet Solutions-2
+  type: ss
+  server: 77.83.246.227
+  port: 39830
+  cipher: chacha20-ietf-poly1305
+  password: 3LpAHcNSolEZ9AjdEN4miA
+  udp: true
+  skip-cert-verify: true
+- name: HK+Alibaba Cloud - HK-3
+  type: vmess
+  server: n1744454498.lie5d.cyou
+  port: 443
+  uuid: cd26abca-0d84-43d0-8f69-9c1143b569e9
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1744454498.lie5d.cyou
+  tls: true
+  servername: n1744454498.lie5d.cyou
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US+OVH US-3
+  network: tcp
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: ww13.levikogjgfdd.ir
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: NL+Greenhost-4
+  type: ss
+  server: 82.38.31.201
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
   skip-cert-verify: true
-- name: EE+EstNOC
-  password: None
-  port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: SG+AWS EC2-3
-  type: vless
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: NL+TELUS Communications
+  type: ss
+  server: 108.181.58.239
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: CJmTCCx7Ltud
   udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-40
+  type: vless
+  server: 104.21.108.4
+  port: 443
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
   tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 28f5c1f8f98a
-  servername: www.lamer.com.sg
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
   client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: MX+Lightnode-MX
-  password: 5t6i121em5lkmsmk
-  port: 15083
-  server: mx001.zestapp778.com
-  skip-cert-verify: true
-  sni: mx001.zestapp778.com
-  type: trojan
-  udp: true
-- name: US+GlobalTeleHost Corp.-2
-  type: trojan
-  server: 167.88.61.20
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: JP+AWS EC2
-  network: tcp
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- name: CA+OVH Hosting-2
+- name: GB+M247
   type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-  udp: true
-  skip-cert-verify: true
-- name: DE+Digital Hosting Provider
-  port: 443
-  server: 193.233.75.115
-  tls: true
-  type: http
-- name: SG+DigitalOcean-3
-  type: ss
-  server: 68.183.227.236
+  server: 146.70.61.37
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
   udp: true
   skip-cert-verify: true
-- name: JP+JAPAN
-  type: trojan
-  server: ench-snet-app.w-ctrip.cn
-  port: 45502
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  udp: true
-  skip-cert-verify: true
-- name: US+Akamai Technologies-4
+- name: CA+Cloudflare-41
   type: vless
-  server: nian.001.url111.kcloud02.top
-  port: 15007
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 2c4d005b
-  servername: www.bing.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: NL+Floating
-  type: vless
-  server: 195.189.98.197
+  server: 104.16.111.102
   port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: b7a5c406
-  servername: api37.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: RU+ESTNOC-GLOBAL
-  port: 9443
-  server: 192.159.101.174
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: DE+IT Hostline
-  type: vless
-  server: images.paner-145.online
-  port: 443
-  uuid: aa09ada3-ad33-4668-9c1a-6af275272567
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: images.paner-145.online
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: KR+Sudogwongangnambonbujang
-  password: Og%3D%3D
-  port: 1090
-  server: 121.169.46.116
-  type: socks5
-  udp: true
-  username: Og%3D%3D
-  skip-cert-verify: true
-- name: NL+CDN77
-  password: ''
-  port: 443
-  server: 149.36.51.129
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: PL+OVH Sp. z o. o
-  type: ss
-  server: 54.36.174.140
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: GB+M247-2
-  password: None
-  port: 443
-  server: 37.120.233.18
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: GB+AWS EC2
-  type: ss
-  server: 35.179.104.254
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: JP+Toko Communications
-  type: vless
-  server: 103.76.85.242
-  port: 443
-  uuid: cd578a0f-4b18-43ce-9a38-52d5919fd4bc
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 7b160d08e2213a6d
-  servername: www.apple.com
-  client-fingerprint: safari
-  flow: xtls-rprx-vision
-- name: FR+DataCamp
-  port: 9443
-  server: 213.139.9.142
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: NL+Greenhost-16
-  type: ss
-  server: 82.38.31.195
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: CY+HTTP Planitis Communications
-  port: 443
-  server: 213.207.130.34
-  tls: true
-  type: http
-- name: AU+Streamline Servers
-  port: 443
-  server: 103.62.50.130
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  name: HK+Hongkong Wen Jing Network-5
-  network: tcp
-  port: 21003
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: eb9539689690d35c
-  server: 526.150333.xyz
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: CA+Cloudflare-18
-  network: ws
-  port: 443
-  server: 172.64.229.21
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    max-early-data: 2048
-    path: /ws
-  xudp: true
-  client-fingerprint: chrome
-  servername: vmess.lbw666.dpdns.org
-- name: NL+Threatoff
-  type: vless
-  server: 94.249.198.211
-  port: 43000
-  uuid: 97462b18-1836-4e4f-b0fb-5c84d38a2e9d
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: b62ac375
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: KZ+PS Internet Company
-  type: vless
-  server: 85.202.192.131
-  port: 34033
-  uuid: 2cb6a5d1-0165-4bc2-aff2-832672160c56
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: a1fdf7b7bebade41
-  servername: splitter.wb.ru
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: CA+Cloudflare-19
-  network: ws
-  port: 443
-  server: 104.19.12.94
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: KR+AWS EC2
-  network: tcp
-  port: 13672
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: DE+Threatoff
-  network: tcp
-  port: 20065
-  server: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  xudp: true
-  servername: 875f9760-be1a-4dfe-8c2b-3f080b5ab158.node1.runet.network
-  skip-cert-verify: true
-- name: LT+IPXO-2
-  type: vless
-  server: app26.betust.net
-  port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: d44d6d46
-  servername: app26.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: US+NetCrew
-  type: vless
-  server: 179.255.124.81
-  port: 50159
-  uuid: e08ff179-2c35-4a95-a8f8-6b2f7bd315ef
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 55b7664bb39e6886
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: US+Lite Info
-  type: ss
-  server: 193.151.160.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: NL+Zappie Host
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- name: KR+Sangsangneteuwokeutekeunolrojijangchunrimitideu
-  network: none
-  port: 31157
-  server: 112.169.175.199
-  type: vless
-  udp: true
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-  skip-cert-verify: true
-- name: TW+Chunghwa Telecom-3
-  password: 0324fbc29561
-  port: 443
-  server: er8u54dh.df6h451rh.xin
-  sni: px.ads.linkedin.com
-  type: anytls
-  udp: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: GB+Alibaba.com Singapore E-Commerce Private
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  port: 443
-  server: 8.211.196.252
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US+OVH US
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.214
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: FR+Contabo
-  type: vless
-  server: 161.97.160.224
-  port: 443
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
-  udp: true
-  network: raw
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: e6
-  servername: passport.yandex.ru
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: NL+Greenhost-17
-  type: ss
-  server: 82.38.31.46
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  skip-cert-verify: true
-- name: PL+OVH Sp. z o. o-2
-  type: ss
-  server: pl140.vpnbook.com
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 6heexyz
-  udp: true
-- name: CA+Cloudflare-20
   network: ws
-  port: 2053
-  server: 172.67.199.126
-  servername: fast.145779.xyz
-  skip-cert-verify: true
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
   tls: true
+  servername: jp3.yohototo.top
+  client-fingerprint: safari
+- name: NL+Scaleway-2
   type: vless
+  server: 51.158.206.8
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   udp: true
-  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
-- name: FI+Fibersa
-  type: vless
-  server: one.alpheratzz.org
-  port: 8443
-  uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
-  udp: true
-  network: raw
   tls: true
-  servername: api-6aeb73b7.adhil.uk
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-- name: ID+PT. INDUSTRI KREATIF DIGITAL
-  port: 443
-  server: 178.248.73.58
-  sub_tag: noCache
-  tls: true
-  type: http
-  udp: true
-- name: US+GTHost-7
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  udp: true
-- name: RU+JSC "TIMEWEB"
-  type: vless
-  server: 200.169.184.140
-  port: 443
-  uuid: 7feec880-56f0-4425-9313-e2e340206284
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: glush.de1.v1
-  tls: true
-  servername: basterdym.asia
+  reality-opts:
+    public-key: ''
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-- name: TW+Chunghwa Telecom-4
-  password: 0a9f1f5a397bd427
+  flow: xtls-rprx-vision
+- name: CA+Cloudflare-42
+  type: vless
+  server: www.codex2api.com
   port: 443
-  server: 125.227.86.45
-  sni: tg.freecodes
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  udp: true
+  network: xhttp
+  tls: true
+  servername: 667a1552s552.fuhuovps.xyz
+- name: US+GlobalTeleHost Corp.
+  type: trojan
+  server: 167.88.61.20
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- name: CA+Cloudflare-43
+  type: vless
+  server: 104.17.112.90
+  port: 2053
+  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn-1fj.pages.dev
+  tls: true
+  servername: vpn-1fj.pages.dev
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: RU+JSC "TIMEWEB"-2
+  server: 201.34.142.108
+  port: 443
+  type: vless
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  tls: true
+  servername: 201.34.142.108
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /assets/nlrelay01/
+    mode: auto
+  udp: true
+- name: EG+LightNode-EG-3
+  type: ss
+  server: 38.54.59.38
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 0cdde695873565ee
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-44
+  type: trojan
+  server: 104.25.239.113
+  port: 2053
+  password: gHQP0D7D15
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  tls: true
+  sni: marvdasht.phonecomparisonblog.org
+  client-fingerprint: ios
+  skip-cert-verify: true
+- name: CA+Cloudflare-45
+  password: humanity
+  port: 443
+  server: 104.16.7.70
+  sni: www.calmlunch.com
   type: trojan
   udp: true
-- name: NL+VPN Consumer Amsterdam
-  type: ss
-  server: 158.173.20.208
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: HK+Sun Network-2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  sni: 202.146.222.89
-  type: hysteria2
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: US+Inception Hosting-4
+  name: US+Inception Hosting
   network: tcp
   port: 443
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  server: 169.40.42.74
+  server: 169.40.42.231
   servername: yahoo.com
   tls: true
   type: vless
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: US+Sophidea
-  port: 443
-  server: carolinafreigh.fun
-  tls: true
-  type: http
-  sni: carolinafreigh.fun
-- alterId: 0
-  cipher: auto
-  name: DE+OVH-2
-  network: tcp
-  port: 1234
-  server: 141.95.65.9
-  servername: 141.95.65.9
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-- name: US+SERV.HOST GROUP
-  network: grpc
-  port: 443
-  server: 91.196.33.157
-  servername: b.us-1.bnc-gt.co.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: NL+Scaleway-2
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.8
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: SG+SimplerCloud
-  type: vless
-  server: 103.25.202.25
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-  tls: true
-  servername: u.srilankangrill.online
-  client-fingerprint: ios
-- name: LU+ESTNOC-GLOBAL
-  password: None
-  port: 443
-  server: 185.221.132.226
-  tls: true
-  type: http
-- name: BY+Idea Host
-  network: ws
-  port: 14430
-  server: 178.172.227.228
-  type: vless
-  udp: true
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SG+Akamai Technologies
-  network: tcp
-  port: 447
-  reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  server: 172.237.88.103
-  servername: netflix.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-- client-fingerprint: random
-  name: SG+Oneprovider.com-5
-  network: tcp
-  port: 21004
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: 4e0418d648f86141
-  server: 510.150333.xyz
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-- name: DE+Lite Info
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- name: EE+1Cent Host
-  type: vless
-  server: static.paner-145.online
-  port: 443
-  uuid: aa09ada3-ad33-4668-9c1a-6af275272567
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: static.paner-145.online
-  client-fingerprint: edge
-  flow: xtls-rprx-vision
-- name: RU+Selectel-3
-  type: vless
-  server: join.betust.net
-  port: 443
-  uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 351224a7
-  servername: join.betust.net
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: NL+Greenhost-18
-  type: ss
-  server: 82.38.31.215
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: SE+Hostup
-  type: vless
-  server: 0ef47cx.se4.h1clayd.click
-  port: 443
-  uuid: f15a2e25-6859-4bcc-b4c4-a14bb8ae0fbb
-  udp: true
-  network: xhttp
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 356cc54d885a4036
-  servername: 0ef47cx.se4.h1clayd.click
-  client-fingerprint: firefox
-- name: SC+RAPIDSEEDBOX-2
-  password: humanity
-  port: 443
-  server: 45.130.125.126
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: US+Lite Info-2
-  type: ss
-  server: 45.86.51.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- name: CA+Cloudflare-21
-  network: ws
-  port: 443
-  server: 104.17.50.53
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: NL+Scaleway-3
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: ''
-  server: 51.158.206.25
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: GB+M247 Europe SRL
-  password: None
-  port: 443
-  server: 185.163.110.194
-  tls: true
-  type: http
-- name: SG+Linode
-  network: ws
-  port: 2096
-  server: 139.162.27.96
-  servername: free-server.techsonic.dev
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-- name: CA+Cloudflare-22
-  network: ws
-  port: 443
-  server: 104.17.210.74
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: FR+Melbikomas UAB-2
-  type: vless
-  server: 103.82.101.94
-  port: 443
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 1a2b3c4d
-  servername: www.porsche.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: KR+KOR VULTR
-  type: trojan
-  server: kr002.zestapp778.com
-  port: 48851
-  password: 5t6i121em5lkmsmk
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SG+AWS EC2-4
-  network: raw
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-- name: VN+Vinasite Viet NAM Company-3
-  type: vless
-  server: node1.csnety.com
-  port: 37515
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: b99cb140
-  servername: amd.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: JP+Ucloud Information Technology
-  password: ''
-  port: 10808
-  server: 101.36.104.46
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: EE+TAKEHOST OU
-  type: vless
-  server: 31.77.236.113
-  port: 443
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 1a2b3c4d
-  servername: files.porsche.com
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: IN+Contabo-2
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  skip-cert-verify: true
-- name: GB+M247-3
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: JP+AWS EC2-2
-  network: tcp
-  port: 19645
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: DE+Doprax ApS
-  network: tcp
-  port: 2052
-  server: edge10.cyrionflare.com
-  type: vless
-  udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-  skip-cert-verify: true
-- name: TW+Chunghwa Telecom-5
-  type: vmess
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 654168416355441.d6f54hd1j.cc
-  tls: true
-  servername: 654168416355441.d6f54hd1j.cc
 - name: DE+Doprax ApS-2
-  network: tcp
-  port: 10002
-  server: 178.83.45.226
-  type: vless
-  udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-  skip-cert-verify: true
-- name: RO+M247 Europe SRL
-  password: 'null'
-  port: 9002
-  server: 193.176.84.22
-  skip-cert-verify: true
-  sub_tag: noCache
-  tls: true
-  type: http
-  username: 'null'
-- cipher: chacha20-ietf-poly1305
-  name: FI+POWER-SERVERS-ROLE-ORG
-  password: x2A6AsyZ-rAllz0wbKHzWA
-  port: 8388
-  server: 178.253.16.185
-  type: ss
-  udp: true
-  skip-cert-verify: true
-- name: US+ReliableSite.Net
-  type: ss
-  server: ruot.ayucloudservices.nl
-  port: 22073
-  cipher: aes-256-gcm
-  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
-  udp: true
-  skip-cert-verify: true
-- name: HK+Sun Network-3
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  sni: 202.146.222.174
-  type: hysteria2
-- name: PL+1Cent Host
-  type: vless
-  server: 144.31.171.86
-  port: 443
-  uuid: 0221981f-3517-4dcb-8f7d-5f3d89a81717
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: play.paner-145.online
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: DE+Doprax ApS-3
   network: tcp
   port: 10002
   server: connect.hondamotor.site
@@ -2685,213 +3170,122 @@ proxies:
   udp: true
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
   skip-cert-verify: true
-- name: JP+ACE SG
-  network: ws
+- name: US+Hargray Communications Group
   port: 443
-  server: 43.170.8.95
-  servername: jp3.yohototo.top
+  server: 207.5.30.9
   tls: true
-  type: vless
+  type: http
+- name: NL+Greenhost-5
+  type: ss
+  server: 193.29.139.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: RU+Masterhost
+  skip-cert-verify: true
+- name: JP+JAPAN-3
+  type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 45503
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+- name: PL+BV Na18
+  type: ss
+  server: 194.61.121.93
+  port: 7538
+  cipher: chacha20-ietf-poly1305
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  udp: true
+  skip-cert-verify: true
+- name: DE+dataforest-2
   type: vless
-  server: 87.242.127.237
-  port: 12443
-  uuid: 769f34f0-1500-488f-b414-03bc90666502
+  server: 5.175.161.195
+  port: 443
+  uuid: 3d87029f-b55b-487d-aea6-6049c8668ff1
   udp: true
   tls: true
   reality-opts:
     public-key: ''
-    short-id: 78c8c6801d59cc19
-  servername: catalog.mimowhat.online
-  client-fingerprint: firefox
+    short-id: 082e4d45beed1487
+  servername: wifi12.jzxc.digital
   flow: xtls-rprx-vision
-- name: US+GTHost-8
-  type: trojan
-  server: 170.101.101.131
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: VN+Fastly Network Solution Company-9
+  type: ss
+  server: 103.186.155.25
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- client-fingerprint: chrome
+  skip-cert-verify: true
+- name: SG+Railway
+  type: vless
+  server: 153.52.255.116
+  port: 443
+  uuid: 37fb2e77-d650-412e-a1d4-ce48b96e18c1
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: panel-production-97b8.up.railway.app
+  tls: true
+  servername: panel-production-97b8.up.railway.app
+  client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: US+OVH US-2
+  name: HK+NetLab Global-2
   network: tcp
-  port: 23576
+  port: 51279
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 15.204.97.219
-  servername: fuck.rkn
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  server: 154.21.203.106
+  servername: www.tesla.com
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: JP+Contabo Asia Private-2
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-  udp: true
-  skip-cert-verify: true
-- name: CA+Cloudflare-23
-  password: humanity
-  port: 443
-  server: 104.25.240.193
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: NL+Greenhost-19
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.188
-  type: ss
-  udp: true
-  skip-cert-verify: true
-- name: CA+Cloudflare-24
-  network: ws
-  port: 443
-  server: 104.27.46.35
-  servername: jp3.yohototo.top
-  tls: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: LV+Melbikomas UAB
   type: vless
+  server: 89.36.161.222
+  port: 2083
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: RU+Ddos-guard
-  type: vless
-  server: 185.178.208.140
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  udp: true
-  network: ws
-  ws-opts:
-    path: /static/events/900598fa7500/
-    headers:
-      Host: gran-game.pro
-  tls: true
-  servername: gran-game.pro
-  client-fingerprint: android
-- name: NL+Greenhost-20
-  type: ss
-  server: 193.29.139.132
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- name: NL+Greenhost-21
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  skip-cert-verify: true
-- name: NL+Greenhost-22
-  type: ss
-  server: 82.38.31.208
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-  skip-cert-verify: true
-- cipher: chacha20-ietf-poly1305
-  name: NL+Greenhost-23
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.17
-  type: ss
-  udp: true
-  skip-cert-verify: true
-- name: HK+TAI Guang Medicines
-  type: vless
-  server: 103.180.20.108
-  port: 8443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-- client-fingerprint: chrome
-  name: PL+First Server
   network: grpc
-  port: 10459
-  reality-opts:
-    public-key: DrVzuibwnFFd6HX9duNcyG65JPMCiUqoJFgxkktishg
-    short-id: af86f23452bf025a
-  server: 83.147.232.69
-  servername: ya.ru
+  grpc-opts:
+    grpc-service-name: grpc
   tls: true
+  servername: laoye.in-gect.fun
+  skip-cert-verify: true
+- name: DE+Hetzner Online
   type: vless
+  server: 91.107.247.173
+  port: 443
+  uuid: c60cd62f-8dc5-415f-826b-abb7856027d1
   udp: true
-  uuid: 55ad002b-6cdf-4d76-81bb-91f3f605afc5
-- name: NL+Greenhost-24
-  type: ss
-  server: 82.38.31.66
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  skip-cert-verify: true
-- name: SG+Datacamp-2
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-- name: CA+GTHost-2
+  network: xhttp
+  tls: true
+  servername: kala.fortresshost.ir
+  client-fingerprint: chrome
+- name: US+Ipxo
   type: trojan
-  server: 216.152.147.152
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  server: sclass-c1.catcat321.com
+  port: 20086
+  password: d9064589-74af-432a-9390-5d8a9da281bf
   udp: true
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: US+Inception Hosting-5
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.202
-  servername: yahoo.com
   tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: SG+Oracle Cloud Infrastructure-2
-  network: tcp
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-- name: US+Fro
-  network: ws
-  port: 8080
-  server: 208.84.100.209
-  type: vless
-  udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  sni: hk.catxstar.com
   skip-cert-verify: true
-- name: TW+Chunghwa Telecom-6
+- name: VN+Fastly Network Solution Company-10
+  type: ss
+  server: 103.186.154.159
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: TW+Chunghwa Telecom-5
   type: vless
   server: 59.125.69.23
   port: 443
@@ -2904,95 +3298,372 @@ proxies:
       Host: ty986gfazs.cainiaohub.xyz
   tls: true
   servername: ty986gfazs.cainiaohub.xyz
-- name: US+Oracle Cloud Infrastructure
-  password: 099830134df5ac3a04a4b21d39b8c395
-  port: 50160
-  server: 163.192.14.135
-  skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
-- name: RU+Ddos-guard-2
+- name: RS+Maxko D O O
   type: vless
-  server: lorettmay.top
+  server: 150.40.126.24
   port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gw.v1.ObjectService
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 4872856d5489c37d
+  servername: rs5.univesalsrv.com
+  client-fingerprint: firefox
+- name: CA+Cloudflare-46
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 86825b06-ee56-4dc9-9128-b3abda5c31e8
   udp: true
   network: ws
   ws-opts:
-    path: /blog/posts
+    path: /
     headers:
       Host: ''
   tls: true
-  servername: lorettmay.top
-  client-fingerprint: chrome
-- name: JP+Alibaba.com Singapore E-Commerce Private-2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  port: 8443
-  server: 8.211.175.236
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-- name: US+WPEngine
-  type: vless
-  server: 141.193.213.20
-  port: 8443
-  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  servername: spl01.hatlikarious.org
+- name: HK+Alibaba Cloud - HK-4
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
   udp: true
   network: ws
   ws-opts:
-    path: '%2F'
+    path: /arki
     headers:
-      Host: u.srilankangrill.online
-  tls: true
-  servername: u.srilankangrill.online
+      Host: ''
   skip-cert-verify: true
-- name: JP+Akenai Products
-  network: grpc
-  port: 443
-  server: 31.76.91.31
-  servername: b.jp-1.bnc-gt.co.uk
-  tls: true
+- name: US+Akamai Technologies-3
   type: vless
+  server: nian.001.url111.kcloud02.top
+  port: 15007
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
   udp: true
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-- client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 2c4d005b
+  servername: www.bing.com
+  client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: SE+SERV.HOST GROUP-2
+- name: CA+Cloudflare-47
+  type: vless
+  server: 104.16.111.195
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+  tls: true
+  servername: jp3.yohototo.top
+  client-fingerprint: chrome
+- name: HK+Hong Kong Telecommunications-3
+  type: trojan
+  server: 219.76.13.180
+  port: 443
+  password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0
+  udp: true
+  tls: true
+  sni: stutter.freetrade.link
+- name: NL+Scaleway-3
+  type: vless
+  server: 51.158.206.86
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: '01'
+  servername: fuck.rkn
+  flow: xtls-rprx-vision
+- name: JP+Alibaba.com
+  type: vless
+  server: 47.79.147.53
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /page/course/download
+    headers:
+      Host: edg-2oo.pages.dev
+  tls: true
+  servername: edg-2oo.pages.dev
+  client-fingerprint: chrome
+- name: US+Digital Ocean-2
+  type: ss
+  server: 138.197.89.234
+  port: 28960
+  cipher: chacha20-ietf-poly1305
+  password: DZRy4Q3QH0jUGfKFl2jDCZ
+  udp: true
+  skip-cert-verify: true
+- name: NL+Pfcloud UG
+  type: vmess
+  server: 176.65.151.175
+  port: 11674
+  uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: JP+Kvmcloud Network
   network: tcp
   port: 443
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  server: 13.143.180.141
+    public-key: Z7B8VKvjAiBH93XEkHFWCVBfK8Mu5HTLtAwfr5LuYlk
+    short-id: 00b0389a
+  server: ga1data.xyy123.bid
+  servername: www.amzn.com
   tls: true
   type: vless
   udp: true
-  uuid: 2614a96d-e39f-02f0-a9c7-467a178c2c0a
-  servername: sw.lenvex.cc
-- name: CA+Cloudflare-25
+  uuid: 81f686e2-0700-4e7d-b3aa-2f7fc544bcc3
+- name: KR+Oracle Cloud Infrastructure-2
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: NL+Greenhost-6
+  type: ss
+  server: 82.38.31.10
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+  skip-cert-verify: true
+- name: FR+YottaSrc-2
+  type: vless
+  server: 45.92.218.130
+  port: 443
+  uuid: 9ff5db63-88ff-4276-ab71-ac2b5cb2a740
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: d3feff5d570d6b
+  servername: delivery.mp.microsoft.com
+  client-fingerprint: chrome
+- name: PL+OVH Sp. z o. o-3
+  type: ss
+  server: 51.83.192.80
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+  skip-cert-verify: true
+- name: US+Light Node
+  type: trojan
+  server: us001.zestapp778.com
+  port: 57277
+  password: 5t6i121em5lkmsmk
+  udp: true
+  skip-cert-verify: true
+- name: SG+Hetzner Online
+  type: vless
+  server: hw6.divarkhaghazi.com
+  port: 465
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+    headers:
+      Host: hw6.divarkhaghazi.com.
+  tls: true
+  servername: hw6.divarkhaghazi.com.
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: SG+Akamai Technologies-2
+  network: tcp
+  port: 447
+  reality-opts:
+    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
+    short-id: 5a42dbd7e26a0415
+  server: 172.237.88.103
+  servername: netflix.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+- name: NL+Greenhost-7
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+  skip-cert-verify: true
+- name: US+Level 3-4
+  type: vless
+  server: 8.39.125.213
+  port: 443
+  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: whitecreeper.pages.dev
+  tls: true
+  servername: whitecreeper.pages.dev
+  client-fingerprint: chrome
+- name: VN+Fastly Network Solution Company-11
+  type: ss
+  server: 103.186.154.35
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: TW+Chunghwa Telecom-6
+  password: 0a9f1f5a397bd427
+  port: 443
+  server: 125.227.86.45
+  sni: tg.freecodes
+  type: trojan
+  udp: true
+- name: CA+Cloudflare-48
   network: ws
   port: 443
-  server: 104.21.6.186
+  server: 104.18.42.98
   servername: jp3.yohototo.top
   tls: true
   type: vless
   udp: true
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: DE+Doprax ApS-4
-  network: tcp
-  port: 10002
-  server: 168.222.43.53
+- name: JP+Baxet Group
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  port: 2060
+  server: rb.mangshe.xyz
+  skip-cert-verify: true
+  sni: ''
+  type: hysteria2
+- name: RU+Procloud
+  type: vless
+  server: 185.147.27.183
+  port: 8443
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
+  udp: true
+  tls: true
+  servername: user-6a917f32.noooo.win
+  client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+- name: US+Cloudflare
+  network: ws
+  port: 443
+  server: 162.159.254.3
+  servername: jp3.yohototo.top
+  tls: true
   type: vless
   udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-  skip-cert-verify: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: US+White Label Services
-  password: Q2YsIzc5YkchSFjsqUZWrQAFtsSpqf7XxYxkG4+Jbsk=:zT1SecPttPY/XPW6NwjK5Wql+/6zbcGSDJK21Jk8uLo=
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: CA+Cloudflare-49
+  type: vless
+  server: xstack.mahanfixe.workers.dev
   port: 443
-  server: 216.9.225.189
-  type: ss
+  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
   udp: true
-- name: US+Thomson Reuters
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  tls: true
+  servername: xstack.mahanfixe.workers.dev
+  client-fingerprint: chrome
+- name: NL+Greenhost-8
+  type: ss
+  server: 82.38.31.213
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-50
+  type: vless
+  server: 172.66.196.248
+  port: 443
+  uuid: 87c467e9-f0af-4b03-8fbd-65fd375d3a26
+  udp: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: pmpmppm.pages.dev
+  tls: true
+  servername: pmpmppm.pages.dev
+  client-fingerprint: randomized
+- name: US+Online Banking Solutions
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  ws-opts:
+    path: /
+    headers:
+      Host: 38.110.1.246
+  skip-cert-verify: true
+- name: JP+Lightnode-2
+  type: ss
+  server: 154.205.139.9
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 303ac65e30f28b0b
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-51
+  password: humanity
+  port: 443
+  server: 104.16.72.50
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: SG+AWS EC2-5
+  type: vless
+  server: sg5-r.link-t7.com
+  port: 10040
+  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: 686c0ef0
+  servername: d1.awsstatic.com
+  client-fingerprint: chrome
+- name: ZA+Xneelo Tscolo
+  type: ss
+  server: 156.38.168.58
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+  udp: true
+  skip-cert-verify: true
+- name: US+Thomson Reuters-2
   type: vless
   server: 167.68.4.131
   port: 8443
@@ -3005,326 +3676,447 @@ proxies:
       Host: proxy-34l.pages.dev
   tls: true
   servername: proxy-34l.pages.dev
-  client-fingerprint: safari
+  client-fingerprint: qq
   skip-cert-verify: true
-- cipher: chacha20-ietf-poly1305
-  name: NL+Greenhost-25
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.28
-  type: ss
-  udp: true
+- name: US+Spartan Host-2
+  port: 8443
+  server: 45.150.164.18
   skip-cert-verify: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: HK+NetLab Global-2
-  network: tcp
-  port: 27509
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: 6ba85179e30d4fc2
-  server: 38.22.88.248
-  servername: www.suffolk.edu
   tls: true
-  type: vless
+  type: http
+- name: VN+Fastly Network Solution Company-12
+  type: ss
+  server: 103.186.155.18
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-- name: HK+AWS EC2-3
+  skip-cert-verify: true
+- name: DE+DataCamp
+  port: 9443
+  server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: FI+HETZNER-DC
   type: vless
-  server: hk3-r.link-t7.com
-  port: 10128
-  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
+  server: 77.42.77.66
+  port: 32323
+  uuid: 015e6f7b-c6df-470a-a22d-62b8b9947a4d
+  udp: true
+  skip-cert-verify: true
+- name: TW+Tucd
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 103.115.109.49
+  sni: ''
+  type: hysteria2
+- name: CA+Cloudflare-52
+  type: vless
+  server: 172.67.199.126
+  port: 2053
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws-tesla
+    headers:
+      Host: fast.145779.xyz
+  tls: true
+  servername: fast.145779.xyz
+  client-fingerprint: firefox
+  skip-cert-verify: true
+- name: PH+Globe Telecom
+  port: 2020
+  server: 180.191.153.75
+  skip-cert-verify: true
+  type: http
+- name: NL+Weiss Hosting Group S.R.L-2
+  type: vless
+  server: 94.232.247.186
+  port: 8880
+  uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
   udp: true
   network: grpc
   grpc-opts:
-    grpc-service-name: movie
+    grpc-service-name: ''
+  skip-cert-verify: true
+- type: vless
+  name: NL+ExpressHost
+  server: sw.golangwikito.cfd
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  udp: true
   tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 686c0ef0
-  servername: s0.awsstatic.com
+  servername: sw.golangwikito.cfd
+  sni: sw.golangwikito.cfd
   client-fingerprint: chrome
-- name: US+CDN77 Seattle
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+- name: VN+Fastly Network Solution Company-13
+  type: ss
+  server: 103.186.155.23
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
   skip-cert-verify: true
-- name: TW+Chunghwa Telecom-7
-  type: vmess
-  server: 24864168545164.d6f54hd1j.cc
-  port: 443
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
+- name: RU+JSC "TIMEWEB"-3
+  type: vless
+  server: 83.147.246.153
+  port: 4100
+  uuid: 85223e1a-f55d-4d0d-b27d-39e8be49d220
+  udp: true
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+  skip-cert-verify: true
+- name: CA+CloudFlare-5
+  type: vless
+  server: 188.114.97.6
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 24864168545164.d6f54hd1j.cc
-  tls: true
-  servername: 24864168545164.d6f54hd1j.cc
-- name: TW+NOT TFN-2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-tw-002.fastervpn.world
-  sni: css.rbxcdn.com
-  type: hysteria2
-- name: CA+Cloudflare-26
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+  skip-cert-verify: true
+- name: KR+Sangsangneteuwokeutekeunolrojijangchunrimitideu
+  network: none
+  port: 31157
+  server: 112.169.175.199
   type: vless
-  server: 172.64.157.161
+  udp: true
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
+  skip-cert-verify: true
+- name: US+Orion Telekom Tim d.o.o.Beograd
+  type: vless
+  server: 188.255.157.136
   port: 443
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: xy1ej.stream-node-us.danfeng.qzz.io
+  tls: true
+  servername: xy1ej.stream-node-us.danfeng.qzz.io
+  client-fingerprint: firefox
+- name: HK+BGP Network-3
+  type: vless
+  server: 27.50.48.6
+  port: 443
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
   udp: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: snip.edgeoneai.cc.cd
+      Host: vless2-8vx.pages.dev
   tls: true
-  servername: snip.edgeoneai.cc.cd
-  client-fingerprint: chrome
-- name: US+Ace Data Centers II
-  type: vless
-  server: 177.202.72.50
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: swedenafteraventura.space
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: VN+Vinasite Viet NAM Company-4
-  type: vless
-  server: node1.csnety.com
-  port: 56533
-  uuid: 689c6e4f-8974-4fdb-8a35-cf2959277448
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: d0be
-  servername: v1-dy.ixigua.com
-  client-fingerprint: chrome
-  flow: xtls-rprx-vision
-- name: RU+SmartApe
-  type: vless
-  server: 31.177.111.236
-  port: 443
-  uuid: 03929684-0dcf-4add-bb02-2b2ba09d10a2
-  udp: true
-  network: raw
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: tfhx4tjzmy39benjh0hg.sellerape.cc
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: NL+Greenhost-26
+  servername: vless2-8vx.pages.dev
+- name: AU+Contabo Asia Private
   type: ss
-  server: 82.38.31.61
-  port: 8080
+  server: 154.26.156.99
+  port: 47385
   cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: 78322e4b934870b6
   udp: true
   skip-cert-verify: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: IN+Beafort-2
-  network: tcp
-  port: 40443
+- name: HK+Hong Kong Broadband Network
+  type: vless
+  server: hkhl1f6.87544899.xyz
+  port: 443
+  uuid: 58c14e54-6db0-46fb-a1fb-8f3184197d94
+  udp: true
+  tls: true
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  server: 5.253.28.224
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
-- name: CA+DataCamp
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: US+5G NETWORK OPERATIONS PTY
-  type: vless
-  server: 103.232.95.178
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-  tls: true
-  servername: u.srilankangrill.online
-  client-fingerprint: firefox
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: DE+MivoCloud SRL
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- client-fingerprint: chrome
-  encryption: none
-  name: NL+H1cloud
-  network: tcp
-  port: 25362
-  reality-opts:
-    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
-    short-id: 23732d14a527990d
-  server: 79.182.39.75
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
-  xudp: true
-  servername: www.chip.de
-- name: JP+DataCamp-2
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US+Inception Hosting-6
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.231
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: GB+Clouvider HB
-  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  port: 443
-  server: 3d329aa8-t9zts0-tpaqgu-1smhu.uk.oshuawei.com
-  tls: true
-  type: http
-  username: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
-  sni: 3d329aa8-t9zts0-tpaqgu-1smhu.uk.oshuawei.com
-- name: HK+BGP Network
-  type: vless
-  server: 27.50.49.154
-  port: 2083
-  uuid: 40af9131-d540-448a-bc56-5bba147a1dc3
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: proxy-34l.pages.dev
-  tls: true
-  servername: proxy-34l.pages.dev
-  client-fingerprint: edge
-  skip-cert-verify: true
-- name: US+IONOS
-  network: ws
-  port: 30016
-  server: 69.48.201.136
-  type: vless
-  udp: true
-  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
-  skip-cert-verify: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: HK+Ucloud Information Technology
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  server: 165.154.63.139
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-- name: FR+Doprax ApS-2
-  network: tcp
-  port: 20001
-  server: 155.117.5.208
-  type: vless
-  udp: true
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-  skip-cert-verify: true
-- name: DE+AWS EC2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 3.64.194.247
-  sni: vpn-de-002.fastervpn.world
-  type: hysteria2
-- name: US+HostPapa
-  type: vless
-  server: 104.168.132.109
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-  tls: true
-  servername: u.srilankangrill.online
+    public-key: ''
+    short-id: e7988d
+  servername: travelinluxe.discoverhongkong.com
   client-fingerprint: chrome
-- name: NL+Greenhost-27
+  flow: xtls-rprx-vision
+- name: RU+Yandex.Cloud-2
+  type: vless
+  server: 51.250.95.143
+  port: 443
+  uuid: 5725a60c-34a5-476d-9ae3-9e43d945ca8f
+  udp: true
+  tls: true
+  reality-opts:
+    public-key: ''
+    short-id: f6
+  servername: www.mobile.yandex.ru
+  client-fingerprint: random
+  flow: xtls-rprx-vision
+- name: PL+Melbikomas UAB
   type: ss
-  server: 193.29.139.168
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
+  server: 217.30.10.70
+  port: 9014
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
   udp: true
   skip-cert-verify: true
-- name: US+Dedicated.com
-  password: ae7eb4dwyaz25pxwgq59
-  port: 59689
-  server: 66.23.203.21
-  skip-cert-verify: true
-  sni: 66.23.203.21
+- name: DE+Alibaba.com Singapore E-Commerce Private
+  type: vless
+  server: 8.209.83.19
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  udp: true
+  network: ws
+  ws-opts:
+    path: /trade/sort?ed=2560
+    headers:
+      Host: edg-2oo.pages.dev
+  tls: true
+  servername: edg-2oo.pages.dev
+  client-fingerprint: chrome
+- name: US+GTHost-7
   type: trojan
-  udp: true
-- name: JP+Baxet Group
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  port: 2060
-  server: rb.mangshe.xyz
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-- name: IT+Fastweb C E I
-  password: None
+  server: 66.163.122.46
   port: 443
-  server: 93.42.177.250
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  tls: true
+  sni: searchnationwidecareerchangehelperandguidancetoday.com
+- name: US+Hurricane Electric
+  password: 'null'
+  port: 443
+  server: berniesbodybla.fun
+  tls: true
+  type: http
+  username: 'null'
+  sni: berniesbodybla.fun
+- name: CA+Cloudflare-53
+  type: vless
+  server: 104.19.219.230
+  port: 443
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+  tls: true
+  servername: cfnode-11ivy8.pages.dev
+  client-fingerprint: chrome
+- name: MY+WANGSU
+  type: ss
+  server: 202.122.145.125
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 46d46fd902d485e8
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-54
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 87a5d3eb-afd4-4193-9787-c54ef7c26c8c
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: patient-cake-39c7.44-e7a.workers.dev
+  skip-cert-verify: true
+- name: JP+JAPAN-4
+  type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 41495
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+- name: IR+Potenting
+  type: vless
+  server: 94.184.13.162
+  port: 4040
+  uuid: 2473e31a-adbc-47e5-b58a-c294d0450812
+  udp: true
+  skip-cert-verify: true
+- name: US+GTHost-8
+  type: trojan
+  server: 66.163.112.171
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+- name: CA+Cloudflare-55
+  type: vless
+  server: 104.16.58.88
+  port: 443
+  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: cfnode-11ivy8.pages.dev
+  tls: true
+  servername: cfnode-11ivy8.pages.dev
+  client-fingerprint: chrome
+- name: CA+Cloudflare-56
+  type: vless
+  server: vless.gem-audio2.us.ci
+  port: 443
+  uuid: f14f0e7d-bcb0-416b-855a-17344b0242b9
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  tls: true
+  servername: vless.gem-audio2.us.ci
+  client-fingerprint: chrome
+- name: SG+Datacamp-2
+  type: trojan
+  server: 86.38.247.109
+  port: 2087
+  password: sshs8_6481354771
+  udp: true
+  tls: true
+  sni: ul-singapore1.09vpn.com
+  skip-cert-verify: true
+- name: VN+Fastly Network Solution Company-14
+  type: ss
+  server: 103.186.155.121
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+  skip-cert-verify: true
+- name: US+DataCamp
+  port: 443
+  server: 149.22.88.65
+  sub_tag: noCache
+  tls: true
+  type: http
+  udp: true
+- name: CA+Cloudflare-57
+  type: vless
+  server: 104.19.47.188
+  port: 8443
+  uuid: 56e4896e-90a9-4fe0-8480-90d3d68b9928
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: go.iranfree.de5.net
+  tls: true
+  servername: go.iranfree.de5.net
+  client-fingerprint: chrome
+  skip-cert-verify: true
+- name: CA+Cloudflare-58
+  type: vless
+  server: 104.16.10.189
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+  tls: true
+  servername: u.srilankangrill.online
+  client-fingerprint: chrome
+- name: HK+Alibaba Cloud - HK-5
+  type: vmess
+  server: n1744454501.4u9ma.icu
+  port: 443
+  uuid: bed7b743-6bf8-46a2-b346-c60e60919220
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1744454501.4u9ma.icu
+  tls: true
+  servername: n1744454501.4u9ma.icu
+- name: KR+AWS EC2
+  type: vmess
+  server: 13.125.24.112
+  port: 49517
+  uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ''
+  skip-cert-verify: true
+- name: CA+Cloudflare-59
+  type: vless
+  server: 172.67.172.155
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+  tls: true
+  servername: lucasjow.us.ci
+  client-fingerprint: qq
+- name: JP+Lightnode-3
+  type: ss
+  server: 154.205.139.9
+  port: 11202
+  cipher: chacha20-ietf-poly1305
+  password: 303ac65e30f28b0b
+  udp: true
+  skip-cert-verify: true
+- name: CA+Cloudflare-60
+  type: vless
+  server: 104.18.255.167
+  port: 443
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
+  udp: true
+  network: ws
+  ws-opts:
+    path: pyip=bpb.yousef.isegaro.com
+    headers:
+      Host: free.cndyw.ggff.net
+  tls: true
+  servername: free.cndyw.ggff.net
+  client-fingerprint: random
+- name: CA+Cloudflare-61
+  type: vless
+  server: 172.64.144.198
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  tls: true
+  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
+  client-fingerprint: chrome
+- name: RO+M247 Europe SRL-2
+  port: 9002
+  server: 193.176.84.32
+  skip-cert-verify: true
+  sub_tag: noCache
   tls: true
   type: http
 - client-fingerprint: chrome
-  name: HK+Hongkong Wen Jing Network-6
+  name: HK+Hongkong Wen Jing Network-3
   network: tcp
   port: 21002
   reality-opts:
@@ -3336,618 +4128,154 @@ proxies:
   type: vless
   udp: true
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-- name: FR+VeryCloud
-  network: grpc
-  port: 443
-  server: 82.22.2.225
-  servername: b-wl.fr-2.bnc-gt.co.uk
-  tls: true
+- name: CA+Cloudflare-62
   type: vless
+  server: 104.18.12.229
+  port: 8443
+  uuid: 1753c03f-39c4-4bf2-ae83-38e90c847e8e
   udp: true
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-- name: AT+NetCrafters OU
-  type: vless
-  server: at-85-10.cdn-lab.online
-  port: 443
-  uuid: 5fa16fdf-5b3c-4f57-988d-b24c6722c91a
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 37f7ef1f627f1c29
-  servername: at-85-10.cdn-lab.online
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: FR+ONLINE
-  network: tcp
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: CA+Cloudflare-27
   network: ws
-  port: 443
-  server: 104.21.70.228
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: US+Datacamp-4
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: DE+DataCamp
-  port: 443
-  server: 152.233.20.206
-  tls: true
-  type: http
-- name: DE+VPN Consumer Frankfurt
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: LV+ESTNOC-GLOBAL
-  password: None
-  port: 443
-  server: 85.203.39.130
-  tls: true
-  type: http
-- name: NL+ClearStack
-  type: vless
-  server: 85.31.148.74
-  port: 443
-  uuid: c86fb9d6-8bdb-48ea-b78f-4409e02234ce
-  udp: true
-  network: raw
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: a111111111111111
-  servername: calendar.salphetka.ru
-  client-fingerprint: qq
-  flow: xtls-rprx-vision
-- client-fingerprint: chrome
-  name: TR+Global Connectivity Solutions LLP
-  network: grpc
-  port: 8444
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  server: 62.133.63.45
-  servername: github.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-- name: HK+Cogento Backbone
-  port: 39811
-  server: 176.111.37.5
-  type: http
-  skip-cert-verify: true
-- name: BY+Idea Host-2
-  network: ws
-  port: 14430
-  server: 178.172.227.124
-  type: vless
-  udp: true
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  skip-cert-verify: true
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: SG+AWS EC2-5
-  network: tcp
-  port: 12512
-  reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  server: 46.137.202.178
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-- name: PL+M247
-  password: None
-  port: 443
-  server: 37.120.156.34
-  tls: true
-  type: http
-- name: KR+Oracle Cloud Infrastructure-4
-  password: 1671a252e2a97dc2bda4e515475931da
-  port: 50160
-  server: 132.226.226.189
-  skip-cert-verify: true
-  sni: ''
-  type: hysteria2
-- name: CA+Cloudflare-28
-  network: ws
-  port: 443
-  server: 104.16.111.195
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: DE+Alibaba.com
-  network: ws
-  port: 443
-  server: 47.245.134.84
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
   ws-opts:
+    path: /?ed=2560
     headers:
-      Host: xy1ej.stream-node-us.danfeng.qzz.io
-    path: /danfeng
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-  servername: xy1ej.stream-node-us.danfeng.qzz.io
-- name: CH+Oracle Cloud Infrastructure
-  password: 84a506ca5aca505696a454d828420b3f
-  port: 50160
-  server: 140.238.213.114
+      Host: ydyg0908.mynameiszt.eu.org
+  tls: true
+  servername: ydyg0908.mynameiszt.eu.org
+  client-fingerprint: random
   skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
-- client-fingerprint: firefox
-  name: SG+HostHatch
-  network: tcp
-  port: 2053
-  reality-opts:
-    public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
-    short-id: cd7e85995ae2afc9
-  server: 45.132.75.213
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+- name: IL+GCL
+  type: ss
+  server: 5.188.227.18
+  port: 11202
+  cipher: chacha20-ietf-poly1305
+  password: 317f13c5c2ebdea3
   udp: true
-  uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-- name: RU+JSC "TIMEWEB"-2
+  skip-cert-verify: true
+- name: GB+NET
+  type: ss
+  server: 45.87.175.157
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 1RWwXhwfAB5gAEozU4G2Pg
+  udp: true
+  skip-cert-verify: true
+- name: NL+Brainoza OU
   type: vless
-  server: 147.45.148.6
+  server: 185.36.143.71
   port: 443
-  uuid: 3bb97d46-789b-4229-88f6-9beb222a4137
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
   udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf-1rm.pages.dev
   tls: true
-  reality-opts:
-    public-key: ''
-    short-id: ''
-  servername: yoy-api.bachidze.com
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
+  servername: cf-1rm.pages.dev
+  client-fingerprint: chrome
+- name: US+Fastly-6
+  type: vless
+  server: 151.101.194.219
+  port: 80
+  uuid: Parsashonam-333
+  udp: true
+  network: xhttp
+  skip-cert-verify: true
+- name: HK+IDC Cube
+  type: vless
+  server: 82.24.203.10
+  port: 2087
+  uuid: 3165b4d0-40f7-4df0-9f59-4c89ccdac92d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /3bfc3e3ed603
+    headers:
+      Host: ''
+  skip-cert-verify: true
+- name: NL+Greenhost-9
+  type: ss
+  server: 82.38.31.204
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+  skip-cert-verify: true
+- name: US+Visa International Service Association
+  type: trojan
+  server: 199.68.156.250
+  port: 2087
+  password: 7bpe9s002exll38s
+  udp: true
+  network: ws
+  ws-opts:
+    path: /wss
+    headers:
+      Host: nexoshop.netvia.ir
+  tls: true
+  sni: nexoshop.netvia.ir
+  client-fingerprint: firefox
+  skip-cert-verify: true
+  alpn:
+  - http/1.1
 - cipher: chacha20-ietf-poly1305
-  name: NL+Greenhost-28
+  name: NL+Greenhost-10
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.26
   type: ss
   udp: true
   skip-cert-verify: true
-- name: CA+Cloudflare-29
-  network: ws
-  port: 443
-  server: 172.67.156.147
-  servername: jp3.yohototo.top
-  tls: true
+- name: CA+Cloudflare-63
   type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: HK+Pittqiao Network Information
-  network: ws
-  port: 8443
-  server: 103.148.73.173
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-- name: JP+Vultr Holdings-2
-  type: trojan
-  server: jp.tronsg.com
-  port: 443
-  password: Trojan@82164024
-  udp: true
-  tls: true
-  sni: jp.tronsg.com
-- name: NL+Floating-2
-  type: vless
-  server: snow.betust.net
-  port: 443
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: b7a5c406
-  servername: api37.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- name: TH+LightNode-TH
-  password: 5t6i121em5lkmsmk
-  port: 33079
-  server: th001.zestapp778.com
-  skip-cert-verify: true
-  sni: th001.zestapp778.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: US+Green Floid
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: H3R3BUAl7thrIZsznTbb-eRREIjQOH2f3WO0oTN7OGY
-    short-id: a0e2a6074c6456b0
-  server: 195.123.235.183
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c14ec728-3eca-4750-87fc-fd1e6aeb81d5
-- name: KR+Haionnet
-  type: ss
-  server: 49.254.204.133
-  port: 1774
-  cipher: aes-256-cfb
-  password: 1234!@#$
-  udp: true
-  skip-cert-verify: true
-- name: JP+Tencent Cloud Computing
-  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
-  port: 8443
-  server: 43.167.186.78
-  skip-cert-verify: true
-  sni: ''
-  type: trojan
-  udp: true
-- name: CN+Su Jingliang
-  port: 443
-  server: 137.175.22.89
-  tls: true
-  type: http
-- name: NL+Cdn77 AMS
-  port: 9002
-  server: 84.17.47.123
-  skip-cert-verify: true
-  sub_tag: noCache
-  tls: true
-  type: http
-  udp: true
-- name: US+Lite Info-3
-  type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- name: US+Fastly
-  password: MiTiVPN
-  port: 443
-  server: 167.82.64.120
-  sni: firefox.com
-  type: trojan
-  udp: true
-- name: GB+Zenlayer
-  type: ss
-  server: 98.98.142.161
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-  skip-cert-verify: true
-- name: KR+Oracle Cloud Infrastructure-5
-  password: maintell
-  port: 2053
-  server: 152.70.237.123
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-- name: RO+M247 Europe SRL-2
-  port: 9002
-  server: 193.176.84.26
-  skip-cert-verify: true
-  sni: www.bing.com
-  sub_tag: noCache
-  tls: true
-  type: http
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: CH+Green Floid
-  network: raw
-  port: 8443
-  reality-opts:
-    public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
-    short-id: 16036bbef04d0509
-  server: 45.90.57.119
-  servername: twitch.tv
-  tls: true
-  type: vless
-  udp: true
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
-- name: US+NetActuate
-  port: 443
-  server: 162.217.114.50
-  tls: true
-  type: http
-- name: KR+Oracle Cloud Infrastructure-6
-  type: vmess
-  server: 140.238.2.250
-  port: 443
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: raw
-- name: US+GTHost-9
-  type: trojan
-  server: 66.163.112.31
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  udp: true
-- name: HK+Lucidacloud
-  type: vless
-  server: 103.143.81.178
-  port: 443
-  uuid: fa45096d-bed0-ad80-c773-23c30000001b
+  server: 104.26.13.40
+  port: 8880
+  uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
   udp: true
   network: ws
   ws-opts:
-    path: /sync
+    path: /pyip=ProxyIP.JP.CMLiussss.net
     headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  client-fingerprint: chrome
-- name: NL+Scaleway-4
-  password: 'null'
-  port: 443
-  server: 51.158.243.91
-  sub_tag: noCache
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: JP+JAPAN-2
-  type: trojan
-  server: ench-snet-app.w-ctrip.cn
-  port: 45503
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  udp: true
+      Host: aged-pine-d8c4.379.workers.dev
   skip-cert-verify: true
-- name: NL+Greenhost-29
-  type: ss
-  server: 82.38.31.149
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: NL+Green Floid
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: Q0dPyF2hFWgxL7hxntJWJammcb6zcRCyA-NOiOFrsAo
-    short-id: 1433a38abea1191c
-  server: 185.14.30.98
-  servername: twitch.tv
-  tls: true
-  type: vless
-  udp: true
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
-- name: IT+Tumpi Networks Srls-3
-  type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- name: ZA+Microsoft Azure Cloud-2
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-  udp: true
-- name: NL+Greenhost-30
-  type: ss
-  server: 193.29.139.235
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-  skip-cert-verify: true
-- name: IR+Toloe Rayaneh Loghman Educational and Cultural Co.
+- name: TW+Chunghwa Telecom Co.-4
   type: vmess
-  server: getnet.serversubasli.top
-  port: 8080
-  uuid: d2b67e48-c341-47ba-8caa-5658df693ac4
+  server: 220.130.80.179
+  port: 443
+  uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   ws-opts:
-    path: /
+    path: /howdy
     headers:
-      Host: ''
+      Host: v2ray2.udpgw.com
   tls: true
-  skip-cert-verify: true
-- name: IT+Tumpi Networks Srls-4
-  type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  skip-cert-verify: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: US+Inception Hosting-7
-  network: raw
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 169.40.42.235
-  servername: yahoo.com
+- name: FR+OVH-3
+  password: freeuser1
+  port: 9251
+  server: fr012.freeconnect.link
+  sni: fr012.freeconnect.link
   tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: RU+Selectel-4
-  type: vless
-  server: 81.163.22.143
-  port: 443
-  uuid: fb37d713-0ed3-4146-b085-a5c879a9aafa
-  udp: true
-  tls: true
-  reality-opts:
-    public-key: ''
-    short-id: 351224a7
-  servername: join.betust.net
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: RO+GF RO BUC
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  server: 46.28.67.55
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-- name: JP+JAPAN-3
-  type: trojan
-  server: ench-snet-app.w-ctrip.cn
-  port: 18295
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  udp: true
+  type: http
+  username: freeuser1
   skip-cert-verify: true
-- name: HK+Maxwell Telecom
-  type: ss
-  server: 23.175.201.177
-  port: 63691
-  cipher: 2022-blake3-aes-128-gcm
-  password: d1rPFOP0VHkK296iGDM/eg==
-  udp: true
-  skip-cert-verify: true
-- name: KR+SK Broadband
-  type: ss
-  server: 211.178.105.134
-  port: 6123
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-  udp: true
-  skip-cert-verify: true
-- name: DE+Play2go - Fzco
+- name: DE+Fine Group Servers Solutions
   type: vless
-  server: sundaylanzgem.site
-  port: 443
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  server: 170.168.99.6
+  port: 8443
+  uuid: f71957f3-29e0-d077-9b51-83da5cf31480
   udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
   tls: true
   reality-opts:
     public-key: ''
     short-id: ''
-  servername: sundaylanzgem.site
-  client-fingerprint: ios
-  flow: xtls-rprx-vision
-- name: CA+Cloudflare-30
-  network: ws
-  port: 443
-  server: 104.24.31.89
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-- name: US+FranTech Solutions
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
-  udp: true
-- name: US+OVH US-3
-  type: ss
-  server: 15.204.247.206
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-  udp: true
-  skip-cert-verify: true
-- name: EC+IPXON Networks Ecuador - Quito EC-UIO
-  port: 9443
-  server: 38.165.231.71
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: NL+Cdn77 AMS-2
-  port: 9002
-  server: 84.17.47.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: CA+Cloudflare-31
-  network: ws
-  port: 443
-  server: 104.18.40.171
-  servername: wallweb-boi.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
-- name: SG+ZENLA
-  type: ss
-  server: 128.1.186.73
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-  skip-cert-verify: true
-- name: RU+Fiber Grid
-  type: vless
-  server: 196.240.125.251
-  port: 8443
-  uuid: 53de05e9-8de3-48ae-9036-dcb203d4925c
-  udp: true
-  tls: true
-  servername: api-v2-6aeb73b7.vmagnum.win
-  client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-- name: JP+Vultr Holdings-3
-  password: 96ab5cd282733fd4c312a61f972f330a
-  port: 443
-  server: 45.32.10.7
-  sni: vp3.yysyy.online
-  type: hysteria2
+  servername: cdn.steamstatic.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: 自动选择
   type: url-test
